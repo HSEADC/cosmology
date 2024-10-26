@@ -103,6 +103,11 @@ module.exports = {
 
     // Страницы разделов
     new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: './about.html'
+    }),
+
+    new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html'
     }),
@@ -115,11 +120,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tests.html',
       filename: './tests.html'
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/about.html',
-      filename: './about.html'
     }),
 
     // Страницы раздела статей (articles)
