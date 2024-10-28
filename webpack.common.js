@@ -124,8 +124,8 @@ module.exports = {
 
     // Страницы раздела статей (articles)
     new HtmlWebpackPlugin({
-      template: './src/articles/dark-matter.html',
-      filename: './articles/dark-matter.html'
+      template: './src/articles/cosmic-distance.html',
+      filename: './articles/cosmic-distance.html'
     }),
 
     new HtmlWebpackPlugin({
@@ -171,8 +171,8 @@ module.exports = {
 
     // Страницы раздела тестов (tests)
     new HtmlWebpackPlugin({
-      template: './src/tests/dark-matter.html',
-      filename: './tests/dark-matter.html'
+      template: './src/tests/dark.html',
+      filename: './tests/dark.html'
     }),
 
     new HtmlWebpackPlugin({
