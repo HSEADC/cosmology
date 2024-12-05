@@ -1,6 +1,6 @@
 body {
   #containerAbout {
-    background-image: url('../images/about/about-back.svg');
+    background-image: url('../images/about/about-back.webp');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@ body {
       font-size: 1vw;
 
       .nav_logo {
-        background-image: url('../images/logo.svg');
+        background-image: url('../images/logo.webp');
         background-size: cover;
         width: 12vw;
         height: 1.5vw;
@@ -86,7 +86,7 @@ body {
         color: #fff;
 
         #glass {
-          background-image: url('../images/search-icon.svg');
+          background-image: url('../images/search-icon.webp');
           background-size: cover;
           width: 1.4vw;
           height: 1.4vw;
@@ -96,7 +96,7 @@ body {
     }
 
     #elipse {
-      background-image: url('../images/about/elipse.svg');
+      background-image: url('../images/about/elipse.webp');
       background-size: cover;
       width: 78vw;
       height: 27.7vw;
@@ -108,6 +108,7 @@ body {
       justify-content: center;
       gap: 1vw;
       margin-bottom: 5vw;
+      margin-top: 10vw;
 
       h1 {
         font-size: 5.7vw;
@@ -135,7 +136,7 @@ body {
         gap: 1vw;
 
         .card {
-          background-image: url('../images/about/glass-square.svg');
+          background-image: url('../images/about/glass-square.webp');
           background-size: cover;
           width: 31vw;
           display: flex;
@@ -144,7 +145,7 @@ body {
           gap: 1.5vw;
 
           .sphere {
-            background-image: url('../images/about/sphere.svg');
+            background-image: url('../images/about/sphere.webp');
             background-size: cover;
             width: 12vw;
             height: 12vw;
@@ -175,7 +176,7 @@ body {
       height: 32vw;
       align-self: center;
       margin-top: 10vw;
-      background-image: url('../images/about/team.png');
+      background-image: url('../images/about/team.webp');
       background-size: cover;
       margin-bottom: 7vw;
     }
@@ -196,7 +197,7 @@ body {
         height: 28vw;
 
         .block {
-          background-image: url('../images/about/glass-square.svg');
+          background-image: url('../images/about/glass-square.webp');
           background-size: cover;
           width: 31vw;
           height: 28vw;
@@ -206,7 +207,7 @@ body {
           gap: 1.5vw;
 
           #telegram {
-            background-image: url('../images/about/telegram.svg');
+            background-image: url('../images/about/telegram.webp');
             background-size: cover;
             width: 8.5vw;
             height: 8.5vw;
@@ -215,7 +216,7 @@ body {
           }
 
           #dzen {
-            background-image: url('../images/about/dzen.svg');
+            background-image: url('../images/about/dzen.webp');
             background-size: cover;
             width: 8.5vw;
             height: 8.5vw;

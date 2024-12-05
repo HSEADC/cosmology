@@ -7,25 +7,89 @@ html {
     font-style: normal;
     color: #969696;
     background-color: #101012;
-    background-image: url('../images/leftBackground.png');
+    background-image: url('../images/leftBackground.webp');
     background-size: cover;
 
-    .navigation {
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      margin: 2.5vw 2.5vw 0;
+      justify-content: space-between;
+      align-items: center;
+      font-family: JetBrainsMono;
+      font-weight: 400;
+      font-size: 1vw;
       position: fixed;
-      width: 100%;
+      width: -webkit-fill-available;
       z-index: 1;
 
-      nav {
-        text-align: center;
-        height: 3vw;
-        display: flex;
-        justify-content: center;
-        gap: 2.5vw;
-        align-items: center;
+      .nav_logo {
+        background-image: url('../images/logo.webp');
+        background-size: cover;
+        width: 12vw;
+        height: 1.5vw;
+      }
 
-        a {
-          color: #969696;
-          text-decoration: none;
+      .nav_menu {
+        display: flex;
+        flex-direction: row;
+        gap: 0.3vw;
+
+        .nav_item:nth-child(1) {
+          width: 6.5vw;
+        }
+
+        .nav_item:nth-child(2) {
+          width: 6vw;
+        }
+
+        .nav_item:nth-child(3) {
+          width: 8.5vw;
+        }
+
+        .nav_item:nth-child(4) {
+          width: 8vw;
+        }
+
+        .nav_item {
+          width: 6vw;
+          text-align: center;
+
+          a {
+            color: #fff;
+            text-decoration-line: none;
+          }
+
+          .page {
+            background-color: #383838;
+            border-radius: 12px;
+            border: #5a5a5a solid 1px;
+            height: 2.4vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .search {
+        background-color: #383838;
+        border-radius: 12px;
+        border: #5a5a5a solid 1px;
+        height: 2.4vw;
+        width: 7.5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.9vw;
+        color: #fff;
+
+        #glass {
+          background-image: url('../images/search-icon.webp');
+          background-size: cover;
+          width: 1.4vw;
+          height: 1.4vw;
+          margin-left: 0.6vw;
         }
       }
     }
@@ -47,9 +111,10 @@ html {
 
         #logo {
           height: 3vw;
-          width: 24vw;
-          background-image: url('../images/logo.svg');
+          width: 25vw;
+          background-image: url('../images/logo.webp');
           background-repeat: no-repeat;
+          background-size: cover;
         }
 
         #description {

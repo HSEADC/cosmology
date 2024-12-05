@@ -3,4 +3,8 @@
 @import 'stylesheets/vars.scss';
 @import 'stylesheets/main.scss';
 @import 'stylesheets/about.scss';
+@import 'stylesheets/articles.scss';
+@import 'stylesheets/cards.scss';
+@import 'stylesheets/tests.scss';
+@import 'stylesheets/styleguide.scss';
 @import 'stylesheets/cosmic-distance.scss';
