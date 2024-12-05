@@ -122,6 +122,11 @@ module.exports = {
       filename: './tests.html'
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/styleguide.html',
+      filename: './styleguide.html'
+    }),
+
     // Страницы раздела статей (articles)
     new HtmlWebpackPlugin({
       template: './src/articles/cosmic-distance.html',

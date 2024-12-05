@@ -1,6 +1,6 @@
 body {
   #containerAbout {
-    background-image: url('../images/about-back.svg');
+    background-image: url('../images/about/about-back.svg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@ body {
     }
 
     #elipse {
-      background-image: url('../images/elipse.svg');
+      background-image: url('../images/about/elipse.svg');
       background-size: cover;
       width: 78vw;
       height: 27.7vw;
@@ -135,7 +135,7 @@ body {
         gap: 1vw;
 
         .card {
-          background-image: url('../images/glass-square.svg');
+          background-image: url('../images/about/glass-square.svg');
           background-size: cover;
           width: 31vw;
           display: flex;
@@ -144,7 +144,7 @@ body {
           gap: 1.5vw;
 
           .sphere {
-            background-image: url('../images/sphere.svg');
+            background-image: url('../images/about/sphere.svg');
             background-size: cover;
             width: 12vw;
             height: 12vw;
@@ -175,7 +175,7 @@ body {
       height: 32vw;
       align-self: center;
       margin-top: 10vw;
-      background-image: url('../images/team.png');
+      background-image: url('../images/about/team.png');
       background-size: cover;
       margin-bottom: 7vw;
     }
@@ -196,7 +196,7 @@ body {
         height: 28vw;
 
         .block {
-          background-image: url('../images/glass-square.svg');
+          background-image: url('../images/about/glass-square.svg');
           background-size: cover;
           width: 31vw;
           height: 28vw;
@@ -206,7 +206,7 @@ body {
           gap: 1.5vw;
 
           #telegram {
-            background-image: url('../images/telegram.svg');
+            background-image: url('../images/about/telegram.svg');
             background-size: cover;
             width: 8.5vw;
             height: 8.5vw;
@@ -215,7 +215,7 @@ body {
           }
 
           #dzen {
-            background-image: url('../images/dzen.svg');
+            background-image: url('../images/about/dzen.svg');
             background-size: cover;
             width: 8.5vw;
             height: 8.5vw;
