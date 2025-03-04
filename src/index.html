@@ -50,112 +50,220 @@
     <!-- Meta Tags Generated with https://metatags.io -->
   </head>
   <body>
-    <section class="navigation">
-      <nav class="navbar">
-        <a href="index.html"><div class="nav_logo"></div></a>
-        <ul class="nav_menu">
-          <li class="nav_item">
-            <div class="page">
-              <a class="nav_link" href="articles.html">СТАТЬИ</a>
-            </div>
-          </li>
-          <li class="nav_item">
-            <div class="page">
-              <a class="nav_link" href="tests.html">ТЕСТЫ</a>
-            </div>
-          </li>
-          <li class="nav_item">
-            <div class="page">
-              <a class="nav_link" href="cards.html">КАРТОЧКИ</a>
-            </div>
-          </li>
-          <li class="nav_item">
-            <div class="page">
-              <a class="nav_link" href="about.html">О ПРОЕКТЕ</a>
-            </div>
-          </li>
-        </ul>
-        <div class="search">
-          <div id="glass"></div>
-          <p>ПОИСК</p>
-        </div>
-      </nav>
-    </section>
-    <div id="container">
-      <section id="leftSide">
-        <div id="cosmology">
-          <div id="logo"></div>
-          <div id="description">
-            <p>
-              Мы создаём новый сервис про космос. <br />
-              Наша цель — показать космос как независимую от человека сущность
-              и объяснить сложные аспекты астрономии<br />
-              простыми словами
-            </p>
-          </div>
-          <div id="form">
-            <form
-              id="my-form"
-              action="https://formspree.io/f/xkgnwaea"
-              method="POST"
-            >
-              <input type="email" name="email" placeholder="Email" />
-              <button id="my-form-button">Подписаться</button>
-              <p id="my-form-status"></p>
-            </form>
-          </div>
-          <div id="socialMedia">
-            <div id="telegram">
-              <a href="https://t.me/cosmologymedia">
-                <button>TG-канал</button>
-              </a>
-            </div>
-            <div id="styleguide">
-              <a href="styleguide.html">
-                <button>стайлгайд</button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <!------------------------- Header ----------------------->
+    <header></header>
+
+    <!------------------------- Title ----------------------->
+    <div class="M_mainPageText">
+      <h1 class="A_H1">Изучай космос с научной точностью, но без душноты</h1>
+      <h4 class="A_h4">
+        У нас ты найдешь подробные статьи, карточки с небольшой дозой информации
+        и тесты, которые позволят проверить свои знания
+      </h4>
     </div>
 
-    <!-- скрипт для формы -->
-    <script>
-      var form = document.getElementById('my-form')
+    <!------------------------- Articles ----------------------->
+    <div class="O_chapter">
+      <div class="M_chapterText">
+        <h1 class="A_H1">Статьи</h1>
+        <div class="A_linkButton">
+          <a href="articles.html">Смотреть все</a>
+          <img
+            class="Q_iconArrow"
+            src="../src/images/index/Q_iconArrow.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <h4 class="A_h4">
+        Здесь — развернутые материалы для тех, кто хочет понять тему
+        по-настоящему
+      </h4>
+    </div>
 
-      async function handleSubmit(event) {
-        event.preventDefault()
-        var status = document.getElementById('my-form-status')
-        var data = new FormData(event.target)
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: 'application/json'
-          }
-        })
-          .then((response) => {
-            if (response.ok) {
-              status.innerHTML = 'Спасибо за подписку! До встречи:)'
-              form.reset()
-            } else {
-              response.json().then((data) => {
-                if (Object.hasOwn(data, 'errors')) {
-                  status.innerHTML = data['errors']
-                    .map((error) => error['message'])
-                    .join(', ')
-                } else {
-                  status.innerHTML = 'Ой, попробуйте заполнить форму еще раз!'
-                }
-              })
-            }
-          })
-          .catch((error) => {
-            status.innerHTML = 'Ой, попробуйте заполнить форму еще раз!'
-          })
-      }
-      form.addEventListener('submit', handleSubmit)
-    </script>
+    <div class="W_articles">
+      <div class="O_cardArticle">
+        <div class="M_cardArticle">
+          <img
+            class="Q_cardArticleImg"
+            src="../src/images/index/Q_cardArticleImg-1.svg"
+            alt=""
+          />
+          <div class="A_testLevelTags">Лекция</div>
+        </div>
+        <h3 class="A_h3">За горизонтом событий: что такое сингулярность?</h3>
+      </div>
+
+      <div class="O_cardArticle">
+        <div class="M_cardArticle">
+          <img
+            class="Q_cardArticleImg"
+            src="../src/images/index/Q_cardArticleImg.svg"
+            alt=""
+          />
+          <div class="A_testLevelTags">Статья</div>
+        </div>
+        <h3 class="A_h3">
+          Экзопланеты: методы обнаружения и перспективы изучения
+        </h3>
+      </div>
+
+      <div class="O_cardArticle">
+        <div class="M_cardArticle">
+          <img
+            class="Q_cardArticleImg"
+            src="../src/images/index/Q_cardArticleImg-2.svg"
+            alt=""
+          />
+          <div class="A_testLevelTags">Подкаст</div>
+        </div>
+        <h3 class="A_h3">Сверхновые: рождение и смерть звёзд</h3>
+      </div>
+    </div>
+
+    <!------------------------- Cards ----------------------->
+    <div class="O_chapter">
+      <div class="M_chapterText">
+        <h1 class="A_H1">Карточки</h1>
+        <div class="A_linkButton">
+          <a href="cards.html">Смотреть все</a>
+          <img
+            class="Q_iconArrow"
+            src="../src/images/index/Q_iconArrow.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <h4 class="A_h4">
+        Когда мало времени, но ты голоден до новых знаний о космосе
+      </h4>
+    </div>
+
+    <div class="W_cards">
+      <div class="O_cardInfo">
+        <img
+          class="Q_cardInfoImg"
+          src="../src/images/index/blackHole.webp"
+          alt=""
+        />
+      </div>
+      <div class="M_cardTexts">
+        <h3 class="A_h3">Чёрная дыра</h3>
+        <p class="A_p">Космический объект</p>
+      </div>
+
+      <div class="O_cardInfo">
+        <img
+          class="Q_cardInfoImg"
+          src="../src/images/index/sunnyWind.webp"
+          alt=""
+        />
+      </div>
+      <div class="M_cardTexts">
+        <h3 class="A_h3">Солнечный ветер</h3>
+        <p class="A_p">Космическое явление</p>
+      </div>
+
+      <div class="O_cardInfo">
+        <img
+          class="Q_cardInfoImg"
+          src="../src/images/index/quazar.webp"
+          alt=""
+        />
+      </div>
+      <div class="M_cardTexts">
+        <h3 class="A_h3">Квазар</h3>
+        <p class="A_p">Космический объект</p>
+      </div>
+    </div>
+
+    <!------------------------- Tests ----------------------->
+    <div class="O_chapter">
+      <div class="M_chapterText">
+        <h1 class="A_H1">Тесты</h1>
+        <div class="A_linkButton">
+          <a href="cards.html">Смотреть все</a>
+          <img
+            class="Q_iconArrow"
+            src="../src/images/index/Q_iconArrow.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <h4 class="A_h4">Проверь свои знания после всего изученного</h4>
+    </div>
+
+    <div class="W_tests">
+      <div class="W_cardTest">
+        <div class="O_cardTextGroup">
+          <div class="A_testLevelTags">Лёгкий</div>
+          <div class="M_cardTexts">
+            <h3 class="A_h3">Планеты солнечной системы</h3>
+            <p class="A_p">Вопросов: 15</p>
+          </div>
+        </div>
+        <img
+          class="Q_cardTextImg"
+          src="../src/images/index/solarSystemPlanets.webp"
+          alt=""
+        />
+      </div>
+
+      <div class="W_cardTest">
+        <div class="O_cardTextGroup">
+          <div class="A_testLevelTags">Сложный</div>
+          <div class="M_cardTexts">
+            <h3 class="A_h3">Спектральные классы звезд</h3>
+            <p class="A_p">Вопросов: 9</p>
+          </div>
+        </div>
+        <img
+          class="Q_cardTextImg"
+          src="../src/images/index/spectralClassesOfStars.webp"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!------------------------- SocialMedia ----------------------->
+    <div class="M_secondPageText">
+      <h1 class="A_H1">Получай новые материалы первым</h1>
+      <h4 class="A_h4">
+        Никакого спама, только оповещения  о новым материалах и полезностях
+      </h4>
+    </div>
+
+    <div class="W_mediaLinks">
+      <div class="O_cardMedia">
+        <img class="Q_mediaLogos" src="" alt="../src/images/index/dzen.svg" />
+        <div class="M_cardTexts">
+          <h2 class="A_h2">Мы в Я.Дзен</h2>
+          <p class="A_p">
+            Присоединяйся к нашему сообществу в Я. Дзен.Там мы делимся
+            эксклюзивными статьями
+          </p>
+        </div>
+        <button class="A_mainButton">Подписаться</button>
+      </div>
+
+      <div class="O_cardMedia">
+        <img
+          class="Q_mediaLogos"
+          src=""
+          alt="../src/images/index/telegram.svg"
+        />
+        <div class="M_cardTexts">
+          <h2 class="A_h2">Мы в Telegram</h2>
+          <p class="A_p">
+            Присоединяйся к нашему каналу в Telegram. Там мы постим еще больше
+            фактов о космосе
+          </p>
+        </div>
+        <button class="A_mainButton">Подписаться</button>
+      </div>
+    </div>
+
+    <!------------------------- Footer ----------------------->
+    <footer></footer>
   </body>
 </html>
