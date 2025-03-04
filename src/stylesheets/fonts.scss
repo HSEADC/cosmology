@@ -1,5 +1,32 @@
 @font-face {
   font-family: 'SuisseIntl';
+  src: url('../fonts/SuisseIntl-Bold.woff') format('woff'),
+    url('../fonts/SuisseIntl-Bold.woff2') format('woff2'),
+    url('../fonts/SuisseIntl-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('../fonts/SuisseIntl-SemiBold.woff') format('woff'),
+    url('../fonts/SuisseIntl-SemiBold.woff2') format('woff2'),
+    url('../fonts/SuisseIntl-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
+  src: url('../fonts/suisseintl-Medium.woff2') format('woff2'),
+    url('../fonts/suisseintl-Medium.woff') format('woff'),
+    url('../fonts/suisseintl-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuisseIntl';
   src: url('../fonts/SuisseIntl-Regular.woff') format('woff'),
     url('../fonts/SuisseIntl-Regular.woff2') format('woff2'),
     url('../fonts/SuisseIntl-Regular.ttf') format('truetype');
@@ -9,16 +36,9 @@
 
 @font-face {
   font-family: 'SuisseIntl';
-  src: url('../fonts/suisseintl-semibold.woff2') format('woff2'),
-    url('../fonts/suisseintl-semibold.woff') format('woff'),
-    url('../fonts/suisseintl-semibold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'JetBrainsMono';
-  src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2');
-  font-weight: 400;
+  src: url('../fonts/SuisseIntl-Book.woff') format('woff'),
+    url('../fonts/SuisseIntl-Book.woff2') format('woff2'),
+    url('../fonts/SuisseIntl-Book.ttf') format('truetype');
+  font-weight: 450;
   font-style: normal;
 }

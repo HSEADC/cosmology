@@ -1,10 +1,20 @@
 @import 'stylesheets/reset.scss';
 @import 'stylesheets/fonts.scss';
 @import 'stylesheets/vars.scss';
-@import 'stylesheets/main.scss';
+/* @import 'stylesheets/main.scss'; */
+@import 'stylesheets/index.scss';
 @import 'stylesheets/about.scss';
 @import 'stylesheets/articles.scss';
 @import 'stylesheets/cards.scss';
 @import 'stylesheets/tests.scss';
 @import 'stylesheets/styleguide.scss';
 @import 'stylesheets/cosmic-distance.scss';
+
+/* Components */
+@import 'stylesheets/components/01_Quarks.scss';
+@import 'stylesheets/components/02_Atoms.scss';
+@import 'stylesheets/components/03_Molecules.scss';
+@import 'stylesheets/components/04_Wrappers.scss';
+@import 'stylesheets/components/05_Collections.scss';
+@import 'stylesheets/components/06_Organisms.scss';
+@import 'stylesheets/components/07_SuperOrganisms.scss';

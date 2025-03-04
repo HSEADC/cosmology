@@ -81,10 +81,10 @@ module.exports = {
         }
       },
       {
-        test: /\.(ttf|otf)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
+        test: /\.(ttf|otf|woff|woff2)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]'
         }
       }
     ]
@@ -188,7 +188,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tests/star-test.html',
       filename: './tests/star-test.html'
-    })
+    }),
 
     // Article
     // new HtmlWebpackPlugin({
@@ -197,15 +197,25 @@ module.exports = {
     // }),
 
     // Partials
-    // new HtmlWebpackPartialsPlugin([
-    //   {
-    //     path: path.join(__dirname, './src/partials/analytics.html'),
-    //     location: 'analytics',
-    //     template_filename: '*',
-    //     priority: 'replace'
-    //   }
-    // ])
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/footer.html'),
+        location: 'footer',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/header.html'),
+        location: 'header',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ])
   ],
+
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
   }
