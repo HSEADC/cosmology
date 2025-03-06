@@ -1,0 +1,80 @@
+/* ------------------------- Header ----------------------- */
+.O_Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 10vw;
+  padding: 3.3vw;
+}
+
+/* ------------------------- Index ----------------------- */
+.O_chapter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5vw;
+
+  margin-top: 14.7vw;
+  height: 8.3vw;
+
+  position: relative;
+  z-index: 2;
+}
+
+.O_cardArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2vw;
+}
+
+.O_cardInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 28.4vw;
+  height: 28.6vw;
+  padding: 1.1vw 1.1vw 2.2vw 1.1vw;
+
+  border-radius: 1.7vw;
+  border: 0.12vw solid #2f2f2f;
+  background: #1a1a1a;
+}
+
+.O_cardTextGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.O_cardMedia {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8vw;
+
+  width: 33.4vw;
+  height: 28.2vw;
+  padding: 2.1vw;
+
+  border-radius: 1.6vw;
+  border: 0.12vw solid #2f2f2f;
+  background: #1a1a1a;
+}
+
+/* ------------------------- Footer ----------------------- */
+.O_formSubscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7vw;
+}
+
+.O_personasFooter {
+  display: flex;
+  gap: 2vw;
+}
