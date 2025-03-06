@@ -1,12 +1,42 @@
-.background {
-  background-image: none;
+.O_headlinePage {
+  .A_p {
+    width: 21vw;
+    text-align: left;
+  }
 
-  .content {
-    padding-top: 8vw;
-    padding-left: 2.5vw;
-
-    h1 {
-      font-size: 3rem;
+  .A_filterButton {
+    &:nth-child(2) {
+      border: 0.12vw solid #fff;
+      background: #1e1e1e;
+      box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-weight: 600;
     }
+  }
+}
+
+.W_cardsTest {
+  .M_cardArticle {
+    display: flex;
+    height: 20.8vw;
+    width: 46.8vw;
+    padding: 1.2vw;
+    justify-content: center;
+    align-items: center;
+
+    .Q_cardArticleImg {
+      width: 80%;
+    }
+
+    .A_testLevelTags {
+      position: absolute;
+      height: 1.9vw;
+      left: 1.4vw;
+      top: 1.4vw;
+    }
+  }
+
+  .A_h3 {
+    width: 70%;
   }
 }

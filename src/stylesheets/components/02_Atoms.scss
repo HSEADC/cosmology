@@ -86,7 +86,7 @@
 
 .A_testLevelTags {
   border-radius: 0.6vw;
-  padding: 0.4vw 0.8vw;
+  padding: 0.5vw 0.9vw;
   background: #fff;
 
   color: #1a1a1a;
@@ -101,6 +101,7 @@
   padding: 1.3vw 1.6vw;
   border-radius: 1.4vw;
   background: #fff;
+  border: 0;
 
   color: #1a1a1a;
   font-size: 1.5vw;
@@ -170,4 +171,17 @@
   &:nth-child(2) {
     color: #fff;
   }
+}
+
+/* ------------------------- Articles ----------------------- */
+.A_filterButton {
+  padding: 1vw 2.2vw;
+  border-radius: 1vw;
+  border: 0.12vw solid #2f2f2f;
+  background: #1e1e1e;
+  color: #888;
+  font-size: 1.1vw;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.06vw;
 }

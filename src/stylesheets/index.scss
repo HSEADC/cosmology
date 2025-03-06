@@ -1,6 +1,5 @@
 html {
   display: block;
-  height: 5308px;
   font-family: 'SuisseIntl';
   color: #c0c0c0;
   scroll-behavior: smooth;
@@ -28,58 +27,60 @@ body {
   }
 
   /* ------------------------- articles ----------------------- */
-  .O_cardArticle {
-    .A_testLevelTags {
-      position: absolute;
-      height: 1.9vw;
-      left: 1.4vw;
-      top: 1.4vw;
-    }
+  .W_articles {
+    .O_cardArticle {
+      .A_testLevelTags {
+        position: absolute;
+        height: 1.9vw;
+        left: 1.4vw;
+        top: 1.4vw;
+      }
 
-    .A_h3 {
-      max-width: 30vw;
-    }
+      .A_h3 {
+        max-width: 30vw;
+      }
 
-    &:first-child {
-      width: 22.8vw;
-      height: 25.4vw;
-
-      .M_cardArticle {
+      &:first-child {
         width: 22.8vw;
-        height: 20.8vw;
+        height: 25.4vw;
 
-        .Q_cardArticleImg {
-          height: 17vw;
+        .M_cardArticle {
+          width: 22.8vw;
+          height: 20.8vw;
+
+          .Q_cardArticleImg {
+            height: 17vw;
+          }
         }
       }
-    }
 
-    &:nth-child(2) {
-      width: 46.7vw;
-      height: 25.4vw;
-      margin-top: 5.8vw;
-
-      .M_cardArticle {
+      &:nth-child(2) {
         width: 46.7vw;
-        height: 21vw;
-      }
+        height: 25.4vw;
+        margin-top: 5.8vw;
 
-      .Q_cardArticleImg {
-        height: 12vw;
-      }
-    }
-
-    &:last-child {
-      width: 14.7vw;
-      height: 15vw;
-
-      .M_cardArticle {
-        width: 14.7vw;
-        height: 14.7vw;
-        align-content: end;
+        .M_cardArticle {
+          width: 46.7vw;
+          height: 21vw;
+        }
 
         .Q_cardArticleImg {
-          height: 70%;
+          height: 12vw;
+        }
+      }
+
+      &:last-child {
+        width: 14.7vw;
+        height: 15vw;
+
+        .M_cardArticle {
+          width: 14.7vw;
+          height: 14.7vw;
+          align-content: end;
+
+          .Q_cardArticleImg {
+            height: 70%;
+          }
         }
       }
     }
@@ -92,7 +93,7 @@ body {
         display: flex;
         justify-content: center;
         align-self: flex-start;
-        align-items: center;
+        align-items: end;
         gap: 0.4vw;
 
         &::before {
@@ -100,6 +101,7 @@ body {
           background-image: url('../images/index/SixSpokedAsteriskGreen.svg');
           width: 1.1vw;
           height: 1.1vw;
+          background-size: 1.1vw 1.1vw;
           background-repeat: no-repeat;
         }
       }
