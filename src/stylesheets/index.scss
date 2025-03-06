@@ -1,11 +1,175 @@
 html {
+  display: block;
+  height: 5308px;
+  font-family: 'SuisseIntl';
+  color: #c0c0c0;
   scroll-behavior: smooth;
+
+  a {
+    color: #c0c0c0;
+    text-decoration: none;
+  }
 }
+
 body {
   background-color: #141414;
-  background-image: url('../images/index/BackgroundImage.svg');
+  background-image: url('../images/BackgroundImage.svg');
 
   * {
     box-sizing: border-box;
+  }
+
+  /* ------------------------- sectionHeadings ----------------------- */
+  .O_chapter {
+    .A_h4 {
+      text-align: left;
+      max-width: 28vw;
+    }
+  }
+
+  /* ------------------------- articles ----------------------- */
+  .O_cardArticle {
+    .A_testLevelTags {
+      position: absolute;
+      height: 1.9vw;
+      left: 1.4vw;
+      top: 1.4vw;
+    }
+
+    .A_h3 {
+      max-width: 30vw;
+    }
+
+    &:first-child {
+      width: 22.8vw;
+      height: 25.4vw;
+
+      .M_cardArticle {
+        width: 22.8vw;
+        height: 20.8vw;
+
+        .Q_cardArticleImg {
+          height: 17vw;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      width: 46.7vw;
+      height: 25.4vw;
+      margin-top: 5.8vw;
+
+      .M_cardArticle {
+        width: 46.7vw;
+        height: 21vw;
+      }
+
+      .Q_cardArticleImg {
+        height: 12vw;
+      }
+    }
+
+    &:last-child {
+      width: 14.7vw;
+      height: 15vw;
+
+      .M_cardArticle {
+        width: 14.7vw;
+        height: 14.7vw;
+        align-content: end;
+
+        .Q_cardArticleImg {
+          height: 70%;
+        }
+      }
+    }
+  }
+
+  /* ------------------------- tests ----------------------- */
+  .W_cardTest {
+    .O_cardTextGroup {
+      .A_testLevelTags {
+        display: flex;
+        justify-content: center;
+        align-self: flex-start;
+        align-items: center;
+        gap: 0.4vw;
+
+        &::before {
+          content: '';
+          background-image: url('../images/index/SixSpokedAsteriskGreen.svg');
+          width: 1.1vw;
+          height: 1.1vw;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .M_cardTexts {
+        width: 16vw;
+        height: 5.6vw;
+        justify-content: center;
+        align-items: flex-start;
+
+        .A_h3 {
+          width: 16vw;
+        }
+
+        .A_p {
+          text-align: left;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      align-self: end;
+
+      .A_testLevelTags::before {
+        background-image: url('../images/index/SixSpokedAsteriskRed.svg');
+      }
+    }
+  }
+
+  /* ------------------------- socialMediaLinks ----------------------- */
+  .M_secondPageText {
+    .A_H1 {
+      width: 61vw;
+    }
+
+    .A_h4 {
+      padding: 0 4.7vw 0.5vw 4.7vw;
+    }
+  }
+
+  .O_cardMedia {
+    .M_cardTexts {
+      align-items: flex-start;
+      gap: 1.4vw;
+    }
+
+    .A_p {
+      width: 29vw;
+      line-height: 100%;
+      text-align: left;
+    }
+  }
+
+  /* ------------------------- footer ----------------------- */
+  .S_Footer {
+    .A_h4 {
+      width: 36.4vw;
+      text-align: left;
+    }
+
+    .A_mainButton {
+      width: 12.7vw;
+      height: 4vw;
+      padding: 1vw 1.2vw;
+      border-radius: 1.1vw;
+    }
+
+    .Q_mediaLogos {
+      width: 2.8vw;
+      height: 2.8vw;
+    }
   }
 }

@@ -1,0 +1,54 @@
+/* ------------------------- Header ----------------------- */
+.Q_iconSearch {
+  width: 13.6vw;
+  text-align: end;
+
+  img {
+    width: 1.8vw;
+    height: 1.8vw;
+  }
+}
+
+/* ------------------------- Index ----------------------- */
+.Q_fixedElement {
+  width: 50vw;
+  height: 49vw;
+  padding: 0.5vw;
+  position: fixed;
+  left: 25vw;
+  z-index: 1;
+
+  img {
+    height: 48vw;
+    width: 100%;
+  }
+}
+
+.Q_iconArrow {
+  width: 1.7vw;
+  height: 1.7vw;
+}
+
+.Q_cardArticleImg {
+  width: 100%;
+}
+
+.Q_cardInfoImg {
+  height: 18.2vw;
+  border-radius: 1.5vw;
+}
+
+.Q_cardTextImg {
+  width: 22vw;
+  height: 14vw;
+}
+
+.Q_cardInfoImg,
+.Q_cardTextImg {
+  mix-blend-mode: lighten;
+}
+
+.Q_mediaLogos {
+  width: 7.1vw;
+  height: 7.1vw;
+}
