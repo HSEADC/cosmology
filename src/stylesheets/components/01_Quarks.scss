@@ -1,40 +1,73 @@
 /* ------------------------- Header ----------------------- */
 .Q_iconSearch {
   width: 13.6vw;
-  text-align: end;
+  height: 1.8vw;
+  background-position: right;
+  background-image: url('/src/images/header/iconSearch.svg');
+  background-repeat: no-repeat;
+  background-size: 1.8vw 1.8vw;
+}
 
-  img {
-    width: 1.8vw;
-    height: 1.8vw;
+/* ------------------------- Footer ----------------------- */
+.Q_socialmediaButtonsFooter {
+  width: 5.6vw;
+  height: 5.6vw;
+  border-radius: 1.3vw;
+  background: #2f2f2f;
+
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center;
+
+  &:first-child {
+    background-image: url('/src/images/footer/telegramFooter.svg');
   }
+
+  &:last-child {
+    background-image: url('/src/images/footer/dzenFooter.svg');
+  }
+}
+
+.Q_logoFooterHse {
+  width: 11.8vw;
+  height: 4.8vw;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/src/images/footer/logoFooterHse.svg');
 }
 
 /* ------------------------- Index ----------------------- */
 .Q_fixedElement {
   width: 50vw;
   height: 49vw;
-  padding: 0.5vw;
+
   position: fixed;
   left: 25vw;
   z-index: 1;
 
-  img {
-    height: 48vw;
-    width: 100%;
-  }
+  background-image: url('/src/images/index/fixedElement.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .Q_iconArrow {
   width: 1.7vw;
   height: 1.7vw;
+
+  background-image: url('/src/images/index/iconArrow.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Q_cardArticleImg {
-  width: 100%;
+  background-repeat: no-repeat;
 }
 
 .Q_cardInfoImg {
   height: 18.2vw;
+  width: 100%;
+  background-size: cover;
   border-radius: 1.5vw;
 }
 
@@ -51,4 +84,7 @@
 .Q_mediaLogos {
   width: 7.1vw;
   height: 7.1vw;
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }

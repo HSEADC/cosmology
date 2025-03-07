@@ -1,3 +1,18 @@
+/* ------------------------- Footer ----------------------- */
+.W_topFooter,
+.W_bottomFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.W_topFooter {
+  align-items: flex-start;
+}
+
+.W_bottomFooter {
+  align-items: flex-end;
+}
+
 /* ------------------------- Index ----------------------- */
 .W_articles,
 .W_cards,
@@ -58,21 +73,6 @@
   gap: 2.6vw;
 
   margin-top: 5.5vw;
-}
-
-/* ------------------------- Footer ----------------------- */
-.W_topFooter,
-.W_bottomFooter {
-  display: flex;
-  justify-content: space-between;
-}
-
-.W_topFooter {
-  align-items: flex-start;
-}
-
-.W_bottomFooter {
-  align-items: flex-end;
 }
 
 /* ------------------------- Articles ----------------------- */
