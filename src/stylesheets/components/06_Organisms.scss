@@ -46,18 +46,17 @@
   align-items: flex-start;
   gap: 1.2vw;
 
-  &:first-child {
+  &.lecture {
     width: 22.8vw;
     height: 25.4vw;
   }
 
-  &:nth-child(2) {
+  &.research {
     width: 46.7vw;
     height: 25.4vw;
-    margin-top: 5.8vw;
   }
 
-  &:last-child {
+  &.podcast {
     width: 14.7vw;
     height: 15vw;
   }
@@ -104,5 +103,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5vw 2.6vw;
+  padding: 4.1vw 2.8vw 5.8vw;
 }

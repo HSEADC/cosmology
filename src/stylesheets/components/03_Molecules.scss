@@ -69,6 +69,22 @@
   border-radius: 1.7vw;
   border: 0.12vw solid #2f2f2f;
   background: #1a1a1a;
+
+  &.lecture {
+    width: 22.8vw;
+    height: 20.8vw;
+  }
+
+  &.research {
+    width: 46.7vw;
+    height: 21vw;
+  }
+
+  &.podcast {
+    width: 14.7vw;
+    height: 14.7vw;
+    align-content: end;
+  }
 }
 
 .M_cardTexts {

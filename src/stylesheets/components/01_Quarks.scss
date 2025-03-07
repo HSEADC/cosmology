@@ -62,6 +62,26 @@
 
 .Q_cardArticleImg {
   background-repeat: no-repeat;
+
+  &.lecture {
+    height: 17vw;
+    background-image: url('/src/images/index/cardArticleImg-1.svg');
+    background-size: 100% 17vw;
+  }
+
+  &.research {
+    height: 12.3vw;
+    background-image: url('/src/images/index/cardArticleImg-2.svg');
+    background-size: 100% 12.3vw;
+  }
+
+  &.podcast {
+    height: 11vw;
+    width: 11vw;
+    background-image: url('/src/images/index/cardArticleImg-3.svg');
+    background-size: 8.5vw 8.5vw;
+    background-position: bottom;
+  }
 }
 
 .Q_cardInfoImg {
