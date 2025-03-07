@@ -1,3 +1,4 @@
+/*------------------------- Filters -----------------------*/
 .O_headlinePage {
   .A_p {
     width: 21vw;
@@ -5,7 +6,7 @@
   }
 
   .A_filterButton {
-    &:nth-child(2) {
+    &:first-child {
       border: 0.12vw solid #fff;
       background: #1e1e1e;
       box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.2);
@@ -15,17 +16,63 @@
   }
 }
 
-.W_cardsTest {
-  .M_cardArticle {
-    display: flex;
-    height: 20.8vw;
-    width: 46.8vw;
-    padding: 1.2vw;
-    justify-content: center;
-    align-items: center;
+/*------------------------- Articles -----------------------*/
+.S_articlesContent {
+  .O_cardArticle {
+    &:first-child {
+      grid-area: research1;
+    }
 
-    .Q_cardArticleImg {
-      width: 80%;
+    &:nth-child(2) {
+      grid-area: research2;
+    }
+
+    &:nth-child(3) {
+      grid-area: podcast1;
+    }
+
+    &:nth-child(4) {
+      grid-area: podcast2;
+    }
+
+    &:nth-child(5) {
+      grid-area: lecture1;
+    }
+
+    &:nth-child(6) {
+      grid-area: research3;
+    }
+
+    &:nth-child(7) {
+      grid-area: podcast3;
+    }
+
+    &:nth-child(8) {
+      grid-area: podcast4;
+    }
+
+    &:nth-child(9) {
+      grid-area: lecture2;
+    }
+
+    &:nth-child(10) {
+      grid-area: research4;
+    }
+
+    &:nth-child(11) {
+      grid-area: podcast5;
+    }
+
+    &:nth-child(12) {
+      grid-area: lecture3;
+    }
+
+    &:nth-child(13) {
+      grid-area: podcast6;
+    }
+
+    &:nth-child(14) {
+      grid-area: lecture4;
     }
 
     .A_testLevelTags {
@@ -34,9 +81,9 @@
       left: 1.4vw;
       top: 1.4vw;
     }
-  }
 
-  .A_h3 {
-    width: 70%;
+    .A_h3 {
+      max-width: 30vw;
+    }
   }
 }

@@ -42,46 +42,8 @@ body {
         max-width: 30vw;
       }
 
-      &:first-child {
-        .M_cardArticle {
-          width: 22.8vw;
-          height: 20.8vw;
-
-          .Q_cardArticleImg {
-            height: 17vw;
-            background-image: url('../images/index/cardArticleImg-1.svg');
-            background-size: 100% 17vw;
-          }
-        }
-      }
-
       &:nth-child(2) {
-        .M_cardArticle {
-          width: 46.7vw;
-          height: 21vw;
-        }
-
-        .Q_cardArticleImg {
-          height: 12.3vw;
-          background-image: url('../images/index/cardArticleImg-2.svg');
-          background-size: 100% 12.3vw;
-        }
-      }
-
-      &:last-child {
-        .M_cardArticle {
-          width: 14.7vw;
-          height: 14.7vw;
-          align-content: end;
-
-          .Q_cardArticleImg {
-            height: 11vw;
-            width: 11vw;
-            background-image: url('../images/index/cardArticleImg-3.svg');
-            background-size: 8.5vw 8.5vw;
-            background-position: bottom;
-          }
-        }
+        margin-top: 5.8vw;
       }
     }
   }
