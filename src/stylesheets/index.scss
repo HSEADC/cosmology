@@ -13,6 +13,8 @@ html {
 body {
   background-color: #141414;
   background-image: url('../images/BackgroundImage.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 
   * {
     box-sizing: border-box;
@@ -41,47 +43,65 @@ body {
       }
 
       &:first-child {
-        width: 22.8vw;
-        height: 25.4vw;
-
         .M_cardArticle {
           width: 22.8vw;
           height: 20.8vw;
 
           .Q_cardArticleImg {
             height: 17vw;
+            background-image: url('../images/index/cardArticleImg-1.svg');
+            background-size: 100% 17vw;
           }
         }
       }
 
       &:nth-child(2) {
-        width: 46.7vw;
-        height: 25.4vw;
-        margin-top: 5.8vw;
-
         .M_cardArticle {
           width: 46.7vw;
           height: 21vw;
         }
 
         .Q_cardArticleImg {
-          height: 12vw;
+          height: 12.3vw;
+          background-image: url('../images/index/cardArticleImg-2.svg');
+          background-size: 100% 12.3vw;
         }
       }
 
       &:last-child {
-        width: 14.7vw;
-        height: 15vw;
-
         .M_cardArticle {
           width: 14.7vw;
           height: 14.7vw;
           align-content: end;
 
           .Q_cardArticleImg {
-            height: 70%;
+            height: 11vw;
+            width: 11vw;
+            background-image: url('../images/index/cardArticleImg-3.svg');
+            background-size: 8.5vw 8.5vw;
+            background-position: bottom;
           }
         }
+      }
+    }
+  }
+
+  /* ------------------------- cards ----------------------- */
+
+  .O_cardInfo {
+    &:first-child {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/blackHole.webp');
+      }
+    }
+    &:nth-child(2) {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/sunnyWind.webp');
+      }
+    }
+    &:last-child {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/quazar.webp');
       }
     }
   }
@@ -122,6 +142,17 @@ body {
       }
     }
 
+    &:first-child {
+      .Q_cardTextImg {
+        background-image: url('../images/index/solarSystemPlanets.webp');
+      }
+    }
+    &:last-child {
+      .Q_cardTextImg {
+        background-image: url('../images/index/spectralClassesOfStars.webp');
+      }
+    }
+
     &:nth-child(2) {
       align-self: end;
 
@@ -143,35 +174,27 @@ body {
   }
 
   .O_cardMedia {
+    &:first-child {
+      .Q_mediaLogos {
+        background-image: url('../images/index/dzen.svg');
+      }
+    }
+
+    &:last-child {
+      .Q_mediaLogos {
+        background-image: url('../images/index/telegram.svg');
+      }
+    }
+
     .M_cardTexts {
       align-items: flex-start;
       gap: 1.4vw;
-    }
 
-    .A_p {
-      width: 29vw;
-      line-height: 100%;
-      text-align: left;
-    }
-  }
-
-  /* ------------------------- footer ----------------------- */
-  .S_Footer {
-    .A_h4 {
-      width: 36.4vw;
-      text-align: left;
-    }
-
-    .A_mainButton {
-      width: 12.7vw;
-      height: 4vw;
-      padding: 1vw 1.2vw;
-      border-radius: 1.1vw;
-    }
-
-    .Q_mediaLogos {
-      width: 2.8vw;
-      height: 2.8vw;
+      .A_p {
+        width: 29vw;
+        line-height: 100%;
+        text-align: left;
+      }
     }
   }
 }

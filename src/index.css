@@ -3,6 +3,7 @@
 @import 'stylesheets/vars.scss';
 /* @import 'stylesheets/main.scss'; */
 @import 'stylesheets/index.scss';
+@import 'stylesheets/footer.scss';
 @import 'stylesheets/about.scss';
 @import 'stylesheets/articles.scss';
 @import 'stylesheets/cards.scss';
