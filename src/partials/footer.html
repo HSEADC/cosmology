@@ -5,25 +5,38 @@
         Будем присылать вам только полезную информацию и уведомлять о новых
         материалах на cosmology.space
       </h4>
-      <div class="M_formSubscribe">
+      <form
+        id="M_formSubscribe"
+        action="https://formspree.io/f/xkgnwaea"
+        method="POST"
+      >
         <input
           class="A_inputFooter"
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder="Email:"
         />
+
         <button class="A_mainButton">Подписаться</button>
-      </div>
+
+        <p class="A_p"></p>
+      </form>
     </div>
 
     <div class="M_socialButtonsFooter">
-      <div class="Q_socialmediaButtonsFooter"></div>
-      <div class="Q_socialmediaButtonsFooter"></div>
+      <a
+        href="https://dzen.ru/cosmologymedia"
+        class="Q_socialmediaButtonsFooter"
+      ></a>
+      <a
+        href="https://t.me/cosmologymedia"
+        class="Q_socialmediaButtonsFooter"
+      ></a>
     </div>
   </div>
   <div class="W_bottomFooter">
     <div class="M_logosFooter">
-      <div class="A_logoFooter">COSMOLOGY</div>
+      <a href="index.html" class="A_logoFooter">COSMOLOGY</a>
       <div class="Q_logoFooterHse"></div>
     </div>
     <div class="O_personasFooter">
@@ -40,3 +53,40 @@
     </div>
   </div>
 </footer>
+
+<script>
+  var form = document.getElementById('M_formSubscribe')
+
+  async function handleSubmit(event) {
+    event.preventDefault()
+    var status = document.getElementById('formStatus')
+    var data = new FormData(event.target)
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        Accept: 'application/json'
+      }
+    })
+      .then((response) => {
+        if (response.ok) {
+          status.innerHTML = 'Спасибо за подписку:)'
+          form.reset()
+        } else {
+          response.json().then((data) => {
+            if (Object.hasOwn(data, 'errors')) {
+              status.innerHTML = data['errors']
+                .map((error) => error['message'])
+                .join(', ')
+            } else {
+              status.innerHTML = 'Ой! Попробуй ввести почту еще раз'
+            }
+          })
+        }
+      })
+      .catch((error) => {
+        status.innerHTML = 'Ой! Попробуй ввести почту еще раз'
+      })
+  }
+  form.addEventListener('submit', handleSubmit)
+</script>
