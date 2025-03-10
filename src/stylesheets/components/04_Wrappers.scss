@@ -63,8 +63,8 @@
   padding: 1.7vw;
   height: 60%;
   border-radius: 1.6vw;
-  border: 0.12vw solid #2f2f2f;
-  background: #1a1a1a;
+  border: var(--borderGrey);
+  background: var(--charcoal);
 }
 
 .W_mediaLinks {

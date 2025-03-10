@@ -10,8 +10,8 @@
   padding: 2.8vw;
 
   border-radius: 2.8vw 2.8vw 0 0;
-  border: 0.12vw solid #2f2f2f;
-  background: #1a1a1a;
+  border: var(--borderGrey);
+  background: var(--charcoal);
 
   position: relative;
   z-index: 2;

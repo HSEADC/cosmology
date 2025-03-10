@@ -7,10 +7,10 @@
 
   .A_filterButton {
     &:first-child {
-      border: 0.12vw solid #fff;
-      background: #1e1e1e;
-      box-shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.2);
-      color: #fff;
+      border: 0.12vw solid var(--white);
+      background: var(--charcoal);
+      box-shadow: var(--shadow);
+      color: var(--white);
       font-weight: 600;
     }
   }
