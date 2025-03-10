@@ -25,7 +25,7 @@
 }
 
 .A_navigationActionsHeader {
-  color: #888;
+  color: var(--lightGrey);
   font-size: 1.1vw;
   font-weight: 400;
 }
@@ -37,9 +37,9 @@
   padding: 1.2vw 1.1vw;
   border-radius: 1.1vw;
   border: 0;
-  background: #2f2f2f;
+  background: var(--grey);
 
-  color: #888;
+  color: var(--lightGrey);
   font-size: 1.1vw;
   font-weight: 600;
   line-height: 120%;
@@ -47,12 +47,12 @@
   outline: none;
 
   &:focus {
-    background-color: #fff;
+    background-color: var(--white);
   }
 }
 
 .A_logoFooter {
-  color: #fff;
+  color: var(--white);
   display: flex;
   align-items: center;
   gap: 0.6vw;
@@ -74,20 +74,20 @@
 
 .A_authorsFooter {
   display: flex;
-  color: #888;
+  color: var(--lightGrey);
   font-size: 1.4vw;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.06vw;
 
   &:nth-child(2) {
-    color: #fff;
+    color: var(--white);
   }
 }
 
 /* ------------------------- Typography ----------------------- */
 .A_H1 {
-  color: #c0c0c0;
+  color: var(--silver);
   text-align: center;
   font-size: 5.5vw;
   font-weight: 700;
@@ -111,7 +111,7 @@
 
 .A_h4 {
   width: 35vw;
-  color: #888;
+  color: var(--lightGrey);
   text-align: center;
   font-size: 1.4vw;
   font-weight: 500;
@@ -120,7 +120,7 @@
 }
 
 .A_p {
-  color: #888;
+  color: var(--lightGrey);
   text-align: center;
   font-size: 1.1vw;
   font-weight: 400;
@@ -132,7 +132,7 @@
   display: flex;
   gap: 0.7vw;
 
-  color: #c0c0c0;
+  color: var(--silver);
   font-size: 1.4vw;
   font-weight: 400;
   letter-spacing: -0.03vw;
@@ -141,9 +141,9 @@
 .A_testLevelTags {
   border-radius: 0.6vw;
   padding: 0.5vw 0.9vw;
-  background: #fff;
+  background: var(--white);
 
-  color: #1a1a1a;
+  color: var(--charcoal);
   font-size: 1vw;
   font-weight: 450;
   letter-spacing: -0.04vw;
@@ -154,10 +154,10 @@
   height: 4.6vw;
   padding: 1.3vw 1.6vw;
   border-radius: 1.4vw;
-  background: #fff;
+  background: var(--white);
   border: 0;
 
-  color: #1a1a1a;
+  color: var(--charcoal);
   font-size: 1.5vw;
   font-weight: 500;
   line-height: 120%;
@@ -168,9 +168,9 @@
 .A_filterButton {
   padding: 1vw 2.2vw;
   border-radius: 1vw;
-  border: 0.12vw solid #2f2f2f;
-  background: #1e1e1e;
-  color: #888;
+  border: var(--borderGrey);
+  background: var(--charcoal);
+  color: var(--lightGrey);
   font-size: 1.1vw;
   font-weight: 400;
   line-height: normal;

@@ -1,0 +1,26 @@
+html {
+  display: block;
+  font-family: 'SuisseIntl';
+  color: var(--silver);
+  scroll-behavior: smooth;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--bgColor);
+    background-image: url('../images/BackgroundImage.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    a {
+      color: var(--silver);
+      text-decoration: none;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  }
+}

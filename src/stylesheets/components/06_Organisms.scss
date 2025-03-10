@@ -11,7 +11,7 @@
 
   width: 100%;
   padding: 2vw 3.3vw;
-  background-color: #141414;
+  background-color: var(--bgColor);
 }
 
 /* ------------------------- Footer ----------------------- */
@@ -73,8 +73,8 @@
   padding: 1.1vw 1.1vw 2.2vw 1.1vw;
 
   border-radius: 1.7vw;
-  border: 0.12vw solid #2f2f2f;
-  background: #1a1a1a;
+  border: var(--borderGrey);
+  background: var(--charcoal);
 }
 
 .O_cardTextGroup {
@@ -94,8 +94,8 @@
   padding: 2.1vw;
 
   border-radius: 1.6vw;
-  border: 0.12vw solid #2f2f2f;
-  background: #1a1a1a;
+  border: var(--borderGrey);
+  background: var(--charcoal);
 }
 
 /* ------------------------- Articles ----------------------- */
