@@ -12,9 +12,10 @@
 }
 
 /* ------------------------- Footer ----------------------- */
-.M_formSubscribe {
+#M_formSubscribe {
   display: flex;
-  width: 36.4vw;
+  flex-wrap: wrap;
+  width: 36.5vw;
   height: 4vw;
   gap: 1.1vw;
 }
