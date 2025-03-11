@@ -3,6 +3,7 @@ html {
   font-family: 'SuisseIntl';
   color: var(--silver);
   scroll-behavior: smooth;
+  font-size: 16px;
 
   * {
     box-sizing: border-box;
@@ -22,5 +23,17 @@ html {
     button {
       cursor: pointer;
     }
+  }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1921px) {
+  html {
+    font-size: 21px;
+  }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {
+  html {
+    font-size: 14px;
   }
 }

@@ -1,19 +1,19 @@
 /* ------------------------- Header ----------------------- */
 .Q_iconSearch {
-  width: 1.8vw;
-  height: 1.8vw;
-  padding-left: 11.8vw;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding-left: 11.9rem;
   background-position: right;
   background-image: url('/src/images/header/iconSearch.svg');
   background-repeat: no-repeat;
-  background-size: 1.8vw 1.8vw;
+  background-size: 1.6rem 1.6rem;
 }
 
 /* ------------------------- Footer ----------------------- */
 .Q_socialmediaButtonsFooter {
-  width: 5.6vw;
-  height: 5.6vw;
-  border-radius: 1.3vw;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 1.25rem;
   background: var(--grey);
 
   background-repeat: no-repeat;
@@ -30,8 +30,8 @@
 }
 
 .Q_logoFooterHse {
-  width: 11.8vw;
-  height: 4.8vw;
+  width: 10.25rem;
+  height: 4.13rem;
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,21 +40,22 @@
 
 /* ------------------------- Index ----------------------- */
 .Q_fixedElement {
-  width: 50vw;
-  height: 49vw;
+  height: 44.1rem;
+  width: 100%;
 
   position: fixed;
-  left: 25vw;
+  background-position: center;
+
   z-index: 1;
 
   background-image: url('/src/images/index/fixedElement.svg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 45rem 44.1rem;
 }
 
 .Q_iconArrow {
-  width: 1.7vw;
-  height: 1.7vw;
+  width: 1.5rem;
+  height: 1.5rem;
 
   background-image: url('/src/images/index/iconArrow.svg');
   background-repeat: no-repeat;
@@ -65,36 +66,38 @@
   background-repeat: no-repeat;
 
   &.lecture {
-    height: 17vw;
+    height: 15rem;
     background-image: url('/src/images/index/cardArticleImg-1.svg');
-    background-size: 100% 17vw;
+    background-size: 100% 15rem;
   }
 
   &.research {
-    height: 12.3vw;
+    height: 10.8rem;
     background-image: url('/src/images/index/cardArticleImg-2.svg');
-    background-size: 100% 12.3vw;
+    background-size: 100% 10.8rem;
   }
 
   &.podcast {
-    height: 11vw;
-    width: 11vw;
+    height: 9.9rem;
+    width: 9.9rem;
     background-image: url('/src/images/index/cardArticleImg-3.svg');
-    background-size: 8.5vw 8.5vw;
+    background-size: 7.75rem 7.75rem;
     background-position: bottom;
   }
 }
 
 .Q_cardInfoImg {
-  height: 18.2vw;
+  height: 16.4rem;
   width: 100%;
   background-size: cover;
-  border-radius: 1.5vw;
+  background-repeat: no-repeat;
 }
 
 .Q_cardTextImg {
-  width: 22vw;
-  height: 14vw;
+  width: 19rem;
+  height: 13rem;
+  background-repeat: no-repeat;
+  background-size: 19rem 13rem;
 }
 
 .Q_cardInfoImg,
@@ -103,9 +106,16 @@
 }
 
 .Q_mediaLogos {
-  width: 7.1vw;
-  height: 7.1vw;
+  width: 6.2rem;
+  height: 6.2rem;
 
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  .Q_cardInfoImg {
+    background-size: 25vw;
+    background-position: center;
+  }
 }
