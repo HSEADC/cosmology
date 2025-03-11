@@ -2,7 +2,7 @@
 .O_chapter {
   .A_h4 {
     text-align: left;
-    max-width: 28vw;
+    max-width: 25.2rem;
   }
 }
 
@@ -11,17 +11,16 @@
   .O_cardArticle {
     .A_testLevelTags {
       position: absolute;
-      height: 1.9vw;
-      left: 1.4vw;
-      top: 1.4vw;
+      left: 1.26rem;
+      top: 1.26rem;
     }
 
     .A_h3 {
-      max-width: 30vw;
+      max-width: 27rem;
     }
 
     &:nth-child(2) {
-      margin-top: 5.8vw;
+      margin-top: 5.25rem;
     }
   }
 }
@@ -54,26 +53,23 @@
       justify-content: center;
       align-self: flex-start;
       align-items: end;
-      gap: 0.4vw;
+      gap: 0.4rem;
 
       &::before {
         content: '';
         background-image: url('../images/index/SixSpokedAsteriskGreen.svg');
-        width: 1.1vw;
-        height: 1.1vw;
-        background-size: 1.1vw 1.1vw;
+        width: 1rem;
+        height: 1rem;
+        background-size: 1rem 1rem;
         background-repeat: no-repeat;
       }
     }
 
     .M_cardTexts {
-      width: 16vw;
-      height: 5.6vw;
-      justify-content: center;
       align-items: flex-start;
 
       .A_h3 {
-        width: 16vw;
+        width: 14rem;
       }
 
       .A_p {
@@ -105,11 +101,11 @@
 /* ------------------------- socialMediaLinks ----------------------- */
 .M_secondPageText {
   .A_H1 {
-    width: 61vw;
+    max-width: 55rem;
   }
 
   .A_h4 {
-    padding: 0 4.7vw 0.5vw 4.7vw;
+    padding: 0 4.2rem 0.5rem 4.2rem;
   }
 }
 
@@ -128,11 +124,8 @@
 
   .M_cardTexts {
     align-items: flex-start;
-    gap: 1.4vw;
 
     .A_p {
-      width: 29vw;
-      line-height: 100%;
       text-align: left;
     }
   }

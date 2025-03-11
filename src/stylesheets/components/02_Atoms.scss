@@ -4,47 +4,46 @@
   justify-content: center;
   align-self: flex-start;
   align-items: center;
-  gap: 0.6vw;
+  gap: 0.53rem;
+  width: 11.9rem;
 
-  height: 2.7vw;
-  width: 13.6vw;
-
-  font-size: 1.6vw;
+  font-size: 1.44rem;
   font-weight: 700;
-  letter-spacing: -0.1vw;
+  letter-spacing: -0.09rem;
   text-transform: uppercase;
 
   &::before {
     content: '';
     background-image: url('/src/images/header/iconLogoHeader.svg');
     background-repeat: no-repeat;
-    width: 2.7vw;
-    height: 2.7vw;
-    background-size: 2.7vw 2.7vw;
+    width: 2.43rem;
+    height: 2.43rem;
+    background-size: 2.43rem 2.43rem;
   }
 }
 
 .A_navigationActionsHeader {
   color: var(--lightGrey);
-  font-size: 1.1vw;
+  font-size: 1rem;
+  letter-spacing: -0.04rem;
   font-weight: 400;
 }
 
 /* ------------------------- Footer ----------------------- */
 .A_inputFooter {
-  width: 22.7vw;
-  height: 4vw;
-  padding: 1.2vw 1.1vw;
-  border-radius: 1.1vw;
   border: 0;
   background: var(--grey);
-
   color: var(--lightGrey);
-  font-size: 1.1vw;
   font-weight: 600;
-  line-height: 120%;
-  letter-spacing: -0.05vw;
   outline: none;
+
+  width: 20.44rem;
+  height: 100%;
+  padding: 1.13rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: -0.04rem;
 
   &:focus {
     background-color: var(--white);
@@ -55,30 +54,30 @@
   color: var(--white);
   display: flex;
   align-items: center;
-  gap: 0.6vw;
+  gap: 1rem;
 
-  font-size: 3.2vw;
+  font-size: 2.88rem;
   font-weight: 500;
-  letter-spacing: -0.09vw;
+  letter-spacing: -0.11rem;
   text-transform: uppercase;
 
   &::before {
     content: '';
     background-image: url('/src/images/footer/iconLogoFooter.svg');
     background-repeat: no-repeat;
-    width: 3.6vw;
-    height: 3.6vw;
-    background-size: 3.6vw 3.6vw;
+    width: 3.1rem;
+    height: 3.3rem;
+    background-size: 3.1rem 3.3rem;
   }
 }
 
 .A_authorsFooter {
   display: flex;
   color: var(--lightGrey);
-  font-size: 1.4vw;
+  font-size: 1.25rem;
+  letter-spacing: -0.05rem;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.06vw;
 
   &:nth-child(2) {
     color: var(--white);
@@ -89,79 +88,83 @@
 .A_H1 {
   color: var(--silver);
   text-align: center;
-  font-size: 5.5vw;
   font-weight: 700;
-  line-height: 110%;
-  letter-spacing: -0.3vw;
   text-transform: uppercase;
+
+  font-size: 5rem;
+  line-height: 5.5rem;
+  letter-spacing: -0.3rem;
 }
 
 .A_h2 {
-  font-size: 3.3vw;
   font-weight: 600;
-  line-height: 90%;
-  letter-spacing: -0.17vw;
+  font-size: 3rem;
+  line-height: 2.7rem;
+  letter-spacing: -0.15rem;
 }
 
 .A_h3 {
-  font-size: 1.7vw;
+  font-size: 1.5rem;
+  letter-spacing: -0.06rem;
   font-weight: 500;
-  letter-spacing: -0.09vw;
 }
 
 .A_h4 {
-  width: 35vw;
+  width: 30.9rem;
   color: var(--lightGrey);
   text-align: center;
-  font-size: 1.4vw;
   font-weight: 500;
-  line-height: 130%;
-  letter-spacing: -0.03vw;
+
+  font-size: 1.26rem;
+  line-height: 1.62rem;
+  letter-spacing: -0.025rem;
 }
 
 .A_p {
   color: var(--lightGrey);
   text-align: center;
-  font-size: 1.1vw;
   font-weight: 400;
-  letter-spacing: -0.04vw;
+  font-size: 1rem;
+  letter-spacing: -0.04rem;
 }
 
 /* ------------------------- Index ----------------------- */
 .A_linkButton {
   display: flex;
-  gap: 0.7vw;
 
   color: var(--silver);
-  font-size: 1.4vw;
   font-weight: 400;
-  letter-spacing: -0.03vw;
+
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.025rem;
 }
 
 .A_testLevelTags {
-  border-radius: 0.6vw;
-  padding: 0.5vw 0.9vw;
   background: var(--white);
 
   color: var(--charcoal);
-  font-size: 1vw;
   font-weight: 450;
-  letter-spacing: -0.04vw;
+
+  padding: 0.45rem 0.81rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  letter-spacing: -0.03rem;
 }
 
 .A_mainButton {
-  width: 29vw;
-  height: 4.6vw;
-  padding: 1.3vw 1.6vw;
-  border-radius: 1.4vw;
   background: var(--white);
   border: 0;
-
   color: var(--charcoal);
-  font-size: 1.5vw;
   font-weight: 500;
-  line-height: 120%;
-  letter-spacing: -0.04vw;
+
+  width: 100%;
+  height: 4rem;
+  padding: 0 1.5rem;
+  border-radius: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.04rem;
 }
 
 /* ------------------------- Articles ----------------------- */
