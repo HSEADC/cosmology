@@ -6,7 +6,7 @@
 
   width: 100%;
   height: 28.7rem;
-  padding: 2.5rem 0;
+  padding: 2.5rem;
   margin-top: 9.3rem;
 
   border-radius: 2.5rem 2.5rem 0 0;
@@ -19,13 +19,13 @@
 
 /* ------------------------- Articles ----------------------- */
 .S_articlesContent {
-  width: 100%;
-  padding: 0 2.8vw;
-
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
   display: grid;
   grid-template: auto / repeat(4, 1fr);
   grid-auto-flow: row;
-  gap: 6vw 1vw;
+  gap: 5.4rem 1rem;
 
   grid-template-areas:
     'research1 research1 research2 research2'

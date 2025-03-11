@@ -169,13 +169,14 @@
 
 /* ------------------------- Articles ----------------------- */
 .A_filterButton {
-  padding: 1vw 2.2vw;
-  border-radius: 1vw;
   border: var(--borderGrey);
   background: var(--charcoal);
   color: var(--lightGrey);
-  font-size: 1.1vw;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: -0.06vw;
+
+  padding: 0.9rem 2rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: -0.04rem;
 }
