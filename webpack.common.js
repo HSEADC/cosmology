@@ -8,7 +8,8 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
+    header: './src/javascripts/header.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -98,96 +99,114 @@ module.exports = {
     // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+      chunks: ['index', 'header']
     }),
 
     // Страницы разделов
     new HtmlWebpackPlugin({
       template: './src/about.html',
-      filename: './about.html'
+      filename: './about.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/articles.html',
-      filename: './articles.html'
+      filename: './articles.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/cards.html',
-      filename: './cards.html'
+      filename: './cards.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/tests.html',
-      filename: './tests.html'
+      filename: './tests.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
-      filename: './styleguide.html'
+      filename: './styleguide.html',
+      chunks: ['index', 'header']
     }),
 
     // Страницы раздела статей (articles)
     new HtmlWebpackPlugin({
       template: './src/articles/cosmic-distance.html',
-      filename: './articles/cosmic-distance.html'
+      filename: './articles/cosmic-distance.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/articles/gravity.html',
-      filename: './articles/gravity.html'
+      filename: './articles/gravity.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/articles/universe.html',
-      filename: './articles/universe.html'
+      filename: './articles/universe.html',
+      chunks: ['index', 'header']
     }),
 
     // Страницы раздела карточек (cards)
     new HtmlWebpackPlugin({
       template: './src/cards/asteroid.html',
-      filename: './cards/asteroid.html'
+      filename: './cards/asteroid.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/cards/black-hole.html',
-      filename: './cards/black-hole.html'
+      filename: './cards/black-hole.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/cards/galaxy.html',
-      filename: './cards/galaxy.html'
+      filename: './cards/galaxy.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/cards/nebula.html',
-      filename: './cards/nebula.html'
+      filename: './cards/nebula.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/cards/planet.html',
-      filename: './cards/planet.html'
+      filename: './cards/planet.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/cards/star.html',
-      filename: './cards/star.html'
+      filename: './cards/star.html',
+      chunks: ['index', 'header']
     }),
 
     // Страницы раздела тестов (tests)
     new HtmlWebpackPlugin({
       template: './src/tests/dark.html',
-      filename: './tests/dark.html'
+      filename: './tests/dark.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/tests/space-test.html',
-      filename: './tests/space-test.html'
+      filename: './tests/space-test.html',
+      chunks: ['index', 'header']
     }),
 
     new HtmlWebpackPlugin({
       template: './src/tests/star-test.html',
-      filename: './tests/star-test.html'
+      filename: './tests/star-test.html',
+      chunks: ['index', 'header']
     }),
 
     // Article

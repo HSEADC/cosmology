@@ -27,6 +27,14 @@
   font-size: 1rem;
   letter-spacing: -0.04rem;
   font-weight: 400;
+
+  &:hover {
+    color: var(--white);
+  }
+
+  &.activePage {
+    color: var(--white);
+  }
 }
 
 /* ------------------------- Footer ----------------------- */
@@ -179,4 +187,11 @@
   border-radius: 0.75rem;
   font-size: 1rem;
   letter-spacing: -0.04rem;
+
+  &:hover {
+    border: var(--borderWhite);
+    box-shadow: var(--shadow);
+    color: var(--white);
+    font-weight: 600;
+  }
 }
