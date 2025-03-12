@@ -1,4 +1,5 @@
 :root {
+  /* ------------------------- Colors ----------------------- */
   --bgColor: #141414;
   --charcoal: #1a1a1a;
   --grey: #2f2f2f;
@@ -8,6 +9,25 @@
 
   --shadow: 0px 0px 16px 0px rgba(255, 255, 255, 0.2);
 
+  /* ------------------------- Borders & borderRadius ----------------------- */
   --borderGrey: 0.0625rem solid var(--grey);
   --borderWhite: 0.0625rem solid var(--white);
+
+  --radiusBig: 1.5rem;
+  --radiusMedium: 1rem;
+  --radiusSmall: 0.5rem;
+
+  /* ------------------------- Typography ----------------------- */
+  --fontH1: 700 5rem/5.5rem 'SuisseIntl', sans-serif;
+  --fontH2: 600 3rem/2.7rem 'SuisseIntl', sans-serif;
+  --fontH3: 500 1.5rem/1.5rem 'SuisseIntl', sans-serif;
+  --fontH4: 500 1.25rem/1.62rem 'SuisseIntl', sans-serif;
+  --fontP: 400 1rem/1rem 'SuisseIntl', sans-serif;
+
+  --fontLinkButton: 400 1.25rem / 1.62rem 'SuisseIntl', sans-serif;
+  --fontLevelTags: 450 0.9rem / 0.8rem 'SuisseIntl', sans-serif;
+  --fontMainButton: 500 1.25rem / 1.5rem 'SuisseIntl', sans-serif;
+  --fontFilterButton: 400 1rem / normal 'SuisseIntl', sans-serif;
+  --fontFilterButtonActive: 600 1rem / normal 'SuisseIntl', sans-serif;
+  --fontAuthors: 400 1.25rem / normal 'SuisseIntl', sans-serif;
 }
