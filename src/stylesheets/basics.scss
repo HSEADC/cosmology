@@ -1,6 +1,6 @@
 html {
   display: block;
-  font-family: 'SuisseIntl';
+  font-family: 'SuisseIntl', sans-serif;
   color: var(--silver);
   scroll-behavior: smooth;
   font-size: 16px;
@@ -36,7 +36,4 @@ html {
   html {
     font-size: 14px;
   }
-}
-
-@media only screen and (max-width: 1920px) and (min-width: 1441px) {
 }

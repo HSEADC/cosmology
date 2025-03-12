@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: var(--radiusMedium);
   width: 17.4rem;
   height: 3rem;
   padding: 0.8rem 2rem;
@@ -68,7 +68,7 @@
 
   width: 100%;
   padding: 1.8rem 1.5rem;
-  border-radius: 1.5rem;
+  border-radius: var(--radiusBig);
 
   border: var(--borderGrey);
   background: var(--charcoal);

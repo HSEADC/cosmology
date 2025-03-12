@@ -24,9 +24,8 @@
 
 .A_navigationActionsHeader {
   color: var(--lightGrey);
-  font-size: 1rem;
+  font: var(--fontP);
   letter-spacing: -0.04rem;
-  font-weight: 400;
 
   &:hover {
     color: var(--white);
@@ -48,7 +47,7 @@
   width: 20.44rem;
   height: 100%;
   padding: 1.13rem 1rem;
-  border-radius: 1rem;
+  border-radius: var(--radiusMedium);
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: -0.04rem;
@@ -80,118 +79,103 @@
 }
 
 .A_authorsFooter {
+  font: var(--fontAuthors);
   display: flex;
   color: var(--lightGrey);
-  font-size: 1.25rem;
   letter-spacing: -0.05rem;
-  font-weight: 400;
-  line-height: normal;
 
   &:nth-child(2) {
-    color: var(--white);
+    color: var(--silver);
   }
 }
 
 /* ------------------------- Typography ----------------------- */
 .A_H1 {
+  font: var(--fontH1);
   color: var(--silver);
   text-align: center;
-  font-weight: 700;
   text-transform: uppercase;
-
-  font-size: 5rem;
-  line-height: 5.5rem;
   letter-spacing: -0.3rem;
 }
 
 .A_h2 {
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 2.7rem;
+  font: var(--fontH2);
   letter-spacing: -0.15rem;
 }
 
 .A_h3 {
-  font-size: 1.5rem;
+  font: var(--fontH3);
   letter-spacing: -0.06rem;
-  font-weight: 500;
 }
 
 .A_h4 {
+  font: var(--fontH4);
   width: 30.9rem;
   color: var(--lightGrey);
   text-align: center;
-  font-weight: 500;
-
-  font-size: 1.26rem;
-  line-height: 1.62rem;
   letter-spacing: -0.025rem;
 }
 
 .A_p {
+  font: var(--fontP);
   color: var(--lightGrey);
   text-align: center;
-  font-weight: 400;
-  font-size: 1rem;
   letter-spacing: -0.04rem;
 }
 
 /* ------------------------- Index ----------------------- */
 .A_linkButton {
+  font: var(--fontLinkButton);
   display: flex;
-
   color: var(--silver);
-  font-weight: 400;
-
   gap: 0.5rem;
-  font-size: 1.25rem;
   letter-spacing: -0.025rem;
 }
 
 .A_testLevelTags {
-  background: var(--white);
+  font: var(--fontLevelTags);
 
+  background: var(--white);
   color: var(--charcoal);
-  font-weight: 450;
 
   padding: 0.45rem 0.81rem;
-  border-radius: 0.5rem;
-  font-size: 0.9rem;
+  border-radius: var(--radiusSmall);
   letter-spacing: -0.03rem;
 }
 
 .A_mainButton {
+  font: var(--fontMainButton);
   background: var(--white);
   border: 0;
   color: var(--charcoal);
-  font-weight: 500;
 
   width: 100%;
   height: 4rem;
   padding: 0 1.5rem;
-  border-radius: 1.25rem;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
+  border-radius: var(--radiusMedium);
   letter-spacing: -0.04rem;
+
+  &:hover {
+    border: var(--borderGrey);
+    background: var(--charcoal);
+    color: var(--white);
+  }
 }
 
 /* ------------------------- Articles ----------------------- */
 .A_filterButton {
+  font: var(--fontFilterButton);
   border: var(--borderGrey);
   background: var(--charcoal);
   color: var(--lightGrey);
-  font-weight: 400;
-  line-height: normal;
 
   padding: 0.9rem 2rem;
   border-radius: 0.75rem;
-  font-size: 1rem;
   letter-spacing: -0.04rem;
 
   &:hover {
     border: var(--borderWhite);
     box-shadow: var(--shadow);
     color: var(--white);
-    font-weight: 600;
   }
 }
