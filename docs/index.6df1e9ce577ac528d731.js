@@ -1,5 +1,8 @@
 /******/ (() => { // webpackBootstrap
-/* ------------------------- activeLinks ----------------------- */
+/******/ 	"use strict";
+
+
+/* ------------------------- headerActiveLinks ----------------------- */
 var pathName = window.location.pathname;
 var pageName = pathName.split('/').pop();
 if (pageName === 'articles.html') {
