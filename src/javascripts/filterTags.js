@@ -7,11 +7,19 @@ function initFilter() {
   const filters = document.querySelectorAll('.A_filterButton')
   const tagAll = document.querySelector('.all')
 
+  const articlesContent = document.querySelector('.S_articlesContent')
+  const articles = document.querySelectorAll('.O_cardArticle')
+
   filters.forEach((filter) => {
     filter.addEventListener('click', () => {
       if (filter != tagAll) {
         tagAll.classList.remove('active')
         filter.classList.toggle('active')
+
+        articlesContent.classList.remove('selected')
+        articles.forEach((article) => {
+          article.classList.remove('selected')
+        })
 
         filterByTag()
       }
@@ -69,6 +77,7 @@ function filterByTag() {
 
 function filterAll() {
   const articles = document.querySelectorAll('.O_cardArticle')
+  const articlesContent = document.querySelector('.S_articlesContent')
   const activeTags = document.querySelectorAll('.active')
 
   activeTags.forEach((tag) => {
@@ -77,5 +86,9 @@ function filterAll() {
         article.style.display = 'block'
       })
     }
+  })
+  articlesContent.classList.add('selected')
+  articles.forEach((article) => {
+    article.classList.add('selected')
   })
 }
