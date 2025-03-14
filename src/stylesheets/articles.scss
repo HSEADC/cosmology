@@ -4,15 +4,6 @@
     width: 19rem;
     text-align: left;
   }
-
-  .A_filterButton {
-    &:first-child {
-      border: var(--borderWhite);
-      box-shadow: var(--shadow);
-      color: var(--white);
-      font-weight: 600;
-    }
-  }
 }
 
 /*------------------------- Articles -----------------------*/

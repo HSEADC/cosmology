@@ -178,4 +178,11 @@
     box-shadow: var(--shadow);
     color: var(--white);
   }
+
+  &.active {
+    border: var(--borderWhite);
+    box-shadow: var(--shadow);
+    color: var(--white);
+    font-weight: 600;
+  }
 }
