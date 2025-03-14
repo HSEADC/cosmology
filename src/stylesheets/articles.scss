@@ -9,62 +9,6 @@
 /*------------------------- Articles -----------------------*/
 .S_articlesContent {
   .O_cardArticle {
-    &:first-child {
-      grid-area: research1;
-    }
-
-    &:nth-child(2) {
-      grid-area: research2;
-    }
-
-    &:nth-child(3) {
-      grid-area: podcast1;
-    }
-
-    &:nth-child(4) {
-      grid-area: podcast2;
-    }
-
-    &:nth-child(5) {
-      grid-area: lecture1;
-    }
-
-    &:nth-child(6) {
-      grid-area: research3;
-    }
-
-    &:nth-child(7) {
-      grid-area: podcast3;
-    }
-
-    &:nth-child(8) {
-      grid-area: podcast4;
-    }
-
-    &:nth-child(9) {
-      grid-area: lecture2;
-    }
-
-    &:nth-child(10) {
-      grid-area: research4;
-    }
-
-    &:nth-child(11) {
-      grid-area: podcast5;
-    }
-
-    &:nth-child(12) {
-      grid-area: lecture3;
-    }
-
-    &:nth-child(13) {
-      grid-area: podcast6;
-    }
-
-    &:nth-child(14) {
-      grid-area: lecture4;
-    }
-
     .A_testLevelTags {
       position: absolute;
       height: 1.75rem;
@@ -74,6 +18,73 @@
 
     .A_h3 {
       max-width: 27rem;
+    }
+
+    &.selected {
+      &:first-child {
+        grid-area: research1;
+      }
+
+      &:nth-child(2) {
+        grid-area: research2;
+      }
+
+      &:nth-child(3) {
+        grid-area: podcast1;
+      }
+
+      &:nth-child(4) {
+        grid-area: podcast2;
+      }
+
+      &:nth-child(5) {
+        grid-area: lecture1;
+      }
+
+      &:nth-child(6) {
+        grid-area: research3;
+      }
+
+      &:nth-child(7) {
+        grid-area: podcast3;
+      }
+
+      &:nth-child(8) {
+        grid-area: podcast4;
+      }
+
+      &:nth-child(9) {
+        grid-area: lecture2;
+      }
+
+      &:nth-child(10) {
+        grid-area: research4;
+      }
+
+      &:nth-child(11) {
+        grid-area: podcast5;
+      }
+
+      &:nth-child(12) {
+        grid-area: lecture3;
+      }
+
+      &:nth-child(13) {
+        grid-area: podcast6;
+      }
+
+      &:nth-child(14) {
+        grid-area: lecture4;
+      }
+    }
+    &.research {
+      grid-column: span 6;
+    }
+    &.lecture {
+      grid-column: span 3;
+    }
+    &.podcast {
+      grid-column: span 2;
     }
   }
 }
