@@ -6,11 +6,17 @@ document.addEventListener('DOMContentLoaded', function () {
 function initFilter() {
   var filters = document.querySelectorAll('.A_filterButton');
   var tagAll = document.querySelector('.all');
+  var articlesContent = document.querySelector('.S_articlesContent');
+  var articles = document.querySelectorAll('.O_cardArticle');
   filters.forEach(function (filter) {
     filter.addEventListener('click', function () {
       if (filter != tagAll) {
         tagAll.classList.remove('active');
         filter.classList.toggle('active');
+        articlesContent.classList.remove('selected');
+        articles.forEach(function (article) {
+          article.classList.remove('selected');
+        });
         filterByTag();
       }
       var activeTags = document.querySelectorAll('.active');
@@ -60,6 +66,7 @@ function filterByTag() {
 }
 function filterAll() {
   var articles = document.querySelectorAll('.O_cardArticle');
+  var articlesContent = document.querySelector('.S_articlesContent');
   var activeTags = document.querySelectorAll('.active');
   activeTags.forEach(function (tag) {
     if (tag.classList.contains('all')) {
@@ -67,6 +74,10 @@ function filterAll() {
         article.style.display = 'block';
       });
     }
+  });
+  articlesContent.classList.add('selected');
+  articles.forEach(function (article) {
+    article.classList.add('selected');
   });
 }
 /******/ })()
