@@ -29,10 +29,12 @@
 
   &:hover {
     color: var(--white);
+    font-weight: 600;
   }
 
   &.activePage {
     color: var(--white);
+    font-weight: 600;
   }
 }
 
@@ -154,12 +156,6 @@
   padding: 0 1.5rem;
   border-radius: var(--radiusMedium);
   letter-spacing: -0.04rem;
-
-  &:hover {
-    border: var(--borderGrey);
-    background: var(--charcoal);
-    color: var(--white);
-  }
 }
 
 /* ------------------------- Articles ----------------------- */
@@ -177,6 +173,7 @@
     border: var(--borderWhite);
     box-shadow: var(--shadow);
     color: var(--white);
+    font-weight: 600;
   }
 
   &.active {

@@ -1,0 +1,62 @@
+.M_headlinePage {
+  .A_p {
+    width: 16.5rem;
+    text-align: left;
+  }
+}
+
+.W_cardsGroup {
+  .O_cardInfo {
+    &:first-child {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/blackHole.webp');
+      }
+    }
+    &:nth-child(2) {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/sunnyWind.webp');
+      }
+    }
+    &:nth-child(3) {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/quazar.webp');
+      }
+    }
+
+    &:nth-child(4) {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/sunnyWind.webp');
+      }
+    }
+
+    &:nth-child(5) {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/quazar.webp');
+      }
+    }
+
+    &:nth-child(6) {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/blackHole.webp');
+      }
+    }
+
+    &:nth-child(7) {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/quazar.webp');
+      }
+    }
+
+    &:nth-child(8) {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/blackHole.webp');
+      }
+    }
+
+    &:last-child {
+      .Q_cardInfoImg {
+        background-image: url('../images/index/sunnyWind.webp');
+      }
+    }
+  }
+}
