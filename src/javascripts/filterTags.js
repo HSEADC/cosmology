@@ -1,3 +1,5 @@
+/* filterTags for articles and tests */
+
 console.clear()
 document.addEventListener('DOMContentLoaded', () => {
   initFilter()
@@ -7,8 +9,8 @@ function initFilter() {
   const filters = document.querySelectorAll('.A_filterButton')
   const tagAll = document.querySelector('.all')
 
-  const articlesContent = document.querySelector('.S_articlesContent')
-  const articles = document.querySelectorAll('.O_cardArticle')
+  const content = document.querySelector('.S_articlesContent, .S_testsContent')
+  const cards = document.querySelectorAll('.O_cardArticle, .W_cardTest')
 
   filters.forEach((filter) => {
     filter.addEventListener('click', () => {
@@ -16,9 +18,9 @@ function initFilter() {
         tagAll.classList.remove('active')
         filter.classList.toggle('active')
 
-        articlesContent.classList.remove('selected')
-        articles.forEach((article) => {
-          article.classList.remove('selected')
+        content.classList.remove('selected')
+        cards.forEach((card) => {
+          card.classList.remove('selected')
         })
 
         filterByTag()
@@ -45,13 +47,15 @@ function initFilter() {
 }
 
 function filterByTag() {
+  const cards = document.querySelectorAll('.O_cardArticle, .W_cardTest')
   const articles = document.querySelectorAll('.O_cardArticle')
+  const tests = document.querySelectorAll('.W_cardTest')
   const activeTags = document.querySelectorAll('.active')
   let tagList = []
   let count
 
-  articles.forEach((article) => {
-    article.style.display = 'none'
+  cards.forEach((card) => {
+    card.style.display = 'none'
   })
 
   activeTags.forEach((tag) => {
@@ -72,12 +76,20 @@ function filterByTag() {
         article.style.display = 'block'
       }
     })
+
+    tests.forEach((test) => {
+      if (test.classList.contains(tagName)) {
+        test.style.display = 'flex'
+      }
+    })
   })
 }
 
 function filterAll() {
+  const cards = document.querySelectorAll('.O_cardArticle, .W_cardTest')
   const articles = document.querySelectorAll('.O_cardArticle')
-  const articlesContent = document.querySelector('.S_articlesContent')
+  const tests = document.querySelectorAll('.W_cardTest')
+  const content = document.querySelector('.S_articlesContent, .S_testsContent')
   const activeTags = document.querySelectorAll('.active')
 
   activeTags.forEach((tag) => {
@@ -85,10 +97,14 @@ function filterAll() {
       articles.forEach((article) => {
         article.style.display = 'block'
       })
+
+      tests.forEach((test) => {
+        test.style.display = 'flex'
+      })
     }
   })
-  articlesContent.classList.add('selected')
-  articles.forEach((article) => {
-    article.classList.add('selected')
+  content.classList.add('selected')
+  cards.forEach((card) => {
+    card.classList.add('selected')
   })
 }

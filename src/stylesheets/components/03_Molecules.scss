@@ -103,11 +103,13 @@
   margin: 16.2rem auto 0;
 }
 
-/* ------------------------- Articles ----------------------- */
+/* ------------------------- Articles & tests ----------------------- */
 .M_filterGroup {
   display: flex;
   align-items: center;
   gap: 1rem;
+  min-width: 33rem;
+  max-width: 36rem;
 }
 
 /* ------------------------- Cards ----------------------- */
