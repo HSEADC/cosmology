@@ -1,4 +1,6 @@
 /******/ (() => { // webpackBootstrap
+/* filterTags for articles and tests */
+
 console.clear();
 document.addEventListener('DOMContentLoaded', function () {
   initFilter();
@@ -6,16 +8,16 @@ document.addEventListener('DOMContentLoaded', function () {
 function initFilter() {
   var filters = document.querySelectorAll('.A_filterButton');
   var tagAll = document.querySelector('.all');
-  var articlesContent = document.querySelector('.S_articlesContent');
-  var articles = document.querySelectorAll('.O_cardArticle');
+  var content = document.querySelector('.S_articlesContent, .S_testsContent');
+  var cards = document.querySelectorAll('.O_cardArticle, .W_cardTest');
   filters.forEach(function (filter) {
     filter.addEventListener('click', function () {
       if (filter != tagAll) {
         tagAll.classList.remove('active');
         filter.classList.toggle('active');
-        articlesContent.classList.remove('selected');
-        articles.forEach(function (article) {
-          article.classList.remove('selected');
+        content.classList.remove('selected');
+        cards.forEach(function (card) {
+          card.classList.remove('selected');
         });
         filterByTag();
       }
@@ -38,12 +40,14 @@ function initFilter() {
   });
 }
 function filterByTag() {
+  var cards = document.querySelectorAll('.O_cardArticle, .W_cardTest');
   var articles = document.querySelectorAll('.O_cardArticle');
+  var tests = document.querySelectorAll('.W_cardTest');
   var activeTags = document.querySelectorAll('.active');
   var tagList = [];
   var count;
-  articles.forEach(function (article) {
-    article.style.display = 'none';
+  cards.forEach(function (card) {
+    card.style.display = 'none';
   });
   activeTags.forEach(function (tag) {
     var classList = tag.className.split(' ');
@@ -62,22 +66,32 @@ function filterByTag() {
         article.style.display = 'block';
       }
     });
+    tests.forEach(function (test) {
+      if (test.classList.contains(tagName)) {
+        test.style.display = 'flex';
+      }
+    });
   });
 }
 function filterAll() {
+  var cards = document.querySelectorAll('.O_cardArticle, .W_cardTest');
   var articles = document.querySelectorAll('.O_cardArticle');
-  var articlesContent = document.querySelector('.S_articlesContent');
+  var tests = document.querySelectorAll('.W_cardTest');
+  var content = document.querySelector('.S_articlesContent, .S_testsContent');
   var activeTags = document.querySelectorAll('.active');
   activeTags.forEach(function (tag) {
     if (tag.classList.contains('all')) {
       articles.forEach(function (article) {
         article.style.display = 'block';
       });
+      tests.forEach(function (test) {
+        test.style.display = 'flex';
+      });
     }
   });
-  articlesContent.classList.add('selected');
-  articles.forEach(function (article) {
-    article.classList.add('selected');
+  content.classList.add('selected');
+  cards.forEach(function (card) {
+    card.classList.add('selected');
   });
 }
 /******/ })()
