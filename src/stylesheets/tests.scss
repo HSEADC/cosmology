@@ -1,0 +1,49 @@
+/*------------------------- Tests -----------------------*/
+.S_testsContent {
+  .W_cardTest {
+    justify-content: space-between;
+    grid-column: span 2;
+
+    &:first-child {
+      .Q_cardTextImg {
+        background-image: url('../images/index/solarSystemPlanets.webp');
+      }
+    }
+    &:nth-child(2) {
+      justify-self: flex-end;
+      margin-right: 19rem;
+
+      .Q_cardTextImg {
+        background-image: url('../images/index/solarSystemPlanets.webp');
+      }
+    }
+    &:nth-child(3) {
+      grid-column: span 1;
+
+      .Q_cardTextImg {
+        background-image: url('../images/index/spectralClassesOfStars.webp');
+      }
+    }
+    &:nth-child(4) {
+      grid-column: span 1;
+
+      .Q_cardTextImg {
+        background-image: url('../images/index/solarSystemPlanets.webp');
+      }
+    }
+    &:nth-child(5) {
+      margin-left: 14rem;
+
+      .Q_cardTextImg {
+        background-image: url('../images/index/spectralClassesOfStars.webp');
+      }
+    }
+    &:last-child {
+      justify-self: flex-end;
+
+      .Q_cardTextImg {
+        background-image: url('../images/index/spectralClassesOfStars.webp');
+      }
+    }
+  }
+}

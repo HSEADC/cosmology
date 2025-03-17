@@ -24,7 +24,7 @@
   padding: 0 2.5rem;
   display: grid;
   grid-auto-flow: row;
-  gap: 5.4rem 1rem;
+  gap: 5rem 1rem;
   grid-template: auto / repeat(12, 1fr);
   grid-auto-flow: row dense;
 
@@ -37,4 +37,25 @@
       'research4 research4 . podcast5'
       'lecture3 . podcast6 lecture4';
   }
+}
+
+/* ------------------------- Cards ----------------------- */
+.S_cardsContent {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  display: grid;
+  grid-template: auto / repeat(3, 25.64rem);
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* ------------------------- Tests ----------------------- */
+.S_testsContent {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.5rem;
 }

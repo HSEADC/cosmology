@@ -1,3 +1,4 @@
+/*------------------------- Title -----------------------*/
 .M_headlinePage {
   .A_p {
     width: 16.5rem;
@@ -5,7 +6,8 @@
   }
 }
 
-.W_cardsGroup {
+/*------------------------- Cards -----------------------*/
+.S_cardsContent {
   .O_cardInfo {
     &:first-child {
       .Q_cardInfoImg {

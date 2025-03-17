@@ -53,7 +53,8 @@
   display: flex;
   gap: 3.85rem;
   padding: 1.5rem;
-  height: 60%;
+  height: fit-content;
+  width: 41.5rem;
   border-radius: var(--radiusBig);
 
   border: var(--borderGrey);
@@ -82,15 +83,4 @@
     justify-content: space-between;
     padding: 2.5rem 0;
   }
-}
-
-/* ------------------------- Cards ----------------------- */
-.W_cardsGroup {
-  max-width: 90rem;
-  margin: 0 auto;
-  padding: 0 2.5rem;
-  display: grid;
-  grid-template: auto / repeat(3, 25.64rem);
-  justify-content: space-between;
-  gap: 2rem;
 }

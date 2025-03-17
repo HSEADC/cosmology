@@ -113,7 +113,7 @@
 .A_h4 {
   font: var(--fontH4);
   width: 30.9rem;
-  color: var(--lightGrey);
+  color: var(--white);
   text-align: center;
   letter-spacing: -0.025rem;
 }
@@ -129,7 +129,7 @@
 .A_linkButton {
   font: var(--fontLinkButton);
   display: flex;
-  color: var(--silver);
+  align-items: center;
   gap: 0.5rem;
   letter-spacing: -0.025rem;
 }
@@ -143,6 +143,48 @@
   padding: 0.45rem 0.81rem;
   border-radius: var(--radiusSmall);
   letter-spacing: -0.03rem;
+
+  &.none {
+    position: absolute;
+    left: 1.26rem;
+    top: 1.26rem;
+  }
+
+  &.easy,
+  &.medium,
+  &.hard {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  &.easy::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-image: url('/src/images/easyLevel.svg');
+  }
+
+  &.medium::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-image: url('/src/images/mediumLevel.svg');
+  }
+
+  &.hard::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    background-size: 1rem 1rem;
+    background-repeat: no-repeat;
+    background-image: url('/src/images/hardLevel.svg');
+  }
 }
 
 .A_mainButton {
@@ -156,6 +198,14 @@
   padding: 0 1.5rem;
   border-radius: var(--radiusMedium);
   letter-spacing: -0.04rem;
+
+  &:hover {
+    background: var(--silver);
+  }
+
+  &:focus {
+    background: var(--lightGrey);
+  }
 }
 
 /* ------------------------- Articles ----------------------- */
