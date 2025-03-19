@@ -48,8 +48,10 @@ function initFilter() {
 
 function filterByTag() {
   const cards = document.querySelectorAll('.O_cardArticle, .W_cardTest')
+
   const articles = document.querySelectorAll('.O_cardArticle')
   const tests = document.querySelectorAll('.W_cardTest')
+
   const activeTags = document.querySelectorAll('.active')
   let tagList = []
   let count
@@ -87,9 +89,12 @@ function filterByTag() {
 
 function filterAll() {
   const cards = document.querySelectorAll('.O_cardArticle, .W_cardTest')
+
   const articles = document.querySelectorAll('.O_cardArticle')
   const tests = document.querySelectorAll('.W_cardTest')
+
   const content = document.querySelector('.S_articlesContent, .S_testsContent')
+
   const activeTags = document.querySelectorAll('.active')
 
   activeTags.forEach((tag) => {
