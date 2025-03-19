@@ -9,7 +9,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/javascripts/index.js',
-    filterTags: './src/javascripts/filterTags.js'
+    filterTags: './src/javascripts/filterTags.js',
+    popup: './src/javascripts/popup.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -119,7 +120,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/cards.html',
       filename: './cards.html',
-      chunks: ['index']
+      chunks: ['index', 'popup']
     }),
 
     new HtmlWebpackPlugin({

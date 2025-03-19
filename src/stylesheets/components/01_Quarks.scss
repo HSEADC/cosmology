@@ -67,20 +67,20 @@
 
   &.lecture {
     height: 15rem;
-    background-image: url('/src/images/index/cardArticleImg-1.svg');
+    background-image: url('/src/images/articles/lecture.svg');
     background-size: 100% 15rem;
   }
 
   &.research {
     height: 10.8rem;
-    background-image: url('/src/images/index/cardArticleImg-2.svg');
+    background-image: url('/src/images/articles/research.svg');
     background-size: 100% 10.8rem;
   }
 
   &.podcast {
     height: 9.9rem;
     width: 9.9rem;
-    background-image: url('/src/images/index/cardArticleImg-3.svg');
+    background-image: url('/src/images/articles/podcast.svg');
     background-size: 7.75rem 7.75rem;
     background-position: bottom;
   }
@@ -90,19 +90,20 @@
   height: 16.4rem;
   width: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .Q_cardTextImg {
   width: 19rem;
   height: 13rem;
-  background-repeat: no-repeat;
-  background-size: 19rem 13rem;
+  background-size: auto;
 }
 
 .Q_cardInfoImg,
 .Q_cardTextImg {
   mix-blend-mode: lighten;
+  filter: saturate(0);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .Q_mediaLogos {

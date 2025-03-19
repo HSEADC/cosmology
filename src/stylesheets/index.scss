@@ -47,17 +47,17 @@
   .O_cardInfo {
     &:first-child {
       .Q_cardInfoImg {
-        background-image: url('../images/index/blackHole.webp');
+        background-image: url('../images/cards/blackHole.webp');
       }
     }
     &:nth-child(2) {
       .Q_cardInfoImg {
-        background-image: url('../images/index/sunnyWind.webp');
+        background-image: url('../images/cards/sunnyWind.webp');
       }
     }
     &:last-child {
       .Q_cardInfoImg {
-        background-image: url('../images/index/quazar.webp');
+        background-image: url('../images/cards/quazar.webp');
       }
     }
   }
