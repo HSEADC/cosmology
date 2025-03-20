@@ -1,9 +1,7 @@
 /*------------------------- Filters -----------------------*/
-.O_headlinePage {
-  .A_p {
-    width: 19rem;
-    text-align: left;
-  }
+.O_headlinePage > p {
+  width: 19rem;
+  text-align: left;
 }
 
 /*------------------------- Articles -----------------------*/
@@ -70,13 +68,13 @@
         grid-area: lecture4;
       }
     }
-    &.research {
+    &.big {
       grid-column: span 6;
     }
-    &.lecture {
+    &.medium {
       grid-column: span 3;
     }
-    &.podcast {
+    &.small {
       grid-column: span 2;
     }
   }

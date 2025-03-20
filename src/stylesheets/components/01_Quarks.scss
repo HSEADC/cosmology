@@ -20,11 +20,11 @@
   background-size: 50% 50%;
   background-position: center;
 
-  &:first-child {
+  &.dzen {
     background-image: url('/src/images/footer/dzenFooter.svg');
   }
 
-  &:last-child {
+  &.tg {
     background-image: url('/src/images/footer/telegramFooter.svg');
   }
 }
@@ -65,19 +65,19 @@
 .Q_cardArticleImg {
   background-repeat: no-repeat;
 
-  &.lecture {
+  &.medium {
     height: 15rem;
     background-image: url('/src/images/articles/lecture.svg');
     background-size: 100% 15rem;
   }
 
-  &.research {
+  &.big {
     height: 10.8rem;
     background-image: url('/src/images/articles/research.svg');
     background-size: 100% 10.8rem;
   }
 
-  &.podcast {
+  &.small {
     height: 9.9rem;
     width: 9.9rem;
     background-image: url('/src/images/articles/podcast.svg');
@@ -99,7 +99,8 @@
 }
 
 .Q_cardInfoImg,
-.Q_cardTextImg {
+.Q_cardTextImg,
+.Q_cardPopupImg {
   mix-blend-mode: lighten;
   filter: saturate(0);
   background-position: center;
@@ -112,6 +113,14 @@
 
   background-repeat: no-repeat;
   background-size: cover;
+
+  &.dzen {
+    background-image: url('/src/images/index/dzen.svg');
+  }
+
+  &.tg {
+    background-image: url('/src/images/index/telegram.svg');
+  }
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1024px) {
@@ -123,16 +132,16 @@
 
 /*------------------------- Cards -----------------------*/
 .Q_cardInfoImg,
-.Q_cardTextImg {
-  &.blackHole {
+.Q_cardPopupImg {
+  &.black {
     background-image: url('/src/images/cards/blackHole.webp');
   }
 
-  &.sunnyWind {
+  &.sun {
     background-image: url('/src/images/cards/sunnyWind.webp');
     background-size: contain;
   }
-  &.quazar {
+  &.quaz {
     background-image: url('/src/images/cards/quazar.webp');
   }
 }
@@ -143,4 +152,10 @@
   background-image: url('/src/images/cards/closeButton.svg');
   align-self: end;
   cursor: pointer;
+}
+
+.Q_cardPopupImg {
+  width: 100%;
+  height: 16rem;
+  background-size: cover;
 }

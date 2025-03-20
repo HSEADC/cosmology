@@ -3,33 +3,11 @@
   .W_cardTest {
     justify-content: space-between;
 
-    &:first-child {
-      .Q_cardTextImg {
+    .Q_cardTextImg {
+      &.solarSystem {
         background-image: url('../images/index/solarSystemPlanets.webp');
       }
-    }
-    &:nth-child(2) {
-      .Q_cardTextImg {
-        background-image: url('../images/index/solarSystemPlanets.webp');
-      }
-    }
-    &:nth-child(3) {
-      .Q_cardTextImg {
-        background-image: url('../images/index/spectralClassesOfStars.webp');
-      }
-    }
-    &:nth-child(4) {
-      .Q_cardTextImg {
-        background-image: url('../images/index/solarSystemPlanets.webp');
-      }
-    }
-    &:nth-child(5) {
-      .Q_cardTextImg {
-        background-image: url('../images/index/spectralClassesOfStars.webp');
-      }
-    }
-    &:last-child {
-      .Q_cardTextImg {
+      &.spectralClasses {
         background-image: url('../images/index/spectralClassesOfStars.webp');
       }
     }

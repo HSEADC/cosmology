@@ -40,15 +40,15 @@
 .O_cardArticle {
   height: 100%;
 
-  &.lecture {
+  &.medium {
     width: 20.5rem;
   }
 
-  &.research {
+  &.big {
     width: 42rem;
   }
 
-  &.podcast {
+  &.small {
     width: 13.2rem;
   }
 }
