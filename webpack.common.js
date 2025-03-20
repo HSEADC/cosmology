@@ -142,55 +142,6 @@ module.exports = {
       chunks: ['index']
     }),
 
-    new HtmlWebpackPlugin({
-      template: './src/articles/gravity.html',
-      filename: './articles/gravity.html',
-      chunks: ['index']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/articles/universe.html',
-      filename: './articles/universe.html',
-      chunks: ['index']
-    }),
-
-    // Страницы раздела карточек (cards)
-    new HtmlWebpackPlugin({
-      template: './src/cards/asteroid.html',
-      filename: './cards/asteroid.html',
-      chunks: ['index']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/cards/black-hole.html',
-      filename: './cards/black-hole.html',
-      chunks: ['index']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/cards/galaxy.html',
-      filename: './cards/galaxy.html',
-      chunks: ['index']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/cards/nebula.html',
-      filename: './cards/nebula.html',
-      chunks: ['index']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/cards/planet.html',
-      filename: './cards/planet.html',
-      chunks: ['index']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/cards/star.html',
-      filename: './cards/star.html',
-      chunks: ['index']
-    }),
-
     // Страницы раздела тестов (tests)
     new HtmlWebpackPlugin({
       template: './src/tests/dark.html',
@@ -209,12 +160,6 @@ module.exports = {
       filename: './tests/star-test.html',
       chunks: ['index']
     }),
-
-    // Article
-    // new HtmlWebpackPlugin({
-    //   template: './src/articles/superorganisms/S_Popup.html',
-    //   filename: './superorganisms/S_Popup.html'
-    // }),
 
     // Partials
     new HtmlWebpackPartialsPlugin([
