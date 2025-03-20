@@ -1,3 +1,12 @@
+/*------------------------- PopupScrollLock -----------------------*/
+body.popup {
+  scrollbar-gutter: stable;
+}
+
+.scrollLock {
+  overflow: hidden;
+}
+
 /* ------------------------- sectionHeadings ----------------------- */
 .O_chapter {
   .A_h4 {
@@ -37,28 +46,6 @@
 
     &:nth-child(2) {
       margin-top: 5.25rem;
-    }
-  }
-}
-
-/* ------------------------- cards ----------------------- */
-
-.W_cards {
-  .O_cardInfo {
-    &:first-child {
-      .Q_cardInfoImg {
-        background-image: url('../images/cards/blackHole.webp');
-      }
-    }
-    &:nth-child(2) {
-      .Q_cardInfoImg {
-        background-image: url('../images/cards/sunnyWind.webp');
-      }
-    }
-    &:last-child {
-      .Q_cardInfoImg {
-        background-image: url('../images/cards/quazar.webp');
-      }
     }
   }
 }

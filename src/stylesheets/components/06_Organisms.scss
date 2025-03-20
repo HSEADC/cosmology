@@ -66,6 +66,8 @@
 
   border: var(--borderGrey);
   background: var(--charcoal);
+
+  cursor: pointer;
 }
 
 .O_cardTextGroup {
@@ -107,4 +109,19 @@
   padding: 3.7rem 2.5rem 5.22rem;
   max-width: 90rem;
   margin: 0 auto;
+}
+
+/* ------------------------- Cards ----------------------- */
+.O_moreCardInfo {
+  display: flex;
+  padding: 2.5rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 3;
+  transform: rotateX(90deg);
+  transition: transform 0.6s;
+
+  border-radius: var(--radiusBig);
+  border: var(--borderGrey);
+  background: var(--charcoal);
 }

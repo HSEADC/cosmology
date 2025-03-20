@@ -120,3 +120,27 @@
     background-position: center;
   }
 }
+
+/*------------------------- Cards -----------------------*/
+.Q_cardInfoImg,
+.Q_cardTextImg {
+  &.blackHole {
+    background-image: url('/src/images/cards/blackHole.webp');
+  }
+
+  &.sunnyWind {
+    background-image: url('/src/images/cards/sunnyWind.webp');
+    background-size: contain;
+  }
+  &.quazar {
+    background-image: url('/src/images/cards/quazar.webp');
+  }
+}
+
+.Q_closeButton {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url('/src/images/cards/closeButton.svg');
+  align-self: end;
+  cursor: pointer;
+}

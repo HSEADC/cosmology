@@ -27,7 +27,6 @@
   position: relative;
   z-index: 2;
 
-  gap: 4rem;
   margin: 3.6rem auto 0;
   max-width: 90rem;
   padding: 2.5rem 3rem;
@@ -41,12 +40,14 @@
 .W_cards {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .W_tests {
   display: flex;
   flex-direction: row;
   height: 31.7rem;
+  gap: 3.5rem;
 }
 
 .W_cardTest {
@@ -64,6 +65,7 @@
 .W_mediaLinks {
   display: flex;
   justify-content: center;
+  gap: 3.5rem;
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1024px) {
@@ -82,5 +84,26 @@
     width: calc(1024px - 6rem);
     justify-content: space-between;
     padding: 2.5rem 0;
+  }
+}
+
+/* ------------------------- Cards ----------------------- */
+.W_popupOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  display: grid;
+  place-content: center;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s;
+  z-index: 3;
+
+  &.activePopup {
+    opacity: 1;
+    visibility: initial;
+    pointer-events: initial;
   }
 }
