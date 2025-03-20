@@ -8,21 +8,14 @@ body.popup {
 }
 
 /*------------------------- Title -----------------------*/
-.M_headlinePage {
-  .A_p {
-    width: 16.5rem;
-    text-align: left;
-  }
+.M_headlinePage > p {
+  width: 16.5rem;
+  text-align: left;
 }
 
 /*------------------------- Cards -----------------------*/
 
 .O_moreCardInfo {
-  .Q_cardTextImg {
-    width: 100%;
-    height: 16rem;
-    background-size: cover;
-  }
   .A_h2,
   .A_h4 {
     color: var(--white);

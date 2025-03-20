@@ -44,7 +44,7 @@ body.popup {
       max-width: 27rem;
     }
 
-    &:nth-child(2) {
+    &.big {
       margin-top: 5.25rem;
     }
   }
@@ -53,26 +53,19 @@ body.popup {
 /* ------------------------- tests ----------------------- */
 .W_cardTest {
   .O_cardTextGroup {
-    .M_cardTexts {
-      align-items: flex-start;
-
-      .A_h3 {
-        width: 14rem;
-      }
-
-      .A_p {
-        text-align: left;
-      }
+    .A_h3 {
+      width: 14rem;
+    }
+    .A_p {
+      text-align: left;
     }
   }
 
-  &:first-child {
-    .Q_cardTextImg {
+  .Q_cardTextImg {
+    &.solarSystem {
       background-image: url('../images/index/solarSystemPlanets.webp');
     }
-  }
-  &:last-child {
-    .Q_cardTextImg {
+    &.spectralClasses {
       background-image: url('../images/index/spectralClassesOfStars.webp');
     }
   }
@@ -94,23 +87,7 @@ body.popup {
 }
 
 .O_cardMedia {
-  &:first-child {
-    .Q_mediaLogos {
-      background-image: url('../images/index/dzen.svg');
-    }
-  }
-
-  &:last-child {
-    .Q_mediaLogos {
-      background-image: url('../images/index/telegram.svg');
-    }
-  }
-
-  .M_cardTexts {
-    align-items: flex-start;
-
-    .A_p {
-      text-align: left;
-    }
+  .A_p {
+    text-align: left;
   }
 }

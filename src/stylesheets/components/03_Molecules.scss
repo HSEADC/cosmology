@@ -74,12 +74,12 @@
   border: var(--borderGrey);
   background: var(--charcoal);
 
-  &.lecture,
-  &.research {
+  &.medium,
+  &.big {
     height: 18.73rem;
   }
 
-  &.podcast {
+  &.small {
     height: 13.25rem;
   }
 }
@@ -87,8 +87,17 @@
 .M_cardTexts {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
+
+  &.test,
+  &.media {
+    align-items: flex-start;
+  }
+
+  &.card,
+  &.description {
+    align-items: center;
+  }
 }
 
 .M_secondPageText {
