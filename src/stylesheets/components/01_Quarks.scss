@@ -95,7 +95,17 @@
 .Q_cardTextImg {
   width: 19rem;
   height: 13rem;
-  background-size: auto;
+  background-size: contain;
+
+  &.solarSystem {
+    background-image: url('/src/images/tests/solarSystemPlanets.webp');
+  }
+  &.spectralClasses {
+    background-image: url('/src/images/tests/spectralClassesOfStars.webp');
+  }
+  &.cosmicDisance {
+    background-image: url('/src/images/tests/cosmicDistance.webp');
+  }
 }
 
 .Q_cardInfoImg,

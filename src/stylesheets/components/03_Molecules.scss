@@ -128,3 +128,49 @@
   max-width: 90rem;
   margin: 0 auto;
 }
+
+/* ------------------------- ArticlePage ----------------------- */
+.M_articleTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.M_articleNote {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-self: end;
+  grid-column-start: 1;
+}
+
+.M_articleText {
+  display: flex;
+  flex-direction: column;
+
+  &.textPlusText {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &.titlePlusText {
+    gap: 2.5rem;
+    margin-top: 5rem;
+  }
+
+  &.subtitlePlusText {
+    gap: 0.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  &.textPlusImage {
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+  }
+}
