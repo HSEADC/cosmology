@@ -3,15 +3,6 @@
   .W_cardTest {
     justify-content: space-between;
 
-    .Q_cardTextImg {
-      &.solarSystem {
-        background-image: url('../images/index/solarSystemPlanets.webp');
-      }
-      &.spectralClasses {
-        background-image: url('../images/index/spectralClassesOfStars.webp');
-      }
-    }
-
     &.selected {
       grid-column: span 2;
 

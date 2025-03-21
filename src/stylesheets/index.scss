@@ -61,15 +61,6 @@ body.popup {
     }
   }
 
-  .Q_cardTextImg {
-    &.solarSystem {
-      background-image: url('../images/index/solarSystemPlanets.webp');
-    }
-    &.spectralClasses {
-      background-image: url('../images/index/spectralClassesOfStars.webp');
-    }
-  }
-
   &:nth-child(2) {
     align-self: end;
   }

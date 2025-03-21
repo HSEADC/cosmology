@@ -1,0 +1,64 @@
+.O_articleTitle {
+  .A_testLevelTags {
+    &.none {
+      position: static;
+      width: fit-content;
+    }
+  }
+  .A_h4,
+  .A_H1 {
+    text-align: left;
+  }
+}
+
+.S_article {
+  .Q_articleImage {
+    &.parallax {
+      height: 41.4rem;
+      background-image: url('../images/articles/cosmic-distance/parallax.webp');
+    }
+
+    &.cepheids {
+      height: 33.3rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('../images/articles/cosmic-distance/cepheids.webp');
+    }
+
+    &.redshift {
+      height: 27.7rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url('../images/articles/cosmic-distance/redshift.webp');
+    }
+  }
+
+  .A_h4,
+  .A_h2,
+  .A_h3,
+  .A_H1,
+  .A_p {
+    text-align: left;
+    width: fit-content;
+  }
+
+  .A_h2,
+  .A_h3 {
+    color: var(--white);
+  }
+
+  .O_articleEnd {
+    .A_h2 {
+      text-align: center;
+      width: 84%;
+    }
+
+    .W_cardTest {
+      align-self: center;
+    }
+  }
+
+  .A_p {
+    color: var(--silver);
+  }
+}
