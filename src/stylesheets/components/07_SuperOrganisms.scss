@@ -79,9 +79,11 @@
     max-width: 100vw;
     gap: 9vw 3vw;
     grid-template: auto / 50% 50%;
+    grid-auto-flow: row;
 
     &.selected {
       grid-template-areas: none;
+      grid-auto-flow: row dense;
     }
   }
 
