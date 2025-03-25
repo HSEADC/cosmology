@@ -102,5 +102,10 @@
         }
       }
     }
+    .O_cardArticle {
+      &.small {
+        grid-column: span 1;
+      }
+    }
   }
 }

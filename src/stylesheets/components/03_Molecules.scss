@@ -119,10 +119,6 @@
   gap: 1rem;
 }
 
-.M_filterGroupMobile {
-  display: none;
-}
-
 /* ------------------------- Cards ----------------------- */
 .M_headlinePage {
   display: flex;
@@ -181,15 +177,12 @@
 
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .M_filterGroup {
-    display: none;
-  }
-
-  .M_filterGroupMobile {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 3.5vw;
     width: 100%;
+    gap: 0;
   }
 
   .M_cardArticle {
