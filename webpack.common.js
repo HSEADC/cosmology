@@ -8,7 +8,7 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/javascripts/index.js',
+    index: './src/index.js',
     filterTags: './src/javascripts/filterTags.js',
     popup: './src/javascripts/popup.js'
   },
@@ -137,8 +137,8 @@ module.exports = {
 
     // Страницы раздела статей (articles)
     new HtmlWebpackPlugin({
-      template: './src/articles/cosmic-distance.html',
-      filename: './articles/cosmic-distance.html',
+      template: './src/articles/researches/cosmic-distance.html',
+      filename: './articles/researches/cosmic-distance.html',
       chunks: ['index']
     }),
 

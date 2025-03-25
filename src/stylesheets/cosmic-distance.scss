@@ -12,27 +12,6 @@
 }
 
 .S_article {
-  .Q_articleImage {
-    &.parallax {
-      height: 41.4rem;
-      background-image: url('../images/articles/cosmic-distance/parallax.webp');
-    }
-
-    &.cepheids {
-      height: 33.3rem;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-image: url('../images/articles/cosmic-distance/cepheids.webp');
-    }
-
-    &.redshift {
-      height: 27.7rem;
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-image: url('../images/articles/cosmic-distance/redshift.webp');
-    }
-  }
-
   .A_h4,
   .A_h2,
   .A_h3,
