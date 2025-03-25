@@ -1,4 +1,4 @@
-import '../index.css'
+import './index.css'
 
 /* ------------------------- headerActiveLinks ----------------------- */
 const pathName = window.location.pathname
