@@ -69,6 +69,27 @@
   gap: 3.5rem;
 }
 
+/* ------------------------- Cards ----------------------- */
+.W_popupOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  display: grid;
+  place-content: center;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s, visibility 0.4s;
+  z-index: 3;
+
+  &.activePopup {
+    opacity: 1;
+    visibility: initial;
+    pointer-events: initial;
+  }
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 1024px) {
   .W_tests {
     flex-wrap: wrap;
@@ -88,23 +109,15 @@
   }
 }
 
-/* ------------------------- Cards ----------------------- */
-.W_popupOverlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(15px);
-  display: grid;
-  place-content: center;
-  pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.4s, visibility 0.4s;
-  z-index: 3;
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .W_topFooter {
+    flex-direction: column;
+    margin-top: 6.5vw;
+    gap: 28.5vw;
+  }
 
-  &.activePopup {
-    opacity: 1;
-    visibility: initial;
-    pointer-events: initial;
+  .W_bottomFooter {
+    flex-direction: column-reverse;
+    gap: 11vw;
   }
 }

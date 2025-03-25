@@ -79,3 +79,28 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .O_headlinePage > p {
+    width: 80%;
+    line-height: 130%;
+  }
+
+  .S_articlesContent {
+    .A_h3 {
+      max-width: calc(100vw - 6vw);
+    }
+
+    &.selected {
+      .O_cardArticle {
+        &:nth-child(n + 1) {
+          grid-area: auto;
+        }
+        &.big,
+        &.medium {
+          grid-column: span 2;
+        }
+      }
+    }
+  }
+}

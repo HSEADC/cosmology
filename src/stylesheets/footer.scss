@@ -11,3 +11,11 @@
     border-radius: 1.2rem;
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .S_Footer {
+    .A_mainButton {
+      width: 100%;
+    }
+  }
+}
