@@ -133,13 +133,6 @@
   }
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 1024px) {
-  .Q_cardInfoImg {
-    background-size: 25vw;
-    background-position: center;
-  }
-}
-
 /*------------------------- Cards -----------------------*/
 .Q_cardInfoImg {
   &.black {
@@ -188,4 +181,50 @@
   background-image: url('/src/images/cards/closeButton.svg');
   align-self: end;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  .Q_cardInfoImg {
+    background-size: 25vw;
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .Q_menuIcon {
+    width: 4.8vw;
+    height: 0.5vw;
+    border-radius: 0.5vw;
+    background: var(--silver);
+  }
+
+  .Q_cardArticleImg {
+    &.big {
+      height: 100%;
+      background-size: contain;
+      background-position: bottom;
+    }
+    &.small {
+      height: 22vw;
+      width: 100%;
+      margin-top: 6vw;
+      background-size: contain;
+    }
+    &.medium {
+      height: 64vw;
+      background-size: contain;
+      background-position: center;
+    }
+  }
+
+  .Q_socialmediaButtonsFooter {
+    width: 17vw;
+    height: 17vw;
+  }
+
+  .Q_logoFooterHse {
+    width: 100%;
+    height: 10.3vw;
+    background-size: contain;
+  }
 }

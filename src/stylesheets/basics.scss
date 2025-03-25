@@ -9,10 +9,11 @@ html {
     box-sizing: border-box;
   }
 
-  body {
+  body,
+  .O_Header {
     background-color: var(--bgColor);
     background-image: url('../images/BackgroundImage.svg');
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
 
     a {

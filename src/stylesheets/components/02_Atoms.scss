@@ -242,3 +242,104 @@
   width: 100%;
   border-radius: var(--radiusSmall);
 }
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .A_logoHeader {
+    gap: 1.5vw;
+    width: 38.6vw;
+    font-size: 4.8vw;
+    align-self: center;
+
+    &::before {
+      width: 7.5vw;
+      height: 7.5vw;
+      background-size: 7.5vw 7.5vw;
+    }
+  }
+
+  .A_menuButton {
+    display: flex;
+    width: 13vw;
+    height: 13vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 4vw;
+    background: var(--charcoal);
+    box-shadow: var(--shadow);
+  }
+
+  .A_H1 {
+    font-size: 11vw;
+    line-height: 100%;
+    letter-spacing: -0.9vw;
+  }
+
+  .A_h3 {
+    font-size: 5vw;
+    line-height: 100%;
+    letter-spacing: -0.2vw;
+    font-size: 5.34vw;
+  }
+
+  .A_h4 {
+    font-size: 4.3vw;
+    line-height: 130%;
+    letter-spacing: -0.1vw;
+  }
+
+  .A_p {
+    letter-spacing: -0.1vw;
+    font-size: 3.8vw;
+  }
+
+  .A_filterButton {
+    padding: 3vw 4.7vw;
+    letter-spacing: -0.1vw;
+    font-size: 3.7vw;
+  }
+
+  .A_testLevelTags {
+    padding: 1.5vw 3.4vw;
+    letter-spacing: -0.03rem;
+    font-size: 3.2vw;
+    &.none {
+      left: 4vw;
+      top: 4vw;
+      line-height: 100%;
+    }
+  }
+
+  .A_inputFooter {
+    width: 100%;
+    padding: 4.8vw 4.2vw;
+    font-size: 4.2vw;
+    line-height: 120%;
+    letter-spacing: -0.18vw;
+  }
+
+  .A_authorsFooter {
+    font-size: 4.3vw;
+    letter-spacing: -0.18vw;
+  }
+
+  .A_logoFooter {
+    gap: 2.5vw;
+    font-size: 2.88rem;
+    letter-spacing: -0.11rem;
+    font-size: 7.5vw;
+    letter-spacing: -0.3vw;
+    &::before {
+      width: 8vw;
+      height: 9vw;
+      background-size: contain;
+    }
+  }
+
+  .A_mainButton {
+    font-size: 4.3vw;
+    line-height: 120%;
+    letter-spacing: -0.18vw;
+  }
+}

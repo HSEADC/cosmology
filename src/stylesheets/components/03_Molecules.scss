@@ -119,6 +119,10 @@
   gap: 1rem;
 }
 
+.M_filterGroupMobile {
+  display: none;
+}
+
 /* ------------------------- Cards ----------------------- */
 .M_headlinePage {
   display: flex;
@@ -172,5 +176,57 @@
   &.textPlusImage {
     gap: 2rem;
     margin-bottom: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .M_filterGroup {
+    display: none;
+  }
+
+  .M_filterGroupMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3.5vw;
+    width: 100%;
+  }
+
+  .M_cardArticle {
+    width: calc(100vw - 6vw);
+    padding: 8vw 5vw;
+    margin-bottom: 4vw;
+    &.big {
+      height: 53vw;
+    }
+    &.medium {
+      height: 94vw;
+    }
+    &.small {
+      width: calc((100vw - 3.5vw - 6vw) / 2);
+      height: 45.4vw;
+    }
+  }
+
+  .M_socialButtonsFooter {
+    gap: 2.5vw;
+  }
+
+  #M_formSubscribe {
+    height: 15vw;
+    gap: 2.5vw;
+  }
+
+  .M_authors {
+    width: auto;
+    &:first-child {
+      width: auto;
+    }
+  }
+
+  .M_logosFooter {
+    width: 100%;
+    gap: 11vw;
+    margin-bottom: 6vw;
   }
 }
