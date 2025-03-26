@@ -257,6 +257,21 @@
       background-position: top;
     }
   }
+
+  .Q_fixedElement {
+    height: 105vw;
+    background-size: 100% 70vw;
+  }
+
+  .Q_iconArrow {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .Q_mediaLogos {
+    width: 8.5vw;
+    height: 8.5vw;
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {

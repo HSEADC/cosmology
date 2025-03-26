@@ -346,8 +346,9 @@
   }
 
   .A_testLevelTags {
-    padding: 0.5vw 1vw;
+    padding: 1vw 1.6vw;
     font-size: 1.6vw;
+    border-radius: 1.1vw;
 
     &.easy::before,
     &.middle::before,
@@ -356,6 +357,10 @@
       height: 1.9vw;
       background-size: contain;
     }
+  }
+
+  .A_linkButton {
+    gap: 1vw;
   }
 }
 
