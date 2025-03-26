@@ -90,6 +90,15 @@
   }
 }
 
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .W_cardTest {
+    width: 45.8vw;
+    height: 26vw;
+    padding: 2vw;
+    gap: 4vw;
+  }
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .W_topFooter {
     gap: 5.2vw;
