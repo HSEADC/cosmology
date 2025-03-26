@@ -249,6 +249,8 @@
   height: 40rem;
   width: 100%;
   position: relative;
+  border-radius: var(--radiusBig);
+  border: var(--borderGrey);
 }
 
 /* ------------------------- PodcastPage ----------------------- */
