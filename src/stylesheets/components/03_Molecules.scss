@@ -226,6 +226,18 @@
       height: 22vw;
     }
   }
+
+  .M_headlinePage {
+    padding: 2.5vw 3.1vw 7.4vw;
+    max-width: 100vw;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6vw;
+  }
+
+  .M_cardTexts {
+    gap: 2vw;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 360px) {

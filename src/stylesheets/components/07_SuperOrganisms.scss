@@ -104,6 +104,15 @@
       grid-auto-flow: dense;
     }
   }
+
+  .S_cardsContent {
+    max-width: 100vw;
+    grid-template: 1fr / 1fr 1fr;
+    justify-content: space-between;
+    grid-auto-flow: row;
+    padding: 0 3.1vw;
+    gap: 18px;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 360px) {

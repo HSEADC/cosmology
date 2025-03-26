@@ -179,6 +179,7 @@
   width: 1.5rem;
   height: 1.5rem;
   background-image: url('/src/images/cards/closeButton.svg');
+  background-size: cover;
   align-self: end;
   cursor: pointer;
 }
@@ -200,6 +201,21 @@
       width: 11vw;
       background-size: contain;
       margin: 3.6vw 1.8vw;
+    }
+  }
+
+  .Q_cardInfoImg {
+    height: 28.5vw;
+  }
+
+  .Q_closeButton {
+    width: 3.1vw;
+    height: 3.1vw;
+  }
+
+  .Q_cardInfoImg {
+    &.popup {
+      height: 34vw;
     }
   }
 }
