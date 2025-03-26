@@ -12,7 +12,14 @@
 @import 'stylesheets/cards.scss';
 @import 'stylesheets/tests.scss';
 @import 'stylesheets/styleguide.scss';
+
+/* Articles */
+
+/* Reseasrches */
 @import 'stylesheets/cosmic-distance.scss';
+
+/* Lectures */
+@import 'stylesheets/black-hole.scss';
 
 /* Components */
 @import 'stylesheets/components/01_Quarks.scss';

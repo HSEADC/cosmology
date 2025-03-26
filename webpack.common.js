@@ -136,9 +136,18 @@ module.exports = {
     }),
 
     // Страницы раздела статей (articles)
+
+    // Страницы раздела исследований (researches)
     new HtmlWebpackPlugin({
       template: './src/articles/researches/cosmic-distance.html',
       filename: './articles/researches/cosmic-distance.html',
+      chunks: ['index']
+    }),
+
+    // Страницы раздела лекций (lectures)
+    new HtmlWebpackPlugin({
+      template: './src/articles/lectures/black-hole.html',
+      filename: './articles/lectures/black-hole.html',
       chunks: ['index']
     }),
 
