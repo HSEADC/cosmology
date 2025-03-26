@@ -184,6 +184,41 @@
   cursor: pointer;
 }
 
+/* ------------------------- LecturePage ----------------------- */
+.Q_playerImg {
+  background-image: url('/src/images/articles/lectures/black-hole/black-hole-cover.webp');
+  height: 100%;
+  background-size: cover;
+  border-radius: var(--radiusBig);
+}
+
+.Q_play {
+  position: absolute;
+  background-image: url('/src/images/articles/lectures/Q_play.svg');
+  width: 3.75rem;
+  height: 3.75rem;
+  top: calc(50% - (3.75rem / 2));
+  left: calc(50% - (3.75rem / 2));
+  background-size: cover;
+}
+
+.Q_eye,
+.Q_like {
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Q_eye {
+  background-image: url('/src/images/articles/lectures/Q_eye.svg');
+}
+
+.Q_like {
+  background-image: url('/src/images/articles/lectures/Q_like.svg');
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .Q_cardArticleImg {
     &.big {

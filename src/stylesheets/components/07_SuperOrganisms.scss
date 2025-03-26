@@ -61,7 +61,7 @@
   gap: 3.5rem;
 }
 
-/* ------------------------- ArticlePage ----------------------- */
+/* ------------------------- ResearchPage ----------------------- */
 .S_article {
   padding: 0 2.5rem;
   display: grid;
@@ -71,6 +71,16 @@
   column-gap: 6rem;
   margin: 0 auto;
   max-width: 90rem;
+}
+
+/* ------------------------- LecturePage ----------------------- */
+.S_lecture {
+  margin: 0 auto;
+  max-width: 90rem;
+  padding: 0 2.5rem;
+  display: flex;
+  gap: 3.75rem;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {

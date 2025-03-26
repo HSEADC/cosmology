@@ -90,6 +90,20 @@
   }
 }
 
+/* ------------------------- LecturePage ----------------------- */
+.W_descriptonLecture {
+  display: flex;
+  justify-content: space-between;
+}
+
+.W_articleEnd {
+  display: grid;
+  grid-template: 2fr / repeat(3, 1fr);
+  width: 44.75rem;
+  align-self: center;
+  gap: 2.5rem;
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .W_cardTest {
     width: 45.8vw;

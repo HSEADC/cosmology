@@ -129,7 +129,7 @@
   margin: 0 auto;
 }
 
-/* ------------------------- ArticlePage ----------------------- */
+/* ------------------------- ResearchPage ----------------------- */
 .M_articleTitle {
   display: flex;
   flex-direction: column;
@@ -173,6 +173,14 @@
     gap: 2rem;
     margin-bottom: 3.5rem;
   }
+}
+
+/* ------------------------- LecturePage ----------------------- */
+.M_seen,
+.M_likes {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
