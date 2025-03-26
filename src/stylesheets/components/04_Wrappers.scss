@@ -90,25 +90,6 @@
   }
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 1024px) {
-  .W_tests {
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: center;
-  }
-
-  .W_cardTest {
-    width: calc(1024px - 6rem);
-    justify-content: space-between;
-  }
-
-  .W_mediaLinks {
-    width: calc(1024px - 6rem);
-    justify-content: space-between;
-    padding: 2.5rem 0;
-  }
-}
-
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .W_topFooter {
     gap: 5.2vw;

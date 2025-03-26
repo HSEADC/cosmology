@@ -183,21 +183,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 1024px) {
-  .Q_cardInfoImg {
-    background-size: 25vw;
-    background-position: center;
-  }
-}
-
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .Q_iconSearch {
-    width: 3vw;
-    height: 3vw;
-    padding-left: 18vw;
-    background-size: contain;
-  }
-
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
   .Q_cardArticleImg {
     &.big {
       height: 20vw;
@@ -215,6 +201,15 @@
       background-size: contain;
       margin: 3.6vw 1.8vw;
     }
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .Q_iconSearch {
+    width: 3vw;
+    height: 3vw;
+    padding-left: 18vw;
+    background-size: contain;
   }
 
   .Q_socialmediaButtonsFooter {

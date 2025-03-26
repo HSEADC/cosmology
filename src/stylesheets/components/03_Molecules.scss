@@ -182,6 +182,29 @@
     padding: 1.7vw 4vw;
   }
 
+  #M_formSubscribe {
+    height: 7.8vw;
+    gap: 2.1vw;
+  }
+
+  .M_socialButtonsFooter {
+    gap: 1.6vw;
+  }
+
+  .M_authors {
+    max-width: 34vw;
+    gap: 2vw;
+    &:first-child {
+      width: 17vw;
+    }
+  }
+
+  .M_logosFooter {
+    gap: 9vw;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
   .M_filterGroup {
     margin-top: 2.3vw;
     gap: 1vw;
@@ -202,27 +225,6 @@
     &.small {
       height: 22vw;
     }
-  }
-
-  #M_formSubscribe {
-    height: 7.8vw;
-    gap: 2.1vw;
-  }
-
-  .M_socialButtonsFooter {
-    gap: 1.6vw;
-  }
-
-  .M_authors {
-    max-width: 34vw;
-    gap: 2vw;
-    &:first-child {
-      width: 17vw;
-    }
-  }
-
-  .M_logosFooter {
-    gap: 9vw;
   }
 }
 

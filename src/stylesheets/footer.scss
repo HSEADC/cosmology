@@ -26,6 +26,14 @@
   }
 }
 
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  .S_Footer {
+    .A_h4 {
+      font: var(--fontH4);
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .S_Footer {
     .A_mainButton {
