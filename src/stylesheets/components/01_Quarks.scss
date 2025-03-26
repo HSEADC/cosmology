@@ -276,4 +276,20 @@
     height: 10.3vw;
     background-size: contain;
   }
+
+  .Q_cardInfoImg {
+    height: 59vw;
+  }
+
+  .Q_closeButton {
+    width: 6.5vw;
+    height: 6.5vw;
+  }
+
+  .Q_cardInfoImg {
+    &.popup {
+      height: 48vw;
+      background-size: contain;
+    }
+  }
 }

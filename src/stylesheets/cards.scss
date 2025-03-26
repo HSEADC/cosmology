@@ -45,3 +45,17 @@ body.popup {
     }
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .M_headlinePage > p {
+    width: 65vw;
+    line-height: 100%;
+  }
+
+  .O_moreCardInfo {
+    .A_h4,
+    .A_h2 {
+      width: 100%;
+    }
+  }
+}

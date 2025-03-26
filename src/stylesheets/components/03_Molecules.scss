@@ -302,4 +302,16 @@
     gap: 11vw;
     align-items: center;
   }
+
+  .M_headlinePage {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6.3vw 3vw 13vw;
+    max-width: 100vw;
+    gap: 3vw;
+  }
+
+  .M_cardTexts {
+    gap: 2.2vw;
+  }
 }
