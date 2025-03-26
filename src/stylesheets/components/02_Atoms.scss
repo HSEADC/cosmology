@@ -251,6 +251,16 @@
   position: relative;
 }
 
+/* ------------------------- PodcastPage ----------------------- */
+.A_podcastImage {
+  width: 31.25rem;
+  height: 31.25rem;
+  border-radius: var(--radiusSmall);
+  mix-blend-mode: lighten;
+  filter: saturate(0);
+  border: var(--borderGrey);
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .A_logoHeader {
     gap: 1vw;

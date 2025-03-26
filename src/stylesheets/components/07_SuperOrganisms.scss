@@ -83,6 +83,18 @@
   flex-direction: column;
 }
 
+/* ------------------------- PodcastPage ----------------------- */
+.S_podcast {
+  margin: 0 auto;
+  max-width: 90rem;
+  padding: 0 2.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 7rem 2.5rem;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .S_Footer {
     height: 100%;

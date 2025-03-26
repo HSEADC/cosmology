@@ -1,17 +1,9 @@
 .S_podcast {
-  margin: 0 auto;
-  max-width: 90rem;
-  padding: 0 2.5rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 7rem 2.5rem;
-  justify-content: space-between;
-
   .M_articleText {
     width: 100%;
     width: 100%;
     gap: 2rem;
+    align-self: flex-start;
 
     .A_h3,
     .A_h4 {
@@ -30,30 +22,4 @@
       }
     }
   }
-}
-
-.A_podcastImage {
-  width: 31.25rem;
-  height: 31.25rem;
-  border-radius: var(--radiusSmall);
-}
-
-.W_descriptonPodcast {
-  display: flex;
-  width: 51rem;
-  gap: 0 17rem;
-  flex-wrap: wrap;
-  align-items: flex-end;
-
-  .M_articleText {
-    align-self: flex-start;
-  }
-}
-
-.Q_podcast {
-  background-image: url('/src/images/articles/podcasts/yandex.webp');
-  width: 22rem;
-  height: 7rem;
-  background-size: contain;
-  border-radius: var(--radiusSmall);
 }
