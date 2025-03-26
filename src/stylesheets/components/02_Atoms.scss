@@ -243,6 +243,102 @@
   border-radius: var(--radiusSmall);
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .A_logoHeader {
+    gap: 1vw;
+    width: 18vw;
+    font-size: 2.2vw;
+    letter-spacing: -0.15vw;
+    align-self: center;
+
+    &::before {
+      width: 3.4vw;
+      height: 3.8vw;
+      background-size: contain;
+    }
+  }
+
+  .A_navigationActionsHeader {
+    letter-spacing: -0.1vw;
+    font-size: 2.1vw;
+  }
+
+  .A_inputFooter {
+    padding: 2.4vw 2vw;
+    width: 63.5vw;
+  }
+  .A_mainButton {
+    padding: 2.4vw 2vw;
+    font-size: 2.6vw;
+    line-height: 120%;
+  }
+
+  .A_logoFooter {
+    gap: 2.2vw;
+    font-size: 6vw;
+  }
+
+  .A_authorsFooter {
+    font-size: 2.6vw;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .A_H1 {
+    font-size: 7.3vw;
+    line-height: 110%;
+    letter-spacing: -0.45vw;
+  }
+
+  .A_h2 {
+    font-size: 4.2vw;
+    letter-spacing: -0.25vw;
+  }
+
+  .A_h3 {
+    font-size: 2.65vw;
+    line-height: 100%;
+  }
+
+  .A_h4 {
+    font-size: 2.6vw;
+    letter-spacing: -0.04vw;
+  }
+
+  .A_p {
+    font-size: 2.1vw;
+    letter-spacing: -0.1vw;
+    line-height: 100%;
+  }
+
+  .A_filterButton {
+    padding: 1.5vw 2.4vw;
+    align-items: center;
+    font-size: 1.8vw;
+  }
+
+  .A_testLevelTags {
+    &.none {
+      left: 2vw;
+      top: 2vw;
+      font-size: 1.6vw;
+    }
+  }
+
+  .A_testLevelTags {
+    padding: 0.5vw 1vw;
+    font-size: 1.6vw;
+
+    &.easy::before,
+    &.middle::before,
+    &.hard::before {
+      width: 1.6vw;
+      height: 1.9vw;
+      background-size: contain;
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .A_logoHeader {
     gap: 1.5vw;
@@ -257,30 +353,21 @@
     }
   }
 
-  .A_menuButton {
-    display: flex;
-    width: 13vw;
-    height: 13vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    border-radius: 4vw;
-    background: var(--charcoal);
-    box-shadow: var(--shadow);
-  }
-
   .A_H1 {
     font-size: 11vw;
     line-height: 100%;
     letter-spacing: -0.9vw;
   }
 
+  .A_h2 {
+    font-size: 8.5vw;
+    letter-spacing: -0.5vw;
+  }
+
   .A_h3 {
-    font-size: 5vw;
     line-height: 100%;
     letter-spacing: -0.2vw;
-    font-size: 5.34vw;
+    font-size: 5.3vw;
   }
 
   .A_h4 {
@@ -295,9 +382,9 @@
   }
 
   .A_filterButton {
-    padding: 3vw 4.7vw;
-    letter-spacing: -0.1vw;
+    padding: 3.2vw;
     font-size: 3.7vw;
+    letter-spacing: -0.15vw;
   }
 
   .A_testLevelTags {

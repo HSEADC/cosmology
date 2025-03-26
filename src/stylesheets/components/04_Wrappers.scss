@@ -90,34 +90,38 @@
   }
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 1024px) {
-  .W_tests {
-    flex-wrap: wrap;
-    height: 100%;
-    justify-content: center;
-  }
-
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
   .W_cardTest {
-    width: calc(1024px - 6rem);
-    justify-content: space-between;
+    width: 45.8vw;
+    height: 26vw;
+    padding: 2vw;
+    gap: 4vw;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .W_topFooter {
+    gap: 5.2vw;
+    flex-wrap: wrap;
   }
 
-  .W_mediaLinks {
-    width: calc(1024px - 6rem);
-    justify-content: space-between;
-    padding: 2.5rem 0;
+  .W_bottomFooter {
+    align-items: flex-end;
+    align-content: flex-end;
+    row-gap: 5.2vw;
+    flex-wrap: wrap;
   }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .W_topFooter {
     flex-direction: column;
-    margin-top: 6.5vw;
     gap: 28.5vw;
+    flex-wrap: wrap;
   }
 
   .W_bottomFooter {
-    flex-direction: column-reverse;
-    gap: 11vw;
+    row-gap: 11vw;
+    flex-wrap: wrap;
   }
 }
