@@ -238,10 +238,17 @@
   }
 }
 
-/* ------------------------- ArticlePage ----------------------- */
+/* ------------------------- ResearchPage ----------------------- */
 .A_articleImage {
   width: 100%;
   border-radius: var(--radiusSmall);
+}
+
+/* ------------------------- LecturePage ----------------------- */
+.A_player {
+  height: 40rem;
+  width: 100%;
+  position: relative;
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
@@ -395,7 +402,7 @@
     &.none {
       left: 4vw;
       top: 4vw;
-      line-height: 100%;
+      line-height: 120%;
     }
   }
 

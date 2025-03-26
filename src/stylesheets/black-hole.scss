@@ -1,0 +1,16 @@
+.S_lecture {
+  .M_articleText {
+    width: 50rem;
+    gap: 2rem;
+
+    .A_h4 {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .W_articleEnd {
+    .A_h2 {
+      grid-column: span 3;
+    }
+  }
+}

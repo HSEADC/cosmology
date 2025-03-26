@@ -117,13 +117,13 @@
   background: var(--charcoal);
 }
 
-/* ------------------------- ArticlePage ----------------------- */
+/* ------------------------- ResearchPage ----------------------- */
 .O_articleTitle {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 90rem;
-  padding: 3.7rem 2.5rem 3.5rem;
+  padding: 2.5rem 2.5rem 3.5rem;
   gap: 2rem;
 }
 
@@ -142,6 +142,15 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+}
+
+/* ------------------------- LecturePage ----------------------- */
+.O_statistic {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: fit-content;
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
