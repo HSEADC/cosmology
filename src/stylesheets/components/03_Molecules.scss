@@ -245,6 +245,27 @@
 
   .M_cardTexts {
     gap: 2vw;
+
+    &.media {
+      align-items: center;
+    }
+  }
+
+  .M_mainPageText {
+    gap: 4.2vw;
+    width: 91vw;
+    padding: 7.4vw 0;
+  }
+
+  .M_chapterText {
+    gap: 1vw;
+    max-width: 40vw;
+  }
+
+  .M_secondPageText {
+    gap: 1.5vw;
+    max-width: 80vw;
+    margin: 20vw auto 0;
   }
 }
 

@@ -84,6 +84,9 @@ body {
     &.big {
       margin-top: 5.25rem;
     }
+    &:nth-child(4) {
+      display: none;
+    }
   }
 }
 
@@ -117,5 +120,139 @@ body {
 .O_cardMedia {
   .A_p {
     text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .M_mainPageText {
+    .A_H1 {
+      line-height: 100%;
+    }
+
+    .A_h4 {
+      font-size: 2.1vw;
+      line-height: 130%;
+      width: 52vw;
+    }
+  }
+
+  .O_chapter {
+    .A_h4 {
+      font-size: 2vw;
+      line-height: 130%;
+    }
+  }
+
+  :nth-child(1 of .O_chapter) {
+    margin-top: 51.5vw;
+
+    .A_h4 {
+      max-width: 42vw;
+      width: 42vw;
+    }
+  }
+
+  :nth-child(2 of .O_chapter) {
+    .A_h4 {
+      max-width: 35vw;
+      width: 35vw;
+    }
+  }
+
+  :nth-child(3 of .O_chapter) {
+    .A_h4 {
+      max-width: 36vw;
+      width: 36vw;
+    }
+  }
+
+  .A_linkButton > a {
+    font-size: 2.6vw;
+  }
+
+  .W_articles {
+    .O_cardArticle {
+      &:nth-child(4) {
+        display: block;
+      }
+
+      &:nth-child(1) {
+        grid-area: lecture;
+        width: 45.7vw;
+      }
+      &:nth-child(2) {
+        grid-area: research;
+        margin: 0;
+        width: 45.7vw;
+      }
+      &:nth-child(3) {
+        grid-area: podcast1;
+        width: 21.7vw;
+      }
+      &:nth-child(4) {
+        grid-area: podcast2;
+        width: 21.7vw;
+      }
+      .A_h3 {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .W_cards {
+    .S_popupContainer {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+
+  .W_tests {
+    .W_cardTest {
+      & .O_cardTextGroup {
+        .A_h3 {
+          width: 19vw;
+        }
+      }
+    }
+    .Q_cardTextImg.solarSystem {
+      background-position: top;
+    }
+  }
+
+  .M_secondPageText {
+    .A_H1 {
+      max-width: 80vw;
+    }
+
+    .A_h4 {
+      font-size: 2.1vw;
+      line-height: 130%;
+      padding: 0 10vw 1vw 10vw;
+      width: 60vw;
+    }
+  }
+
+  .O_cardMedia {
+    .A_mainButton {
+      padding: 2vw 12vw;
+      font-size: 2.3vw;
+      height: 7vw;
+      border-radius: 2vw;
+    }
+  }
+
+  .M_cardTexts {
+    &.media {
+      align-items: center;
+    }
+    .A_p {
+      text-align: center;
+      font-size: 1.8vw;
+    }
+
+    .A_h2 {
+      margin-top: 0;
+    }
   }
 }

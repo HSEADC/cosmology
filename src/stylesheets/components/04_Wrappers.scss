@@ -120,6 +120,44 @@
     padding: 2vw;
     gap: 4vw;
   }
+
+  .W_articles {
+    display: grid;
+    grid-template: 36vw / repeat(4, 21.6vw);
+    max-width: 100vw;
+    gap: 2.3vw;
+    padding: 0 3vw;
+    margin: 7vw auto 0;
+
+    grid-template-areas:
+      'research research lecture lecture'
+      'podcast1 podcast2 . .';
+  }
+
+  .W_cards {
+    padding: 0 3vw;
+    margin: 7vw auto 0;
+    max-width: 100%;
+    justify-content: center;
+    gap: 2.3vw;
+  }
+
+  .W_tests {
+    padding: 0 3vw;
+    margin: 7vw auto 0;
+    max-width: 100vw;
+    height: 100%;
+    gap: 2.3vw;
+    justify-content: center;
+  }
+
+  .W_mediaLinks {
+    padding: 0 3vw;
+    margin: 5vw auto 0;
+    max-width: 100vw;
+    gap: 2.3vw;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {

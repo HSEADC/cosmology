@@ -190,6 +190,21 @@
     gap: 1vw;
     width: 73.5vw;
   }
+
+  .O_chapter {
+    gap: 10vw;
+    justify-content: center;
+    margin-top: 15.4vw;
+  }
+
+  .O_cardMedia {
+    height: 43vw;
+    padding: 3vw;
+    gap: 3vw;
+    width: 45.7vw;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 360px) {
