@@ -1,0 +1,9 @@
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .C_menuItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 3vw;
+  }
+}
