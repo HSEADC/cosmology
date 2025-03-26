@@ -243,6 +243,81 @@
   border-radius: var(--radiusSmall);
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .A_H1 {
+    font-size: 7.3vw;
+    line-height: 110%;
+    letter-spacing: -0.45vw;
+  }
+
+  .A_h3 {
+    font-size: 2.65vw;
+    line-height: 100%;
+  }
+
+  .A_h4 {
+    font-size: 2.6vw;
+  }
+
+  .A_p {
+    font-size: 2.1vw;
+    letter-spacing: -0.1vw;
+    line-height: 100%;
+  }
+
+  .A_logoHeader {
+    gap: 1vw;
+    width: 18vw;
+    font-size: 2.2vw;
+    letter-spacing: -0.15vw;
+    align-self: center;
+
+    &::before {
+      width: 3.4vw;
+      height: 3.8vw;
+      background-size: contain;
+    }
+  }
+
+  .A_navigationActionsHeader {
+    letter-spacing: -0.1vw;
+    font-size: 2.1vw;
+  }
+
+  .A_filterButton {
+    padding: 1.5vw 2.4vw;
+    align-items: center;
+    font-size: 1.8vw;
+  }
+
+  .A_testLevelTags {
+    &.none {
+      left: 2vw;
+      top: 2vw;
+      font-size: 1.6vw;
+    }
+  }
+
+  .A_inputFooter {
+    padding: 2.4vw 2vw;
+    width: 63.5vw;
+  }
+  .A_mainButton {
+    padding: 2.4vw 2vw;
+    font-size: 2.6vw;
+    line-height: 120%;
+  }
+
+  .A_logoFooter {
+    gap: 2.2vw;
+    font-size: 6vw;
+  }
+
+  .A_authorsFooter {
+    font-size: 2.6vw;
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .A_logoHeader {
     gap: 1.5vw;

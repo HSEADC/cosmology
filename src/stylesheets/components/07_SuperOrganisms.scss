@@ -73,6 +73,36 @@
   max-width: 90rem;
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .S_articlesContent {
+    max-width: 100vw;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    grid-auto-flow: row;
+    padding: 0 3.1vw;
+    row-gap: 5.2vw;
+
+    .O_cardArticle {
+      width: 100%;
+
+      &.small {
+        grid-column: span 1;
+      }
+    }
+
+    &.selected {
+      grid-template-areas: none;
+      grid-auto-flow: dense;
+    }
+  }
+  .S_Footer {
+    height: 100%;
+    padding: 5.2vw;
+    gap: 5.2vw;
+    margin-top: 11vw;
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .S_articlesContent {
     padding: 0 3vw;

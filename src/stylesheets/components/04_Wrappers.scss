@@ -109,6 +109,20 @@
   }
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .W_topFooter {
+    gap: 5.2vw;
+    flex-wrap: wrap;
+  }
+
+  .W_bottomFooter {
+    align-items: flex-end;
+    align-content: flex-end;
+    row-gap: 5.2vw;
+    flex-wrap: wrap;
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .W_topFooter {
     flex-direction: column;

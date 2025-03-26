@@ -190,6 +190,44 @@
   }
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .Q_iconSearch {
+    width: 3vw;
+    height: 3vw;
+    padding-left: 18vw;
+    background-size: contain;
+  }
+
+  .Q_cardArticleImg {
+    &.big {
+      height: 20vw;
+      background-size: 100% 20vw;
+    }
+
+    &.medium {
+      height: 31vw;
+      background-size: 100% 31vw;
+    }
+
+    &.small {
+      height: 11vw;
+      width: 11vw;
+      background-size: contain;
+      margin: 3.6vw 1.8vw;
+    }
+  }
+
+  .Q_socialmediaButtonsFooter {
+    width: 10.4vw;
+    height: 10.4vw;
+  }
+
+  .Q_logoFooterHse {
+    width: 22.4vw;
+    height: 9vw;
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .Q_menuIcon {
     width: 4.8vw;

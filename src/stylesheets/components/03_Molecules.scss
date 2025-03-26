@@ -175,6 +175,57 @@
   }
 }
 
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .M_Navigation {
+    width: 36vw;
+    height: 6vw;
+    padding: 1.7vw 4vw;
+  }
+
+  .M_filterGroup {
+    margin-top: 2.3vw;
+    gap: 1vw;
+  }
+
+  .M_cardArticle {
+    padding: 3.7vw 3.2vw;
+    margin-bottom: 2vw;
+
+    &.big {
+      height: 26vw;
+    }
+
+    &.medium {
+      height: 46vw;
+    }
+
+    &.small {
+      height: 22vw;
+    }
+  }
+
+  #M_formSubscribe {
+    height: 7.8vw;
+    gap: 2.1vw;
+  }
+
+  .M_socialButtonsFooter {
+    gap: 1.6vw;
+  }
+
+  .M_authors {
+    max-width: 34vw;
+    gap: 2vw;
+    &:first-child {
+      width: 17vw;
+    }
+  }
+
+  .M_logosFooter {
+    gap: 9vw;
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .M_Navigation {
     display: flex;
