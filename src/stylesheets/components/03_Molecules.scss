@@ -176,6 +176,20 @@
 }
 
 @media only screen and (max-width: 767px) and (min-width: 360px) {
+  .M_Navigation {
+    display: flex;
+    width: 13vw;
+    height: 13vw;
+    padding: 4vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 4vw;
+    background: var(--charcoal);
+    box-shadow: var(--shadow);
+  }
+
   .M_filterGroup {
     display: flex;
     flex-direction: row;
@@ -207,11 +221,12 @@
 
   #M_formSubscribe {
     height: 15vw;
-    gap: 2.5vw;
+    gap: 2vw;
   }
 
   .M_authors {
-    width: auto;
+    gap: 2vw;
+    max-width: fit-content;
     &:first-child {
       width: auto;
     }
@@ -220,6 +235,6 @@
   .M_logosFooter {
     width: 100%;
     gap: 11vw;
-    margin-bottom: 6vw;
+    align-items: center;
   }
 }

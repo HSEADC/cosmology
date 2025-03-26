@@ -257,19 +257,6 @@
     }
   }
 
-  .A_menuButton {
-    display: flex;
-    width: 13vw;
-    height: 13vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    border-radius: 4vw;
-    background: var(--charcoal);
-    box-shadow: var(--shadow);
-  }
-
   .A_H1 {
     font-size: 11vw;
     line-height: 100%;
@@ -295,9 +282,9 @@
   }
 
   .A_filterButton {
-    padding: 3vw 4.7vw;
-    letter-spacing: -0.1vw;
+    padding: 3.2vw;
     font-size: 3.7vw;
+    letter-spacing: -0.15vw;
   }
 
   .A_testLevelTags {

@@ -112,12 +112,12 @@
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .W_topFooter {
     flex-direction: column;
-    margin-top: 6.5vw;
     gap: 28.5vw;
+    flex-wrap: wrap;
   }
 
   .W_bottomFooter {
-    flex-direction: column-reverse;
-    gap: 11vw;
+    row-gap: 11vw;
+    flex-wrap: wrap;
   }
 }
