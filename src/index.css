@@ -21,6 +21,9 @@
 /* Lectures */
 @import 'stylesheets/black-hole.scss';
 
+/* Podcasts */
+@import 'stylesheets/stars-life.scss';
+
 /* Components */
 @import 'stylesheets/components/01_Quarks.scss';
 @import 'stylesheets/components/02_Atoms.scss';

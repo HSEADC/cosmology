@@ -151,6 +151,13 @@ module.exports = {
       chunks: ['index']
     }),
 
+    // Страницы раздела лекций (podcasts)
+    new HtmlWebpackPlugin({
+      template: './src/articles/podcasts/stars-life.html',
+      filename: './articles/podcasts/stars-life.html',
+      chunks: ['index']
+    }),
+
     // Страницы раздела тестов (tests)
     new HtmlWebpackPlugin({
       template: './src/tests/dark.html',
