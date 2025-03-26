@@ -253,6 +253,25 @@
     border-radius: 4vw;
     background: var(--charcoal);
     box-shadow: var(--shadow);
+
+    &.overlay {
+      background-color: var(--bgColor);
+      background-image: url('/src/images/BackgroundImage.svg');
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      right: -110%;
+      padding: 8vw 3vw 5vw;
+      border-radius: 0;
+      transition: 0.3s ease;
+      justify-content: flex-start;
+      gap: 6.5vw;
+
+      &.active {
+        right: 0;
+      }
+    }
   }
 
   .M_filterGroup {

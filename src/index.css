@@ -5,6 +5,7 @@
 
 /* Pages */
 @import 'stylesheets/index.scss';
+@import 'stylesheets/header.scss';
 @import 'stylesheets/footer.scss';
 @import 'stylesheets/about.scss';
 @import 'stylesheets/articles.scss';

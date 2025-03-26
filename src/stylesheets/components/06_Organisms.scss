@@ -190,6 +190,13 @@
       display: flex;
       padding: 8vw 3vw 5vw;
     }
+
+    &.mobile.overlay {
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 3vw;
+    }
   }
 
   .O_headlinePage {
