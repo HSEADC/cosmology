@@ -41,3 +41,63 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .M_Navigation {
+    &.overlay {
+      background-color: var(--bgColor);
+      background-image: url('../images/BackgroundImage.svg');
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      right: -110%;
+      padding: 8vw 3vw 5vw;
+      border-radius: 0;
+      transition: 0.3s ease;
+      justify-content: flex-start;
+      gap: 6.5vw;
+
+      &.active {
+        right: 0;
+      }
+    }
+  }
+
+  .O_Header {
+    &.mobile.overlay {
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 3vw;
+
+      .Q_closeButton {
+        align-self: center;
+        background-position: center;
+      }
+    }
+    .A_inputHeader {
+      display: flex;
+      width: 100%;
+      height: 16vw;
+      padding: 5vw 4.5vw;
+      align-items: center;
+      gap: 6px;
+      justify-content: flex-start;
+    }
+    .Q_iconSearch {
+      padding: 0;
+      background-image: url('/src/images/header/iconSearchGrey.svg');
+      width: 6vw;
+      height: 6vw;
+      background-size: contain;
+    }
+    .C_menuItems {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 3vw;
+    }
+  }
+}
