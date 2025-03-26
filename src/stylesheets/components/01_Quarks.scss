@@ -185,26 +185,6 @@
 }
 
 /* ------------------------- LecturePage ----------------------- */
-.Q_playerImg {
-  background-image: url('/src/images/articles/lectures/black-hole/black-hole-cover.webp');
-  height: 100%;
-  background-size: cover;
-  border-radius: var(--radiusBig);
-  mix-blend-mode: lighten;
-  filter: saturate(0);
-  border: var(--borderGrey);
-}
-
-.Q_play {
-  position: absolute;
-  background-image: url('/src/images/articles/lectures/Q_play.svg');
-  width: 3.75rem;
-  height: 3.75rem;
-  top: calc(50% - (3.75rem / 2));
-  left: calc(50% - (3.75rem / 2));
-  background-size: cover;
-}
-
 .Q_eye,
 .Q_like {
   width: 2rem;
