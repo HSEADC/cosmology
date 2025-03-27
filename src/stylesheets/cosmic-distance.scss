@@ -41,3 +41,40 @@
     color: var(--silver);
   }
 }
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .M_articleTitle {
+    .A_h4 {
+      font-size: 2.1vw;
+    }
+    .A_H1 {
+      line-height: 100%;
+    }
+  }
+
+  .M_articleText {
+    .A_h4 {
+      font-size: 2.08vw;
+      line-height: 130%;
+    }
+
+    .A_h2 {
+      font-size: 5.2vw;
+      line-height: 90%;
+    }
+
+    .A_h3 {
+      font-size: 2.6vw;
+    }
+  }
+
+  .S_article {
+    & .O_articleEnd {
+      .A_h2 {
+        font-size: 5.3vw;
+        width: 70vw;
+        line-height: 90%;
+      }
+    }
+  }
+}

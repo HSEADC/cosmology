@@ -90,11 +90,17 @@
       &.big,
       &.medium {
         grid-column: span 2;
+        width: 100%;
+      }
+      &.small {
+        grid-column: span 1;
+        width: 100%;
       }
     }
 
     &.selected {
       .O_cardArticle {
+        width: 100%;
         &:nth-child(n + 1) {
           grid-area: auto;
         }
