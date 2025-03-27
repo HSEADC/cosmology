@@ -283,21 +283,12 @@ body {
 
   .W_articles {
     & .O_cardArticle {
-      width: auto;
-
-      .A_h3 {
-        max-width: 75vw;
-      }
+      width: 100%;
       &:nth-child(4) {
         display: block;
       }
       &.big {
         margin-top: 0;
-      }
-    }
-    & .O_cardArticle.small {
-      .A_h3 {
-        max-width: 45vw;
       }
     }
   }
@@ -356,6 +347,20 @@ body {
     }
     .Q_cardTextImg {
       background-position: top;
+    }
+  }
+
+  .W_articles {
+    & .O_cardArticle {
+      .A_h3 {
+        max-width: 75vw;
+      }
+    }
+    & .O_cardArticle.small {
+      .A_h3 {
+        max-width: 45vw;
+      }
+      width: auto;
     }
   }
 }
