@@ -272,6 +272,12 @@
     width: 8.5vw;
     height: 8.5vw;
   }
+
+  .Q_eye,
+  .Q_like {
+    width: 3vw;
+    height: 3vw;
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
@@ -370,5 +376,11 @@
     height: 200vw;
     background-size: 100% 125vw;
     width: 100vw;
+  }
+
+  .Q_eye,
+  .Q_like {
+    width: 5vw;
+    height: 5vw;
   }
 }

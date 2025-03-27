@@ -319,6 +319,11 @@
       line-height: 120%;
     }
   }
+
+  .M_seen,
+  .M_likes {
+    gap: 0.5vw;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 360px) {
@@ -487,5 +492,10 @@
       width: 83vw;
       line-height: 120%;
     }
+  }
+
+  .M_seen,
+  .M_likes {
+    gap: 2vw;
   }
 }

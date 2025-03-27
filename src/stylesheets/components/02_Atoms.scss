@@ -254,7 +254,7 @@
 
 /* ------------------------- LecturePage ----------------------- */
 .A_player {
-  height: 40rem;
+  height: 41rem;
   width: 100%;
   position: relative;
   border-radius: var(--radiusBig);
@@ -380,6 +380,10 @@
   .A_Error {
     font-size: 15vw;
     line-height: 100%;
+  }
+
+  .A_player {
+    height: 45vw;
   }
 }
 
@@ -515,5 +519,13 @@
   .A_Error {
     font-size: 27vw;
     line-height: 100%;
+  }
+
+  .A_player {
+    height: 103vw;
+
+    & img {
+      height: 200vw;
+    }
   }
 }
