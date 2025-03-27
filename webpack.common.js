@@ -104,6 +104,25 @@ module.exports = {
       chunks: ['index', 'popup']
     }),
 
+    // Ошибки
+    new HtmlWebpackPlugin({
+      template: './src/errors/404.html',
+      filename: './errors/404.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/errors/500.html',
+      filename: './errors/500.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/errors/505.html',
+      filename: './errors/505.html',
+      chunks: ['index']
+    }),
+
     // Страницы разделов
     new HtmlWebpackPlugin({
       template: './src/about.html',
