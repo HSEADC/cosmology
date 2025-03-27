@@ -472,18 +472,4 @@
     gap: 6px;
     justify-content: flex-start;
   }
-
-  .A_H1 {
-    &.mobile {
-      display: block;
-      width: 85vw;
-    }
-    &.desktop {
-      display: none;
-    }
-  }
-
-  .A_linkButton {
-    gap: 2vw;
-  }
 }
