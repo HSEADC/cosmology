@@ -57,3 +57,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .S_testsContent {
+    .O_cardTextGroup {
+      .A_h3 {
+        width: 34vw;
+      }
+    }
+  }
+}

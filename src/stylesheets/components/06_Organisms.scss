@@ -264,4 +264,19 @@
     padding: 4.2vw 4.2vw 6.5vw 4.2vw;
     gap: 2vw;
   }
+
+  .O_chapter {
+    width: 100vw;
+    flex-direction: column;
+    gap: 2vw;
+    margin-top: 37vw;
+  }
+
+  .O_cardMedia {
+    gap: 5vw;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 85vw;
+    width: 100%;
+  }
 }

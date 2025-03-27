@@ -101,6 +101,14 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -0.3rem;
+
+  &.mobile {
+    display: none;
+  }
+
+  &.desktop {
+    display: block;
+  }
 }
 
 .A_h2 {
@@ -463,5 +471,33 @@
     align-items: center;
     gap: 6px;
     justify-content: flex-start;
+  }
+
+  .A_testLevelTags {
+    font-size: 3.5vw;
+    height: 6.5vw;
+    padding: 1.2vw 2.2vw;
+
+    &.easy::before,
+    &.middle::before,
+    &.hard::before {
+      width: 3.6vw;
+      height: 4vw;
+      background-size: contain;
+    }
+  }
+
+  .A_H1 {
+    &.mobile {
+      display: block;
+      width: 85vw;
+    }
+    &.desktop {
+      display: none;
+    }
+  }
+
+  .A_linkButton {
+    gap: 2vw;
   }
 }

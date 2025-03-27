@@ -256,3 +256,111 @@ body {
     }
   }
 }
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .M_mainPageText {
+    .A_h4 {
+      font-size: 3.7vw;
+      width: 70vw;
+    }
+  }
+
+  .O_chapter {
+    .A_h4 {
+      max-width: 75vw;
+      font-size: 3.6vw;
+      text-align: center;
+    }
+  }
+
+  :nth-child(1 of .O_chapter) {
+    margin-top: 104vw;
+  }
+
+  .A_linkButton > a {
+    font-size: 3.6vw;
+  }
+
+  .W_articles {
+    & .O_cardArticle {
+      width: 100%;
+      &:nth-child(4) {
+        display: block;
+      }
+      &.big {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .W_cards {
+    .S_popupContainer {
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+
+  .M_secondPageText {
+    .A_H1 {
+      max-width: 90vw;
+    }
+
+    .A_h4 {
+      width: 75vw;
+      font-size: 3.7vw;
+      padding: 0;
+    }
+  }
+
+  .M_cardTexts {
+    &.media {
+      align-items: center;
+    }
+    .A_p {
+      text-align: center;
+      font-size: 3.8vw;
+      line-height: 100%;
+    }
+
+    .A_h2 {
+      margin-top: 0;
+    }
+  }
+  .O_cardMedia {
+    .A_mainButton {
+      padding: 2vw 28vw;
+      font-size: 4.2vw;
+      height: 13.5vw;
+      border-radius: 4vw;
+    }
+  }
+
+  .W_cardTest {
+    & .O_cardTextGroup {
+      .A_h3 {
+        width: 50vw;
+      }
+    }
+    .Q_cardTextImg {
+      background-position: top;
+    }
+  }
+
+  .W_articles {
+    & .O_cardArticle {
+      .A_h3 {
+        max-width: 75vw;
+      }
+    }
+    & .O_cardArticle.small {
+      .A_h3 {
+        max-width: 45vw;
+      }
+      width: auto;
+    }
+  }
+}
