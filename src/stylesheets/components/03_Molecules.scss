@@ -190,6 +190,19 @@
   align-items: center;
 }
 
+/* ------------------------- Errors ----------------------- */
+.M_error {
+  width: fit-content;
+  margin: 15% auto 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  h4 {
+    width: 27rem;
+  }
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .M_Navigation {
     width: 36vw;
@@ -294,6 +307,16 @@
 
     &.subtitlePlusText {
       margin-bottom: 4.2vw;
+    }
+  }
+
+  .M_error {
+    gap: 2vw;
+    margin: 14% auto 16%;
+
+    h4 {
+      width: 55vw;
+      line-height: 120%;
     }
   }
 }
@@ -408,5 +431,61 @@
     padding: 0 3vw;
     max-width: 90vw;
     margin: 24vw auto 0;
+  }
+
+  .M_articleTitle {
+    gap: 3vw;
+  }
+
+  .M_articleNote {
+    grid-column-start: 1;
+    grid-column: span 1;
+  }
+
+  .M_articleNote {
+    &.desktop {
+      display: none;
+    }
+    &.mobile {
+      display: block;
+      gap: 1.5vw;
+      align-self: flex-start;
+    }
+  }
+
+  .M_articleText {
+    &.textPlusText {
+      gap: 3vw;
+      margin-top: 8.5vw;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+    &.titlePlusText {
+      gap: 4.5vw;
+      margin-top: 6vw;
+    }
+
+    &.subtitlePlusText {
+      gap: 3vw;
+      margin-top: 6vw;
+      margin-bottom: 4.5vw;
+    }
+
+    &.textPlusImage {
+      gap: 4.5vw;
+      margin-bottom: 0;
+      margin-top: 6vw;
+    }
+  }
+
+  .M_error {
+    gap: 6vw;
+    margin: 33% auto 39%;
+
+    h4 {
+      width: 83vw;
+      line-height: 120%;
+    }
   }
 }

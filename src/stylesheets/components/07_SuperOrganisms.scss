@@ -184,18 +184,6 @@
     row-gap: 3.2vw;
     grid-template: auto / 1fr;
   }
-}
-
-@media only screen and (max-width: 767px) and (min-width: 360px) {
-  .O_articleTitle {
-    padding: 11.3vw 3vw 12.7vw;
-    max-width: 100vw;
-    gap: 6vw;
-  }
-
-  .M_articleTitle {
-    gap: 3vw;
-  }
 
   .S_article {
     padding: 0 3vw;
@@ -204,92 +192,5 @@
     grid-template-rows: auto;
     column-gap: 0;
     grid-template-columns: 1fr;
-  }
-
-  .M_articleNote {
-    grid-column-start: 1;
-    grid-column: span 1;
-  }
-
-  .O_articleBody {
-    justify-self: flex-start;
-    grid-row-start: 1;
-    grid-row-end: none;
-    width: 94vw;
-    grid-column: span 2;
-  }
-
-  .M_articleNote {
-    &.desktop {
-      display: none;
-    }
-    &.mobile {
-      display: block;
-      gap: 1.5vw;
-      align-self: flex-start;
-
-      .A_p {
-        width: 100%;
-      }
-
-      .A_H1 {
-        font-size: 17vw;
-        line-height: 110%;
-        width: fit-content;
-      }
-    }
-  }
-
-  .C_articleNote > .M_articleNote > .A_p {
-    width: 25vw;
-  }
-
-  .M_articleText {
-    &.textPlusText {
-      gap: 3vw;
-      margin-top: 8.5vw;
-    }
-    &:first-child {
-      margin-top: 0;
-    }
-    &.titlePlusText {
-      gap: 4.5vw;
-      margin-top: 6vw;
-    }
-
-    &.subtitlePlusText {
-      gap: 3vw;
-      margin-top: 6vw;
-      margin-bottom: 4.5vw;
-
-      .M_articleNote {
-        margin-top: 1.5vw;
-      }
-    }
-
-    &.textPlusImage {
-      gap: 4.5vw;
-      margin-bottom: 0;
-      margin-top: 6vw;
-    }
-
-    .A_h2 {
-      font-size: 8.5vw;
-      line-height: 90%;
-    }
-
-    .A_h3 {
-      font-size: 5.3vw;
-    }
-  }
-
-  .O_articleEnd {
-    margin-top: 12.8vw;
-    grid-row-start: auto;
-    gap: 5vw;
-
-    .A_h2 {
-      line-height: 90%;
-    }
   }
 }

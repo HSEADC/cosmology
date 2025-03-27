@@ -271,6 +271,12 @@
   border: var(--borderGrey);
 }
 
+/* ------------------------- Errors ----------------------- */
+.A_Error {
+  font-size: 13rem;
+  line-height: 110%;
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .A_logoHeader {
     gap: 1vw;
@@ -369,6 +375,11 @@
 
   .A_linkButton {
     gap: 1vw;
+  }
+
+  .A_Error {
+    font-size: 15vw;
+    line-height: 100%;
   }
 }
 
@@ -499,5 +510,10 @@
 
   .A_linkButton {
     gap: 2vw;
+  }
+
+  .A_Error {
+    font-size: 27vw;
+    line-height: 100%;
   }
 }

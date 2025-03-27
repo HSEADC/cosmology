@@ -293,4 +293,24 @@
     height: 85vw;
     width: 100%;
   }
+
+  .O_articleTitle {
+    padding: 11.3vw 3vw 12.7vw;
+    max-width: 100vw;
+    gap: 6vw;
+  }
+
+  .O_articleBody {
+    justify-self: flex-start;
+    grid-row-start: 1;
+    grid-row-end: none;
+    width: 94vw;
+    grid-column: span 2;
+  }
+
+  .O_articleEnd {
+    margin-top: 12.8vw;
+    grid-row-start: auto;
+    gap: 5vw;
+  }
 }
