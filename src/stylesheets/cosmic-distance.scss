@@ -43,81 +43,85 @@
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
-  .M_articleTitle {
-    .A_h4 {
-      font-size: 2.1vw;
-    }
-    .A_H1 {
-      line-height: 100%;
-    }
-  }
-
-  .M_articleText {
-    .A_h4 {
-      font-size: 2.08vw;
-      line-height: 130%;
-    }
-
-    .A_h2 {
-      font-size: 5.2vw;
-      line-height: 90%;
-    }
-
-    .A_h3 {
-      font-size: 2.6vw;
-    }
-  }
-
   .S_article {
-    & .O_articleEnd {
+    .M_articleTitle {
+      .A_h4 {
+        font-size: 2.1vw;
+      }
+      .A_H1 {
+        line-height: 100%;
+      }
+    }
+
+    .M_articleText {
+      .A_h4 {
+        font-size: 2.08vw;
+        line-height: 130%;
+      }
+
       .A_h2 {
-        font-size: 5.3vw;
-        width: 70vw;
+        font-size: 5.2vw;
         line-height: 90%;
+      }
+
+      .A_h3 {
+        font-size: 2.6vw;
+      }
+    }
+
+    .S_article {
+      & .O_articleEnd {
+        .A_h2 {
+          font-size: 5.3vw;
+          width: 70vw;
+          line-height: 90%;
+        }
       }
     }
   }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 360px) {
-  .M_articleNote {
-    &.mobile {
-      .A_p {
-        width: 100%;
-      }
+  .S_article {
+    .M_articleNote {
+      &.mobile {
+        .A_p {
+          width: 100%;
+        }
 
-      .A_H1 {
-        font-size: 17vw;
-        line-height: 110%;
-        width: fit-content;
-      }
-    }
-  }
-
-  .C_articleNote > .M_articleNote > .A_p {
-    width: 25vw;
-  }
-
-  .M_articleText {
-    &.subtitlePlusText {
-      .M_articleNote {
-        margin-top: 1.5vw;
+        .A_H1 {
+          font-size: 17vw;
+          line-height: 110%;
+          width: fit-content;
+        }
       }
     }
 
-    .A_h2 {
-      font-size: 8.5vw;
-      line-height: 90%;
+    .C_articleNote > .M_articleNote > .A_p {
+      width: 25vw;
     }
 
-    .A_h3 {
-      font-size: 5.3vw;
-    }
-  }
+    .M_articleText {
+      &.subtitlePlusText {
+        .M_articleNote {
+          margin-top: 1.5vw;
+        }
+      }
 
-  .O_articleEnd {
-    .A_h2 {
-      line-height: 90%;
+      .A_h2 {
+        font-size: 8.5vw;
+        line-height: 90%;
+      }
+
+      .A_h3 {
+        font-size: 5.3vw;
+      }
+    }
+
+    .O_articleEnd {
+      .A_h2 {
+        line-height: 90%;
+      }
     }
   }
 }

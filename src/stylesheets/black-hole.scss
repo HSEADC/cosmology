@@ -14,3 +14,97 @@
     }
   }
 }
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .S_lecture {
+    .W_descriptonLecture {
+      .M_articleText {
+        gap: 2.6vw;
+        width: 72vw;
+
+        .A_h4 {
+          font-size: 2vw;
+        }
+        .A_h3 {
+          font-size: 2.2vw;
+        }
+      }
+
+      .O_statistic {
+        .A_h3 {
+          font-size: 2.2vw;
+          letter-spacing: -0.1vw;
+        }
+      }
+    }
+    .W_articleEnd {
+      .A_h2 {
+        font-size: 5.3vw;
+        line-height: 90%;
+        width: 70vw;
+      }
+
+      .O_cardArticle {
+        &.small {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .S_lecture {
+    .W_descriptonLecture {
+      flex-direction: column-reverse;
+      .M_articleText {
+        gap: 4.2vw;
+        width: 100%;
+
+        .A_h3 {
+          font-size: 5.4vw;
+        }
+        .A_h4 {
+          font-size: 4.2vw;
+        }
+      }
+      .O_statistic {
+        .A_h3 {
+          font-size: 2.2vw;
+          letter-spacing: -0.1vw;
+        }
+      }
+
+      .M_seen,
+      .M_likes {
+        .A_h3 {
+          font-size: 4vw;
+        }
+      }
+    }
+    .W_articleEnd {
+      gap: 9vw 3.4vw;
+      margin-top: 6vw;
+      width: 100%;
+      grid-template: auto / repeat(2, 1fr);
+
+      .A_h2 {
+        line-height: 90%;
+        font-size: 8.5vw;
+        grid-column: span 2;
+        width: 70vw;
+        justify-self: center;
+      }
+
+      .O_cardArticle {
+        width: 100%;
+        .A_h4 {
+          width: fit-content;
+        }
+      }
+    }
+    :nth-child(3 of .O_cardArticle) {
+      grid-row-start: 3;
+    }
+  }
+}
