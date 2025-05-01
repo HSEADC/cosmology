@@ -207,3 +207,46 @@
     padding: 0 3vw;
   }
 }
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  html {
+    height: 2504px;
+  }
+  body::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2504px;
+    content: '';
+    background: url('/src/images/podcast.png');
+    opacity: 0.2;
+  }
+  body {
+    background-color: rgb(60, 60, 60);
+  }
+
+  .S_podcast {
+    padding: 0 3.1vw;
+    max-width: 100vw;
+
+    .M_articleText {
+      gap: 3vw;
+    }
+  }
+
+  .A_podcastImage {
+    width: 39vw;
+    height: 39vw;
+  }
+
+  .W_descriptonPodcast {
+    width: 49vw;
+    gap: 0;
+
+    .A_h4 {
+      font-size: 2vw;
+      line-height: 130%;
+    }
+  }
+}

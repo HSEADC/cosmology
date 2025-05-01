@@ -10,7 +10,8 @@ module.exports = {
   entry: {
     index: './src/index.js',
     filterTags: './src/javascripts/filterTags.js',
-    popup: './src/javascripts/popup.js'
+    popup: './src/javascripts/popup.js',
+    searchVanilla: './src/javascripts/search-vanilla.js'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -194,6 +195,13 @@ module.exports = {
       template: './src/tests/star-test.html',
       filename: './tests/star-test.html',
       chunks: ['index']
+    }),
+
+    // Поиск
+    new HtmlWebpackPlugin({
+      template: './src/search.html',
+      filename: './search.html',
+      chunks: ['index', 'searchVanilla']
     }),
 
     // Partials

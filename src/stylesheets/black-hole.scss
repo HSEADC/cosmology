@@ -16,6 +16,11 @@
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .O_articleTitle {
+    .A_h4 {
+      width: fit-content;
+    }
+  }
   .S_lecture {
     .W_descriptonLecture {
       .M_articleText {
@@ -24,6 +29,7 @@
 
         .A_h4 {
           font-size: 2vw;
+          line-height: 130%;
         }
         .A_h3 {
           font-size: 2.2vw;

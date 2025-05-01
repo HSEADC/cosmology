@@ -529,3 +529,33 @@
     }
   }
 }
+
+.A_searchInput {
+  border: 1px dolis #ddd;
+  border-radius: 12px;
+  width: 250px;
+  height: 58px;
+  padding-left: 16px;
+  font-size: 16px;
+
+  &:focus {
+    border-color: inherit;
+    outline: none;
+  }
+}
+
+.A_searchButton {
+  font-size: 16px;
+  background-color: #212121;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
