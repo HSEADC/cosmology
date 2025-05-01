@@ -11,7 +11,8 @@ module.exports = {
     index: './src/index.js',
     filterTags: './src/javascripts/filterTags.js',
     popup: './src/javascripts/popup.js',
-    searchVanilla: './src/javascripts/search-vanilla.js'
+    searchVanilla: './src/javascripts/search-vanilla.js',
+    reactBasics: './src/javascripts/react-basics.jsx'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -202,6 +203,13 @@ module.exports = {
       template: './src/search.html',
       filename: './search.html',
       chunks: ['index', 'searchVanilla']
+    }),
+
+    // Основы react
+    new HtmlWebpackPlugin({
+      template: './src/react-basics.html',
+      filename: './react-basics.html',
+      chunks: ['reactBasics']
     }),
 
     // Partials
