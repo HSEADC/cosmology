@@ -529,3 +529,101 @@
     }
   }
 }
+
+.A_searchInput {
+  border: 1px dolis #ddd;
+  border-radius: 12px;
+  width: 250px;
+  height: 58px;
+  padding-left: 16px;
+  font-size: 16px;
+
+  &:focus {
+    border-color: inherit;
+    outline: none;
+  }
+}
+
+.A_searchButton {
+  font-size: 16px;
+  background-color: #212121;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+.A_Input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  transition: border-color 0.4s ease;
+
+  &:focus {
+    border-color: #333;
+    outline: none;
+  }
+}
+
+.A_Button {
+  display: inline-block;
+  padding: 10px 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.4s ease;
+
+  &.primary {
+    background-color: cornflowerblue;
+    color: white;
+    opacity: 0.8;
+  }
+
+  &.primary:hover {
+    opacity: 1;
+    transition: all 0.2s ease;
+  }
+
+  &.resetField {
+    background-color: #eee;
+  }
+
+  &.resetField:hover {
+    background-color: #ddd;
+    transition: all 0.2s ease;
+  }
+
+  &.disabled {
+    background-color: #ddd;
+  }
+}
+
+.A_Text {
+  text-decoration: none;
+  color: #111;
+  &.h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  &.tag {
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 10px;
+    padding: 4px 8px;
+  }
+}

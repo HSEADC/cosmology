@@ -316,21 +316,21 @@ body {
     }
   }
 
-  .M_cardTexts {
-    &.media {
-      align-items: center;
-    }
-    .A_p {
-      text-align: center;
-      font-size: 3.8vw;
-      line-height: 100%;
-    }
-
-    .A_h2 {
-      margin-top: 0;
-    }
-  }
   .O_cardMedia {
+    .M_cardTexts {
+      &.media {
+        align-items: center;
+      }
+      .A_p {
+        text-align: center;
+        font-size: 3.8vw;
+        line-height: 100%;
+      }
+
+      .A_h2 {
+        margin-top: 0;
+      }
+    }
     .A_mainButton {
       padding: 2vw 28vw;
       font-size: 4.2vw;

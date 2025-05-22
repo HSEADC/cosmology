@@ -499,3 +499,43 @@
     gap: 2vw;
   }
 }
+
+.M_Search {
+  display: flex;
+  margin: 50px auto;
+  width: 400px;
+  font-size: 16px;
+  gap: 16px;
+}
+
+.M_PostTeaser {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 14px 16px;
+  background-color: #fff;
+  width: 30%;
+}
+
+.M_SearchForm {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+.M_PostSuggestion {
+  display: block;
+  text-decoration: none;
+  padding: 12px 14px;
+  background-color: #fff;
+  transition: background-color 0.4s ease;
+  border-top: 1px solid #ddd;
+}
+
+.M_PostSuggestion:hover {
+  background-color: #f5faff;
+  border-color: #f5faff;
+  border-radius: 14px;
+  transition: background-color 0.4s ease;
+}
