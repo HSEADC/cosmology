@@ -12,7 +12,8 @@ module.exports = {
     filterTags: './src/javascripts/filterTags.js',
     popup: './src/javascripts/popup.js',
     searchVanilla: './src/javascripts/search-vanilla.js',
-    reactBasics: './src/javascripts/react-basics.jsx'
+    reactBasics: './src/javascripts/react-basics.jsx',
+    searchReact: './src/javascripts/search.jsx'
   },
   output: {
     filename: '[name].[contenthash].js',
@@ -202,7 +203,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/search.html',
       filename: './search.html',
-      chunks: ['index', 'searchVanilla']
+      chunks: ['index', 'searchReact']
+      // 'searchVanilla' для ванильного поиска
     }),
 
     // Основы react
@@ -226,6 +228,15 @@ module.exports = {
       {
         path: path.join(__dirname, './src/partials/footer.html'),
         location: 'footer',
+        template_filename: '*',
+        priority: 'replace'
+      }
+    ]),
+
+    new HtmlWebpackPartialsPlugin([
+      {
+        path: path.join(__dirname, './src/partials/analytics.html'),
+        location: 'analytics',
         template_filename: '*',
         priority: 'replace'
       }

@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "airtable": "^0.12.2",
+    "classnames": "^2.5.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   }
