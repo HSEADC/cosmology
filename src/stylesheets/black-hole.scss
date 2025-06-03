@@ -63,6 +63,7 @@
   .S_lecture {
     .W_descriptonLecture {
       flex-direction: column-reverse;
+      gap: 8.9vw;
       .M_articleText {
         gap: 4.2vw;
         width: 100%;
@@ -90,9 +91,12 @@
     }
     .W_articleEnd {
       gap: 9vw 3.4vw;
-      margin-top: 6vw;
+      margin-top: 12.8vw;
       width: 100%;
-      grid-template: auto / repeat(2, 1fr);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
 
       .A_h2 {
         line-height: 90%;
@@ -103,7 +107,7 @@
       }
 
       .O_cardArticle {
-        width: 100%;
+        width: min-content;
         .A_h4 {
           width: fit-content;
         }

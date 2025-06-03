@@ -327,7 +327,12 @@
   }
 
   .O_statistic {
-    gap: 1.8vw;
+    gap: 3vw;
+
+    .A_h3 {
+      color: white;
+      font-size: 4.4vw;
+    }
   }
 }
 
