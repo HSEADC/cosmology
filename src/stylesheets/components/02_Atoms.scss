@@ -385,6 +385,11 @@
   .A_player {
     height: 45vw;
   }
+
+  .A_podcastImage {
+    width: 39vw;
+    height: 39vw;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 360px) {
@@ -522,11 +527,12 @@
   }
 
   .A_player {
-    height: 103vw;
+    height: 100vw;
+  }
 
-    & img {
-      height: 200vw;
-    }
+  .A_podcastImage {
+    width: 100%;
+    height: 100%;
   }
 }
 

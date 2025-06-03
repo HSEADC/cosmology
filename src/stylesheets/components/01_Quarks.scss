@@ -115,6 +115,7 @@
   filter: saturate(0);
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: var(--radiusMedium);
 }
 
 .Q_mediaLogos {
@@ -212,6 +213,7 @@
   mix-blend-mode: lighten;
   filter: saturate(0);
   border: var(--borderGrey);
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
@@ -277,6 +279,11 @@
   .Q_like {
     width: 3vw;
     height: 3vw;
+  }
+
+  .Q_podcast {
+    width: 29vw;
+    height: 9.1vw;
   }
 }
 
@@ -382,5 +389,10 @@
   .Q_like {
     width: 5vw;
     height: 5vw;
+  }
+
+  .Q_podcast {
+    width: 50vw;
+    height: 15.5vw;
   }
 }

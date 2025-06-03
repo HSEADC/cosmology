@@ -2,9 +2,21 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin')
+const SitemapPlugin = require('sitemap-webpack-plugin').default
 
 const webpack = require('webpack')
 const path = require('path')
+
+const paths = [
+  'cosmology',
+  'cosmology/articles.html',
+  'cosmology/articles/lectures/black-hole.html',
+  'cosmology/articles/podcasts/other-planets.html',
+  'cosmology/articles/researches/cosmic-distance.html',
+  'cosmology/errors/404.html',
+  'cosmology/errors/500.html',
+  'cosmology/errors/505.html'
+]
 
 module.exports = {
   entry: {
@@ -175,8 +187,8 @@ module.exports = {
 
     // Страницы раздела лекций (podcasts)
     new HtmlWebpackPlugin({
-      template: './src/articles/podcasts/stars-life.html',
-      filename: './articles/podcasts/stars-life.html',
+      template: './src/articles/podcasts/other-planets.html',
+      filename: './articles/podcasts/other-planets.html',
       chunks: ['index']
     }),
 
@@ -240,7 +252,9 @@ module.exports = {
         template_filename: '*',
         priority: 'replace'
       }
-    ])
+    ]),
+
+    new SitemapPlugin({ base: 'https://hseadc.github.io/cosmology/', paths })
   ],
 
   optimization: {

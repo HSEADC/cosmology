@@ -15,6 +15,13 @@ body.popup {
 
 /*------------------------- Cards -----------------------*/
 
+.W_popupOverlay {
+  .Q_cardInfoImg {
+    mix-blend-mode: unset;
+    filter: saturate(1);
+  }
+}
+
 .O_moreCardInfo {
   .A_h2,
   .A_h4 {
