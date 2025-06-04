@@ -1,11 +1,8 @@
 /* ------------------------- Header ----------------------- */
 .A_logoHeader {
   display: flex;
-  justify-content: center;
-  align-self: flex-start;
   align-items: center;
-  gap: 0.53rem;
-  width: 11.9rem;
+  gap: 0.5rem;
 
   font-size: 1.44rem;
   font-weight: 700;
@@ -16,9 +13,9 @@
     content: '';
     background-image: url('/src/images/header/iconLogoHeader.svg');
     background-repeat: no-repeat;
-    width: 2.43rem;
-    height: 2.43rem;
-    background-size: 2.43rem 2.43rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    background-size: 1.75rem 1.75rem;
   }
 }
 
@@ -64,7 +61,7 @@
   color: var(--white);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 
   font-size: 2.88rem;
   font-weight: 500;
@@ -97,7 +94,7 @@
 /* ------------------------- Typography ----------------------- */
 .A_H1 {
   font: var(--fontH1);
-  color: var(--silver);
+  color: var(--white);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: -0.3rem;
