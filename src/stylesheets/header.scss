@@ -1,3 +1,7 @@
+.A_logoHeader > a {
+  color: var(--white);
+}
+
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .M_Navigation.overlay {
     .O_Header {

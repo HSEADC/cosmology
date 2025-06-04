@@ -23,6 +23,8 @@ module.exports = {
     index: './src/index.js',
     filterTags: './src/javascripts/filterTags.js',
     popup: './src/javascripts/popup.js',
+    showTests: './src/tests/showTests.js',
+    testDistance: './src/tests/distance.js',
     searchVanilla: './src/javascripts/search-vanilla.js',
     reactBasics: './src/javascripts/react-basics.jsx',
     searchReact: './src/javascripts/search.jsx'
@@ -194,21 +196,9 @@ module.exports = {
 
     // Страницы раздела тестов (tests)
     new HtmlWebpackPlugin({
-      template: './src/tests/dark.html',
-      filename: './tests/dark.html',
-      chunks: ['index']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/tests/space-test.html',
-      filename: './tests/space-test.html',
-      chunks: ['index']
-    }),
-
-    new HtmlWebpackPlugin({
-      template: './src/tests/star-test.html',
-      filename: './tests/star-test.html',
-      chunks: ['index']
+      template: './src/tests/distance.html',
+      filename: './tests/distance.html',
+      chunks: ['index', 'testDistance', 'showTests']
     }),
 
     // Поиск
