@@ -15,14 +15,17 @@
 
 /* Articles */
 
-/* Reseasrches */
-@import 'stylesheets/cosmic-distance.scss';
+/* Reseasrch */
+@import 'stylesheets/research.scss';
 
-/* Lectures */
-@import 'stylesheets/black-hole.scss';
+/* Lecture */
+@import 'stylesheets/lecture.scss';
 
-/* Podcasts */
-@import 'stylesheets/other-planets.scss';
+/* Podcast */
+@import 'stylesheets/podcast.scss';
+
+/* Test */
+@import 'stylesheets/test.scss';
 
 /* Components */
 @import 'stylesheets/components/01_Quarks.scss';

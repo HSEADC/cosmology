@@ -216,6 +216,41 @@
   background-repeat: no-repeat;
 }
 
+/* ------------------------- TestPage ----------------------- */
+.Q_radioButton {
+  cursor: pointer;
+  background-color: var(--charcoal);
+  appearance: none;
+  margin: 0;
+  font: inherit;
+  color: var(--silver);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--silver);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.Q_radioButton::before {
+  content: '';
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--white);
+}
+
+.Q_radioButton:checked::before {
+  transform: scale(1);
+}
+
+.Q_radioButton:focus {
+  outline: max(2px, 0.15em) var(--silver);
+  outline-offset: max(2px, 0.15em);
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .Q_cardArticleImg {
     &.big {
@@ -284,6 +319,18 @@
   .Q_podcast {
     width: 29vw;
     height: 9.1vw;
+  }
+
+  .Q_radioButton {
+    width: 2.4vw;
+    height: 2.4vw;
+    border: 0.32vw solid var(--silver);
+  }
+
+  .Q_radioButton::before {
+    width: 1.35vw;
+    height: 1.35vw;
+    box-shadow: inset 2.1vw 2.1vw var(--white);
   }
 }
 
@@ -394,5 +441,15 @@
   .Q_podcast {
     width: 50vw;
     height: 15.5vw;
+  }
+
+  .Q_radioButton {
+    width: 6.4vw;
+    height: 6vw;
+    border: 0.5vw solid var(--silver);
+  }
+  .Q_radioButton::before {
+    width: 3vw;
+    height: 3vw;
   }
 }

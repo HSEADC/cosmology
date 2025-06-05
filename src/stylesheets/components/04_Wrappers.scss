@@ -113,6 +113,14 @@
   align-items: flex-end;
 }
 
+/* ------------------------- TestPage ----------------------- */
+.W_test {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  gap: 5rem;
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .W_cardTest {
     width: 45.8vw;
@@ -173,6 +181,11 @@
     flex-wrap: nowrap;
     align-items: flex-start;
     justify-content: space-between;
+  }
+
+  .W_test {
+    width: 100%;
+    gap: 5.2vw;
   }
 }
 
@@ -245,5 +258,15 @@
   .W_descriptonPodcast {
     gap: 9.3vw;
     justify-content: space-between;
+  }
+
+  .W_popupOverlay {
+    place-content: end;
+    justify-content: center;
+  }
+
+  .W_test {
+    width: 100%;
+    gap: 9vw;
   }
 }

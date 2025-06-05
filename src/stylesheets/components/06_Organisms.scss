@@ -153,7 +153,25 @@
   height: fit-content;
 }
 
-/* ------------------------- PodcastPage ----------------------- */
+/* ------------------------- TestPage ----------------------- */
+.O_resultTest {
+  display: flex;
+  padding: 2.5rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  border-radius: var(--radiusBig);
+  border: 1px solid var(--grey);
+  background: var(--charcoal);
+}
+
+.O_question {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .O_Header {
@@ -223,13 +241,22 @@
   .O_articleTitle {
     align-items: flex-start;
     flex-direction: column;
-    gap: 2vw;
+    gap: 3.2vw;
     max-width: 100vw;
     padding: 5.6vw 3.1vw 7.4vw;
   }
 
   .O_statistic {
     gap: 1.8vw;
+  }
+
+  .O_question {
+    gap: 4.2vw;
+  }
+
+  .O_resultTest {
+    padding: 4.2vw;
+    gap: 4.2vw;
   }
 }
 
@@ -286,7 +313,7 @@
   }
 
   .O_moreCardInfo {
-    width: 89vw;
+    width: 100%;
     padding: 4.2vw 4.2vw 6.5vw 4.2vw;
     gap: 2vw;
   }
@@ -333,6 +360,18 @@
       color: white;
       font-size: 4.4vw;
     }
+  }
+
+  .O_resultTest {
+    padding: 9vw;
+    gap: 9vw;
+    height: 86.5vw;
+    border-radius: 13.5vw 13.5vw 0 0;
+    border: 1px solid var(--grey);
+  }
+
+  .O_question {
+    gap: 6.7vw;
   }
 }
 

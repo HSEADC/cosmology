@@ -190,6 +190,28 @@
   align-items: center;
 }
 
+/* ------------------------- TestPage ----------------------- */
+.M_Note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.M_groupRadioList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.M_groupButton {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* ------------------------- Errors ----------------------- */
 .M_error {
   width: fit-content;
@@ -289,7 +311,7 @@
   }
 
   .M_articleTitle {
-    gap: 1.8vw;
+    gap: 1.5vw;
   }
 
   .M_articleText {
@@ -323,6 +345,18 @@
   .M_seen,
   .M_likes {
     gap: 0.5vw;
+  }
+
+  .M_Note {
+    gap: 0.6vw;
+  }
+
+  .M_groupRadioList {
+    gap: 2.1vw;
+  }
+
+  .M_groupButton {
+    gap: 2.1vw;
   }
 }
 
@@ -497,6 +531,19 @@
   .M_seen,
   .M_likes {
     gap: 2vw;
+  }
+
+  .M_Note {
+    gap: 1.7vw;
+  }
+
+  .M_groupRadioList {
+    gap: 3.4vw;
+  }
+
+  .M_groupButton {
+    gap: 3.3vw;
+    flex-direction: column;
   }
 }
 
