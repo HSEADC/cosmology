@@ -70,12 +70,30 @@ function showResult(stages, results) {
 
   points.innerHTML = `${resultCount} / ${stages.length}`
 
-  if (resultCount >= 8) {
-    resultText.innerHTML = results[2].resultText
-  } else if (resultCount <= 3) {
-    resultText.innerHTML = results[0].resultText
-  } else {
-    resultText.innerHTML = results[1].resultText
+  if (stages.length == 10) {
+    if (resultCount >= 8) {
+      resultText.innerHTML = results[2].resultText
+    } else if (resultCount <= 3) {
+      resultText.innerHTML = results[0].resultText
+    } else {
+      resultText.innerHTML = results[1].resultText
+    }
+  } else if (stages.length == 7) {
+    if (resultCount >= 6) {
+      resultText.innerHTML = results[2].resultText
+    } else if (resultCount <= 2) {
+      resultText.innerHTML = results[0].resultText
+    } else {
+      resultText.innerHTML = results[1].resultText
+    }
+  } else if (stages.length == 5) {
+    if (resultCount >= 4) {
+      resultText.innerHTML = results[2].resultText
+    } else if (resultCount <= 1) {
+      resultText.innerHTML = results[0].resultText
+    } else {
+      resultText.innerHTML = results[1].resultText
+    }
   }
 }
 

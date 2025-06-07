@@ -66,11 +66,22 @@
   padding: 0 2.5rem;
   display: grid;
   grid-template-columns: 12rem 49.2rem;
-  grid-template-rows: 48rem 13.4rem 30.2rem 173.3rem 15.4rem;
   grid-auto-rows: auto;
   column-gap: 6rem;
   margin: 0 auto;
   max-width: 90rem;
+
+  &.cosmicDistance {
+    grid-template-rows: 48rem 15.4rem 31rem 175rem 15.4rem;
+  }
+
+  &.bigBang {
+    grid-template-rows: 54.4rem 9rem 50rem 12.5rem;
+  }
+
+  &.blackHole {
+    grid-template-rows: 152.7rem 85rem 10rem;
+  }
 }
 
 /* ------------------------- LecturePage ----------------------- */
@@ -150,10 +161,21 @@
   .S_article {
     padding: 0 3.1vw;
     grid-template-columns: 15vw 62.2vw;
-    grid-template-rows: 104vw 15vw 62vw 190vw 16vw;
     column-gap: 16.5vw;
     margin: 0 auto;
     max-width: 100vw;
+
+    &.cosmicDistance {
+      grid-template-rows: 95vw 27vw 72vw 278vw 31vw;
+    }
+
+    &.bigBang {
+      grid-template-rows: 110.5vw 24vw 113vw 18vw;
+    }
+
+    &.blackHole {
+      grid-template-rows: 245vw 156vw 18vw;
+    }
   }
 
   .S_lecture {

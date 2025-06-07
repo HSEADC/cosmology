@@ -24,7 +24,9 @@ module.exports = {
     filterTags: './src/javascripts/filterTags.js',
     popup: './src/javascripts/popup.js',
     showTests: './src/tests/showTests.js',
-    testDistance: './src/tests/distance.js',
+    testDistance: './src/tests/cosmic-distance.js',
+    bigBang: './src/tests/big-bang.js',
+    blackHole: './src/tests/black-hole.js',
     searchVanilla: './src/javascripts/search-vanilla.js',
     reactBasics: './src/javascripts/react-basics.jsx',
     searchReact: './src/javascripts/search.jsx'
@@ -180,6 +182,18 @@ module.exports = {
       chunks: ['index']
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/articles/researches/big-bang.html',
+      filename: './articles/researches/big-bang.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/researches/black-hole.html',
+      filename: './articles/researches/black-hole.html',
+      chunks: ['index']
+    }),
+
     // Страницы раздела лекций (lectures)
     new HtmlWebpackPlugin({
       template: './src/articles/lectures/black-hole.html',
@@ -187,7 +201,13 @@ module.exports = {
       chunks: ['index']
     }),
 
-    // Страницы раздела лекций (podcasts)
+    new HtmlWebpackPlugin({
+      template: './src/articles/lectures/universe-secrets.html',
+      filename: './articles/lectures/universe-secrets.html',
+      chunks: ['index']
+    }),
+
+    // Страницы раздела подкастов (podcasts)
     new HtmlWebpackPlugin({
       template: './src/articles/podcasts/other-planets.html',
       filename: './articles/podcasts/other-planets.html',
@@ -196,9 +216,19 @@ module.exports = {
 
     // Страницы раздела тестов (tests)
     new HtmlWebpackPlugin({
-      template: './src/tests/distance.html',
-      filename: './tests/distance.html',
+      template: './src/tests/cosmic-distance-test.html',
+      filename: './tests/cosmic-distance-test.html',
       chunks: ['index', 'testDistance', 'showTests']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/big-bang-test.html',
+      filename: './tests/big-bang-test.html',
+      chunks: ['index', 'bigBang', 'showTests']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/black-hole-test.html',
+      filename: './tests/black-hole-test.html',
+      chunks: ['index', 'blackHole', 'showTests']
     }),
 
     // Поиск
