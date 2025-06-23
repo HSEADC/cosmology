@@ -233,6 +233,8 @@
   border-radius: 0.75rem;
   letter-spacing: -0.04rem;
 
+  cursor: pointer;
+
   &:hover {
     border: var(--borderWhite);
     box-shadow: var(--shadow);

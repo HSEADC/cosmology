@@ -194,6 +194,12 @@ module.exports = {
       chunks: ['index']
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/articles/researches/moon-fall.html',
+      filename: './articles/researches/moon-fall.html',
+      chunks: ['index']
+    }),
+
     // Страницы раздела лекций (lectures)
     new HtmlWebpackPlugin({
       template: './src/articles/lectures/black-hole.html',
@@ -207,10 +213,52 @@ module.exports = {
       chunks: ['index']
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/articles/lectures/universe-smell.html',
+      filename: './articles/lectures/universe-smell.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/lectures/eclipse.html',
+      filename: './articles/lectures/eclipse.html',
+      chunks: ['index']
+    }),
+
     // Страницы раздела подкастов (podcasts)
     new HtmlWebpackPlugin({
       template: './src/articles/podcasts/other-planets.html',
       filename: './articles/podcasts/other-planets.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/podcasts/star-weight.html',
+      filename: './articles/podcasts/star-weight.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/podcasts/water-oxygen.html',
+      filename: './articles/podcasts/water-oxygen.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/podcasts/moon-questions.html',
+      filename: './articles/podcasts/moon-questions.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/podcasts/universe-is-not-infinite.html',
+      filename: './articles/podcasts/universe-is-not-infinite.html',
+      chunks: ['index']
+    }),
+
+    new HtmlWebpackPlugin({
+      template: './src/articles/podcasts/cosmic-web.html',
+      filename: './articles/podcasts/cosmic-web.html',
       chunks: ['index']
     }),
 
