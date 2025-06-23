@@ -164,6 +164,14 @@
     top: 1.26rem;
   }
 
+  &.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 6.5rem;
+    margin: 0 auto 2.5rem;
+  }
+
   &.easy,
   &.middle,
   &.hard {
@@ -286,6 +294,28 @@
 .A_Error {
   font-size: 13rem;
   line-height: 110%;
+}
+
+/* ------------------------- About ----------------------- */
+.A_person {
+  width: 8.75rem;
+  height: 8.75rem;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+
+  &#Alena {
+    background-image: url('/src/images/about/Alena.webp');
+    bottom: 5rem;
+    left: 55rem;
+  }
+
+  &#Masha {
+    background-image: url('/src/images/about/Masha.webp');
+    top: -3rem;
+    left: 2rem;
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
@@ -516,6 +546,7 @@
     align-items: center;
     gap: 6px;
     justify-content: flex-start;
+    font-size: 4.5vw;
   }
 
   .A_testLevelTags {
