@@ -120,6 +120,17 @@
   padding: 2.5rem 2.5rem 3.5rem;
 }
 
+/* ------------------------- StyleguidePage ----------------------- */
+.S_styleguide {
+  column-gap: 8.12rem;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 11rem 62rem;
+  margin: 0 auto;
+  max-width: 90rem;
+  padding: 5.22rem 2.5rem 0;
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .S_Footer {
     height: 100%;

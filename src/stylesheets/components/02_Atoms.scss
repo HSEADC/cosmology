@@ -318,6 +318,64 @@
   }
 }
 
+/* ------------------------- Styleguide ----------------------- */
+.A_styleImage {
+  width: 10rem;
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &.left {
+    background-image: url('/src/images/styleguide/styleImageLeft.svg');
+  }
+  &.middle {
+    background-image: url('/src/images/styleguide/styleImageMiddle.svg');
+    margin-right: 2.5rem;
+  }
+  &.right {
+    background-image: url('/src/images/styleguide/styleImageMiddle.svg');
+    transform: rotate(45deg);
+  }
+}
+
+.A_styleLogo {
+  background-image: url('/src/images/styleguide/styleLogo.webp');
+  width: 41.2rem;
+  height: 11.5rem;
+  background-size: cover;
+}
+
+.A_brandingImg,
+.A_socialImg {
+  width: 30rem;
+  height: 16.9rem;
+  background-size: cover;
+  &:first-child {
+    background-image: url('/src/images/styleguide/poster.webp');
+  }
+  &:nth-child(2) {
+    background-image: url('/src/images/styleguide/stickers.webp');
+  }
+  &:nth-child(3) {
+    background-image: url('/src/images/styleguide/sweater.webp');
+  }
+  &:nth-child(4) {
+    background-image: url('/src/images/styleguide/badge.webp');
+  }
+}
+
+.A_socialImg {
+  width: 30rem;
+  height: 16.9rem;
+  background-size: cover;
+
+  &:first-child {
+    background-image: url('/src/images/styleguide/vkontakte.webp');
+  }
+  &:nth-child(2) {
+    background-image: url('/src/images/styleguide/telegram.webp');
+  }
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .A_logoHeader {
     gap: 1vw;

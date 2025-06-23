@@ -260,6 +260,19 @@
   outline-offset: max(2px, 0.15em);
 }
 
+/* ------------------------- Styleguide ----------------------- */
+.Q_line {
+  width: 100%;
+  height: 0.5rem;
+  background-repeat: no-repeat;
+  &#upper {
+    background-image: url('/src/images/styleguide/upperLine.svg');
+  }
+  &#lower {
+    background-image: url('/src/images/styleguide/lowerLine.svg');
+  }
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .Q_cardArticleImg {
     &.big {

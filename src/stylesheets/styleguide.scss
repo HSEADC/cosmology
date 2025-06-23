@@ -1,0 +1,31 @@
+body.styleguide {
+  .A_navigationActionsHeader {
+    cursor: pointer;
+  }
+  .O_articleBody {
+    justify-self: unset;
+    grid-row-start: auto;
+    grid-column-start: auto;
+    grid-row-end: auto;
+
+    .W_titleText {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      margin-bottom: 6.25rem;
+      .A_H1 {
+        text-align: left;
+      }
+      .M_articleText {
+        gap: 1.6rem;
+      }
+      .A_h3 {
+        width: 75%;
+      }
+      .A_h4 {
+        width: 100%;
+        text-align: right;
+      }
+    }
+  }
+}
