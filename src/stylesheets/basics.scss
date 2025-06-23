@@ -9,12 +9,20 @@ html {
     box-sizing: border-box;
   }
 
-  body,
-  .O_Header {
+  body {
     background-color: var(--bgColor);
     background-image: url('../images/BackgroundImage.svg');
     background-size: auto;
     background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .O_Header {
+      background-color: var(--bgColor);
+      .A_logoHeader {
+        color: var(--white);
+      }
+    }
 
     a {
       color: var(--silver);
