@@ -97,14 +97,23 @@
   height: 13rem;
   background-size: contain;
 
-  &.solarSystem {
-    background-image: url('/src/images/tests/solarSystemPlanets.webp');
+  &.aboutStars {
+    background-image: url('/src/images/tests/aboutStars.webp');
   }
-  &.spectralClasses {
-    background-image: url('/src/images/tests/spectralClassesOfStars.webp');
+  &.bigBang {
+    background-image: url('/src/images/tests/bigBang.webp');
   }
   &.cosmicDisance {
     background-image: url('/src/images/tests/cosmicDistance.webp');
+  }
+  &.blackHole {
+    background-image: url('/src/images/tests/blackHole.webp');
+  }
+  &.spaceInside {
+    background-image: url('/src/images/tests/spaceInside.webp');
+  }
+  &.moonFall {
+    background-image: url('/src/images/tests/moonFall.webp');
   }
 }
 
