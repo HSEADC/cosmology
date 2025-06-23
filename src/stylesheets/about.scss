@@ -1,0 +1,38 @@
+body.about {
+  .M_mainPageText {
+    padding: 6.24rem 99.84px 0 8.81rem 0;
+  }
+  .W_articleEnd {
+    margin: 0 auto;
+  }
+  .A_h2 {
+    grid-column: span 3;
+    color: var(--white);
+    font-weight: 500;
+  }
+  .O_chapter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 57.68rem;
+    margin: 13.2rem auto 0;
+
+    .A_H1 {
+      text-align: left;
+    }
+    .A_h4 {
+      width: 41rem;
+      max-width: 41rem;
+    }
+  }
+  .M_teamText {
+    .A_testLevelTags {
+      &.about {
+        width: 5rem;
+      }
+    }
+    .A_h2 {
+      width: 90%;
+    }
+  }
+}

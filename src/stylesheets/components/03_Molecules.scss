@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   border-radius: var(--radiusMedium);
-  width: 17.4rem;
+  width: 24.18rem;
   height: 3rem;
   padding: 0.8rem 2rem;
   background: var(--charcoal);
@@ -226,9 +226,20 @@
   }
 }
 
+/* ------------------------- About ----------------------- */
+.M_teamText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.M_teamPhotos {
+  position: absolute;
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .M_Navigation {
-    width: 36vw;
+    width: 50.4vw;
     height: 6vw;
     padding: 1.7vw 4vw;
   }
