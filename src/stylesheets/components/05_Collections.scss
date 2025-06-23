@@ -1,3 +1,42 @@
+/* ------------------------- Styleguide ----------------------- */
+.C_styleColors {
+  display: flex;
+  flex-direction: row;
+}
+
+.C_styleFont {
+  padding: 5rem;
+  .A_H1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .A_p {
+    text-align: left;
+
+    &#SuisseIntl {
+      margin-bottom: 7rem;
+    }
+  }
+}
+
+.C_lettersRow {
+  display: flex;
+  gap: 1.1rem;
+}
+
+.C_styleBranding {
+  display: grid;
+  gap: 1.25rem;
+  grid-template: auto / repeat(2, 2fr);
+  padding-top: 3.5rem;
+}
+
+.C_styleSocial {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+
 @media only screen and (max-width: 767px) and (min-width: 360px) {
   .C_menuItems {
     display: flex;

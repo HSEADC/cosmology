@@ -128,6 +128,17 @@
   position: relative;
 }
 
+/* ------------------------- Styleguide ----------------------- */
+.W_styleDescription {
+  width: 19rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem 16px;
+  margin-right: 2.5rem;
+  margin-left: -4rem;
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .W_cardTest {
     width: 45.8vw;
