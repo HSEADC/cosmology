@@ -447,6 +447,10 @@
     font-size: 4.3vw;
     line-height: 130%;
     letter-spacing: -0.1vw;
+
+    &.answerText {
+      max-width: 92%;
+    }
   }
 
   .A_p {
@@ -574,7 +578,7 @@
   }
 
   .A_radioButtonList {
-    gap: 2.3vw;
+    gap: 3vw;
   }
 }
 

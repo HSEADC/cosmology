@@ -27,6 +27,9 @@ module.exports = {
     testDistance: './src/tests/cosmic-distance.js',
     bigBang: './src/tests/big-bang.js',
     blackHole: './src/tests/black-hole.js',
+    moonFall: './src/tests/moon-fall.js',
+    spaceInside: './src/tests/space-inside.js',
+    aboutStars: './src/tests/about-stars.js',
     searchVanilla: './src/javascripts/search-vanilla.js',
     reactBasics: './src/javascripts/react-basics.jsx',
     searchReact: './src/javascripts/search.jsx'
@@ -277,6 +280,21 @@ module.exports = {
       template: './src/tests/black-hole-test.html',
       filename: './tests/black-hole-test.html',
       chunks: ['index', 'blackHole', 'showTests']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/moon-fall-test.html',
+      filename: './tests/moon-fall-test.html',
+      chunks: ['index', 'moonFall', 'showTests']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/space-inside-test.html',
+      filename: './tests/space-inside-test.html',
+      chunks: ['index', 'spaceInside', 'showTests']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/about-stars-test.html',
+      filename: './tests/about-stars-test.html',
+      chunks: ['index', 'aboutStars', 'showTests']
     }),
 
     // Поиск
