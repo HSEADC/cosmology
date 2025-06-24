@@ -299,6 +299,23 @@
   gap: 0.6rem;
 }
 
+/* ------------------------- PromoPage ----------------------- */
+.M_callToAction {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  bottom: -1.5rem;
+}
+.M_articlesIntro {
+  width: 69rem;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 11rem;
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .M_Navigation {
     width: 50.4vw;

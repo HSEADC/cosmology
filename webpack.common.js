@@ -176,6 +176,12 @@ module.exports = {
       chunks: ['index']
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/promo.html',
+      filename: './promo.html',
+      chunks: ['index']
+    }),
+
     // Страницы раздела статей (articles)
 
     // Страницы раздела исследований (researches)

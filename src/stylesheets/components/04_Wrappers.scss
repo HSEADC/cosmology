@@ -139,6 +139,18 @@
   margin-left: -4rem;
 }
 
+/* ------------------------- PromoPage ----------------------- */
+.W_promoCover {
+  background-image: url('/src/images/promo/promo-cover.webp');
+  background-size: 71.5rem 40.6rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 48.3rem;
+  position: relative;
+  margin-bottom: 10rem;
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
   .W_cardTest {
     width: 45.8vw;
