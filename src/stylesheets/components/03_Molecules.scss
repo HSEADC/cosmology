@@ -647,33 +647,40 @@
 }
 
 .M_PostTeaser {
-  display: block;
+  flex-direction: column;
+  width: 31%;
   text-decoration: none;
-  border: 1px solid #ddd;
-  border-radius: 14px;
-  padding: 14px 16px;
-  background-color: #fff;
-  width: 30%;
+  border: var(--borderGrey);
+  border-radius: var(--radiusMedium);
+  padding: 1rem 1.5rem;
+  background-color: var(--charcoal);
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .M_SearchForm {
   width: 100%;
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .M_PostSuggestion {
-  display: block;
-  text-decoration: none;
-  padding: 12px 14px;
-  background-color: #fff;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: var(--radiusMedium);
   transition: background-color 0.4s ease;
-  border-top: 1px solid #ddd;
+  width: 39.4rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  height: 100%;
 }
 
-.M_PostSuggestion:hover {
-  background-color: #f5faff;
-  border-color: #f5faff;
-  border-radius: 14px;
-  transition: background-color 0.4s ease;
+.M_PostSuggestion > .h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+  color: var(--lightGrey);
 }

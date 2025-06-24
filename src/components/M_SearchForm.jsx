@@ -12,20 +12,12 @@ const M_SearchForm = ({
     <div className="M_SearchForm">
       <A_Input
         value={searchInputValue}
-        placeholder="Найти пост"
+        placeholder="Самая большая планета в солнечной системе"
         handleInput={handleSearchInput}
         handleSubmit={handleSearchSubmit}
       />
-      {searchInputValue !== '' && (
-        <A_Button
-          text="X"
-          type="resetField"
-          disabled={false}
-          handleClick={() => handleSearchInput('')}
-        />
-      )}
       <A_Button
-        text="Поиск"
+        text="Найти"
         type="primary"
         disabled={isSearchButtonDisabled}
         handleClick={handleSearchSubmit}
