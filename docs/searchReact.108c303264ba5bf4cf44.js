@@ -20666,18 +20666,11 @@ var M_SearchForm = function M_SearchForm(_ref) {
     className: "M_SearchForm"
   }, /*#__PURE__*/react.createElement(components_A_Input, {
     value: searchInputValue,
-    placeholder: "\u041D\u0430\u0439\u0442\u0438 \u043F\u043E\u0441\u0442",
+    placeholder: "\u0421\u0430\u043C\u0430\u044F \u0431\u043E\u043B\u044C\u0448\u0430\u044F \u043F\u043B\u0430\u043D\u0435\u0442\u0430 \u0432 \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439 \u0441\u0438\u0441\u0442\u0435\u043C\u0435",
     handleInput: handleSearchInput,
     handleSubmit: handleSearchSubmit
-  }), searchInputValue !== '' && /*#__PURE__*/react.createElement(components_A_Button, {
-    text: "X",
-    type: "resetField",
-    disabled: false,
-    handleClick: function handleClick() {
-      return handleSearchInput('');
-    }
   }), /*#__PURE__*/react.createElement(components_A_Button, {
-    text: "\u041F\u043E\u0438\u0441\u043A",
+    text: "\u041D\u0430\u0439\u0442\u0438",
     type: "primary",
     disabled: isSearchButtonDisabled,
     handleClick: handleSearchSubmit
