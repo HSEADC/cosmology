@@ -20677,24 +20677,10 @@ var M_SearchForm = function M_SearchForm(_ref) {
   }));
 };
 /* harmony default export */ const components_M_SearchForm = (M_SearchForm);
-;// ./src/components/M_PostSuggestion.jsx
-
-
-var M_PostSuggestion = function M_PostSuggestion(_ref) {
-  var title = _ref.title,
-    url = _ref.url;
-  return /*#__PURE__*/react.createElement("a", {
-    className: "M_PostSuggestion",
-    href: url
-  }, /*#__PURE__*/react.createElement(components_A_Text, {
-    type: "h3",
-    text: title
-  }));
-};
-/* harmony default export */ const components_M_PostSuggestion = (M_PostSuggestion);
 ;// ./src/components/O_SearchBar.jsx
 
 
+// import M_PostSuggestion from './M_PostSuggestion.jsx'
 
 var O_SearchBar = function O_SearchBar(_ref) {
   var searchInputValue = _ref.searchInputValue,
@@ -20707,17 +20693,16 @@ var O_SearchBar = function O_SearchBar(_ref) {
     var clean = function clean(str) {
       return str.replace(/[\u202F\u00A0]/g, ' ').replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '').toLowerCase();
     };
-    return /*#__PURE__*/react.createElement("div", {
-      className: "C_PostSuggestions"
-    }, postTeasers.filter(function (t) {
-      return clean(t.title).includes(searchLower);
-    }).map(function (t) {
-      return /*#__PURE__*/react.createElement(components_M_PostSuggestion, {
-        key: t.id,
-        title: t.title,
-        url: t.url
-      });
-    }));
+
+    // return (
+    //   <div className="C_PostSuggestions">
+    //     {postTeasers
+    //       .filter((t) => clean(t.title).includes(searchLower))
+    //       .map((t) => (
+    //         <M_PostSuggestion key={t.id} title={t.title} url={t.url} />
+    //       ))}
+    //   </div>
+    // )
   };
   return /*#__PURE__*/react.createElement("div", {
     className: "O_SearchBar"
