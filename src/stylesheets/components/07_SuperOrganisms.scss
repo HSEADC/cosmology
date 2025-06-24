@@ -138,6 +138,11 @@
   padding: 1.75rem 2.5rem;
 }
 
+/* ------------------------- SearchPage ----------------------- */
+.S_SearchContent {
+  margin: 3rem 0;
+}
+
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .S_Footer {
     height: 100%;
@@ -286,9 +291,4 @@
     gap: 9vw;
     flex-direction: column;
   }
-}
-
-.S_SearchContent {
-  max-width: 1024px;
-  margin: 40px 0;
 }
