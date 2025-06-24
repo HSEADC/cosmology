@@ -1,6 +1,6 @@
 import React from 'react'
 import M_SearchForm from './M_SearchForm.jsx'
-import M_PostSuggestion from './M_PostSuggestion.jsx'
+// import M_PostSuggestion from './M_PostSuggestion.jsx'
 
 const O_SearchBar = ({
   searchInputValue,
@@ -17,15 +17,15 @@ const O_SearchBar = ({
         .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '')
         .toLowerCase()
 
-    return (
-      <div className="C_PostSuggestions">
-        {postTeasers
-          .filter((t) => clean(t.title).includes(searchLower))
-          .map((t) => (
-            <M_PostSuggestion key={t.id} title={t.title} url={t.url} />
-          ))}
-      </div>
-    )
+    // return (
+    //   <div className="C_PostSuggestions">
+    //     {postTeasers
+    //       .filter((t) => clean(t.title).includes(searchLower))
+    //       .map((t) => (
+    //         <M_PostSuggestion key={t.id} title={t.title} url={t.url} />
+    //       ))}
+    //   </div>
+    // )
   }
 
   return (
