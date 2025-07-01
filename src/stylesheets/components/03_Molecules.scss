@@ -60,6 +60,7 @@
   flex-direction: column;
   gap: 0.7rem;
   max-width: 27rem;
+  color: var(--lightGrey);
 }
 
 .M_cardArticle {
@@ -316,33 +317,52 @@
   margin-top: 11rem;
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .M_Navigation {
-    width: 50.4vw;
-    height: 6vw;
-    padding: 1.7vw 4vw;
-  }
+/* ------------------------- SearchPage ----------------------- */
+.M_Search {
+  display: flex;
+  margin: 50px auto;
+  width: 400px;
+  font-size: 16px;
+  gap: 16px;
+}
 
-  #M_formSubscribe {
-    height: 7.8vw;
-    gap: 2.1vw;
-  }
+.M_PostTeaser {
+  flex-direction: column;
+  width: 31%;
+  text-decoration: none;
+  border: var(--borderGrey);
+  border-radius: var(--radiusMedium);
+  padding: 1rem 1.5rem;
+  background-color: var(--charcoal);
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .M_socialButtonsFooter {
-    gap: 1.6vw;
-  }
+.M_SearchForm {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
 
-  .M_authors {
-    max-width: 34vw;
-    gap: 2vw;
-    &:first-child {
-      width: 17vw;
-    }
-  }
+.M_PostSuggestion {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: var(--radiusMedium);
+  transition: background-color 0.4s ease;
+  width: 39.4rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  height: 100%;
+}
 
-  .M_logosFooter {
-    gap: 9vw;
-  }
+.M_PostSuggestion > .h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+  color: var(--lightGrey);
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
@@ -448,6 +468,47 @@
 
   .M_groupButton {
     gap: 2.1vw;
+  }
+
+  .M_PostTeaser {
+    height: 15vw;
+    padding: 2vw 2.5vw;
+    width: 29vw;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .M_Navigation {
+    width: 50.4vw;
+    height: 6vw;
+    padding: 1.7vw 4vw;
+  }
+
+  #M_formSubscribe {
+    height: 7.8vw;
+    gap: 2.1vw;
+  }
+
+  .M_socialButtonsFooter {
+    gap: 1.6vw;
+  }
+
+  .M_authors {
+    max-width: 34vw;
+    gap: 2vw;
+    &:first-child {
+      width: 17vw;
+    }
+  }
+
+  .M_logosFooter {
+    gap: 9vw;
+  }
+
+  .M_PostTeaser {
+    height: 25vw;
+    padding: 2vw 2.5vw;
+    width: 29vw;
   }
 }
 
@@ -636,51 +697,14 @@
     gap: 3.3vw;
     flex-direction: column;
   }
-}
 
-.M_Search {
-  display: flex;
-  margin: 50px auto;
-  width: 400px;
-  font-size: 16px;
-  gap: 16px;
-}
+  .M_SearchForm {
+    gap: 2vw;
+  }
 
-.M_PostTeaser {
-  flex-direction: column;
-  width: 31%;
-  text-decoration: none;
-  border: var(--borderGrey);
-  border-radius: var(--radiusMedium);
-  padding: 1rem 1.5rem;
-  background-color: var(--charcoal);
-  height: 12rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.M_SearchForm {
-  width: 100%;
-  display: flex;
-  gap: 1rem;
-}
-
-.M_PostSuggestion {
-  padding: 1rem;
-  background-color: var(--white);
-  border-radius: var(--radiusMedium);
-  transition: background-color 0.4s ease;
-  width: 39.4rem;
-  margin-top: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  height: 100%;
-}
-
-.M_PostSuggestion > .h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0.8rem 0;
-  color: var(--lightGrey);
+  .M_PostTeaser {
+    width: 100%;
+    padding: 3vw 5vw;
+    height: 50vw;
+  }
 }

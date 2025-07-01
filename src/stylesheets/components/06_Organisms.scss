@@ -173,19 +173,10 @@
   gap: 2rem;
 }
 
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .O_Header {
-    padding: 3.1vw 3.1vw;
-  }
-
-  .O_formSubscribe {
-    width: auto;
-    gap: 3.1vw;
-  }
-
-  .O_personasFooter {
-    gap: 5.2vw;
-  }
+/* ------------------------- SearchPage ----------------------- */
+.O_SearchBar {
+  width: 51.5rem;
+  margin: 0rem auto;
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 768px) {
@@ -257,6 +248,31 @@
   .O_resultTest {
     padding: 4.2vw;
     gap: 4.2vw;
+  }
+
+  .O_SearchBar {
+    padding: 3.1vw;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .O_Header {
+    padding: 3.1vw 3.1vw;
+  }
+
+  .O_formSubscribe {
+    width: auto;
+    gap: 3.1vw;
+  }
+
+  .O_personasFooter {
+    gap: 5.2vw;
+  }
+
+  .O_SearchBar {
+    padding: 3.1vw;
+    width: 100%;
   }
 }
 
@@ -373,9 +389,9 @@
   .O_question {
     gap: 6.7vw;
   }
-}
 
-.O_SearchBar {
-  width: 51.5rem;
-  margin: 0rem auto;
+  .O_SearchBar {
+    width: 100%;
+    padding: 3vw;
+  }
 }
