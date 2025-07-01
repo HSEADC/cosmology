@@ -40,3 +40,140 @@ body.about {
     }
   }
 }
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  body.about {
+    .A_h2 {
+      line-height: 90%;
+    }
+    .A_testLevelTags {
+      &.about {
+        width: 12.5vw;
+      }
+    }
+    .W_articleEnd {
+      margin-top: 0;
+    }
+    .O_cardArticle {
+      &.small {
+        width: 100%;
+      }
+    }
+    .O_chapter {
+      margin: 16.4vw auto 0;
+      width: 100%;
+      padding: 0 4.6vw;
+      .A_h4 {
+        width: 65vw;
+        max-width: 65vw;
+      }
+    }
+    .W_whoAreWe {
+      margin: 16.4vw auto 35vw;
+      width: 100%;
+    }
+    & .M_teamText {
+      .A_h2 {
+        width: 70%;
+      }
+      & .A_testLevelTags {
+        &.about {
+          width: 9.2vw;
+        }
+      }
+    }
+    .A_person {
+      width: 14vw;
+      height: 14vw;
+      &#Masha {
+        top: -2vw;
+        left: 12vw;
+      }
+
+      &#Alena {
+        bottom: 11vw;
+        left: 80vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  body.about {
+    .M_mainPageText {
+      padding: 10vw 0 22vw;
+    }
+    .A_testLevelTags {
+      &.about {
+        width: 27vw;
+        height: 8vw;
+        justify-content: center;
+        margin: 0 auto 12vw;
+      }
+    }
+    .A_h2 {
+      line-height: 90%;
+    }
+    .W_articleEnd {
+      grid-template: 3fr / repeat(2, 1fr);
+      width: 100%;
+      padding: 0 3.2vw;
+      align-self: center;
+      gap: 3.2vw;
+      .A_h2 {
+        grid-column: span 2;
+        margin-bottom: 6.4vw;
+      }
+    }
+    .O_cardArticle {
+      &.small {
+        width: 100%;
+        grid-column: auto;
+      }
+      &:last-child {
+        grid-column: span 2;
+        width: 50%;
+        justify-self: center;
+        margin-top: 3.2vw;
+      }
+    }
+    .O_chapter {
+      margin: 22vw auto 0;
+      width: min-content;
+      .A_H1 {
+        text-align: center;
+      }
+      .A_h4 {
+        width: 65vw;
+        max-width: 65vw;
+      }
+    }
+    .W_whoAreWe {
+      margin: 22vw auto 57vw;
+      width: 100%;
+    }
+    & .M_teamText {
+      .A_h2 {
+        width: 85%;
+      }
+      & .A_testLevelTags {
+        &.about {
+          width: 19vw;
+        }
+      }
+    }
+    .A_person {
+      width: 24vw;
+      height: 24vw;
+      &#Masha {
+        top: 4vw;
+        left: 3vw;
+      }
+
+      &#Alena {
+        bottom: 36vw;
+        left: 73vw;
+      }
+    }
+  }
+}

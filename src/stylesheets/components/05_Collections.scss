@@ -37,21 +37,7 @@
   padding-top: 1.5rem;
 }
 
-@media only screen and (max-width: 767px) and (min-width: 360px) {
-  .C_menuItems {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 3vw;
-  }
-  .C_articleNote {
-    display: flex;
-    justify-content: space-between;
-    margin: 1.5vw 0;
-  }
-}
-
+/* ------------------------- SearchPage ----------------------- */
 .C_PostTeasers {
   display: flex;
   flex-wrap: wrap;
@@ -72,4 +58,35 @@
   position: absolute;
   width: 39.4rem;
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 768px) {
+  .C_PostTeasers {
+    gap: 3.1vw;
+    margin: 3.1vw auto 0;
+    max-width: 100%;
+    padding: 3.1vw;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 360px) {
+  .C_menuItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 3vw;
+  }
+  .C_articleNote {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5vw 0;
+  }
+
+  .C_PostTeasers {
+    gap: 4vw;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 8vw 3vw;
+  }
 }
