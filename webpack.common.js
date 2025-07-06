@@ -36,9 +36,9 @@ const paths = [
   'cosmology/articles/researches/black-hole.html',
   'cosmology/articles/researches/big-bang.html',
   'cosmology/articles/researches/moon-fall.html',
-  'cosmology/errors/404.html',
-  'cosmology/errors/500.html',
-  'cosmology/errors/505.html'
+  'cosmology/404.html',
+  'cosmology/500.html',
+  'cosmology/505.html'
 ]
 
 module.exports = {
@@ -151,20 +151,20 @@ module.exports = {
 
     // Ошибки
     new HtmlWebpackPlugin({
-      template: './src/errors/404.html',
-      filename: './errors/404.html',
+      template: './src/404.html',
+      filename: './404.html',
       chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/errors/500.html',
-      filename: './errors/500.html',
+      template: './src/500.html',
+      filename: './500.html',
       chunks: ['index']
     }),
 
     new HtmlWebpackPlugin({
-      template: './src/errors/505.html',
-      filename: './errors/505.html',
+      template: './src/505.html',
+      filename: './505.html',
       chunks: ['index']
     }),
 
